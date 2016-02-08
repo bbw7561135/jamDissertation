@@ -1,0 +1,83 @@
+%% Jamie's defs
+% to have inline colored comments
+\newcount\Comments  % 0 suppresses notes to selves in text
+\Comments=1   % TODO: set to 0 for final version
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{purple}{rgb}{1,0,1}
+\definecolor{darkpurple}{rgb}{0.5,0,0.5}
+\definecolor{lightgreen}{RGB}{135,220,0}
+% \kibitz{color}{comment} inserts a colored comment in the text
+\newcommand{\kibitz}[2]{\ifnum\Comments=1\textcolor{#1}{#2}\fi}
+% add yourself here: 
+\newcommand{\jamie}[1]{\kibitz{red}      {[JAM: #1]}}
+
+\newcommand{\mev}       {\ensuremath{~\mathrm{MeV}}}
+\newcommand{\gev}       {\ensuremath{~\mathrm{GeV}}}
+\newcommand{\g}{$\gamma$}
+\newcommand{\ssec}{$^{\rm s}$}     % Second of time
+\newcommand{\smin}{$^{\rm m}$}   % Minutes of time
+\newcommand{\shour}{$^{\rm h}$}   % Hours of time
+\newcommand{\dsec}{\hbox{$.\!\!^{\rm s}$}}  % Second of time
+\newcommand{\dasec}{\hbox{$.\!\!^{\prime\prime}$}}     % Arcseconds over dot
+\newcommand{\damin}{\hbox{$.\!\!^{\prime}$}}           % Arcseconds over dot
+%\newcommand{\degr}{$^{\circ}$}                       % Degrees symbol
+\newcommand{\ddeg}{\hbox{$.\!\!^\circ$}}               % Degrees over dot #Do Not Use
+\newcommand{\st}{$^{\mathrm{st}}$}        %^st
+\newcommand{\Fermi}{\emph{Fermi}}  % Fermi
+\newcommand{\FermiLat}{\emph{Fermi} LAT}     %Fermi LAT
+\newcommand{\ptlike}{{\tt pointlike}}
+\newcommand{\gtlike}{{\tt gtlike}}
+\newcommand{\logL}{$\log \mathcal{L}$}
+\newcommand{\hi}{$\mathrm{H\,\scriptstyle{I}}$}
+\newcommand{\Hii}{$\mathrm{H\,\scriptstyle{II}}$}
+\newcommand{\HII}{\ion{H}{2}}
+\newcommand{\lat}{\textit{Fermi}-LAT }
+\newcommand{\blat}{$|b|<10{^\circ}$ }
+\newcommand{\blot}{$|b|\geq 10{^\circ}$ }
+
+%Need these for now if I want to just pull from 2FHL
+\newcommand{\eg}{e.g.~}
+\newcommand{\ie}{i.e.~}
+%This is just an example
+\newcommand{\Rsqr}[1][]{\ensuremath{\mathrm{R_{#1}^2}}}
+
+%this was Terri's, don't know what it does yet
+\newcommand{\adisk}[2]{\ensuremath{\mathrm{disk}(\mathrm{#1}\,\mathrm{#2})}}
+
+%% Kayhan's defs (originally from T. Robishaw).
+\newcommand{\msun}      {\ensuremath{M_\odot}}
+\newcommand{\sunmass}   {\msun}
+\newcommand{\kms}       {\ensuremath{~\mathrm{km~s^{-1}}}}
+\newcommand{\au}        {\ensuremath{~\mathrm{AU}}}
+\newcommand{\ergs}      {\ensuremath{~\mathrm{erg~s^{-1}}}}
+\newcommand{\persec}    {\ensuremath{~\mathrm{~s^{-1}}}}
+\newcommand{\kev}       {\ensuremath{~\mathrm{keV}}}
+\newcommand{\mpc}       {\ensuremath{~\mathrm{Mpc}}}
+\newcommand{\kpc}       {\ensuremath{~\mathrm{kpc}}}
+\newcommand {\apgt} {\ {\raise-.5ex\hbox{$\buildrel>\over\sim$}}\ }
+\newcommand {\aplt} {\ {\raise-.5ex\hbox{$\buildrel<\over\sim$}}\ } 
+\newcommand{\mhz}       {\ensuremath{~\mathrm{mHz}}}
+\newcommand{\hz}       {\ensuremath{~\mathrm{Hz}}}
+\newcommand{\yr}       {\ensuremath{~\mathrm{yr}}}
+\newcommand{\units}[1]  {\ensuremath{\mathrm{~{#1}}}}
+
+\newcommand{\vecb}[1]{\mbox{\boldmath ${#1}$}}
+
+
+%% Rupke's defs
+% \newcommand{\kms}{\ifmmode \mathrm{km~s^{-1}}\else km~s$^{-1}$\fi}
+% \newcommand{\smpy}{\ifmmode M_\sun~\mathrm{yr}^{-1}\else M$_\sun$~yr$^{-1}$\fi}
+% \newcommand{\lir}{\ifmmode L_\mathrm{IR}\else $L_\mathrm{IR}$\fi}
+% \newcommand{\lsun}{\ifmmode L_\sun\else $L_\sun$\fi}
+% \newcommand{\msun}{\ifmmode M_\sun\else $M_\sun$\fi}
+% \newcommand{\na}{\ion{Na}{1}}
+% \newcommand{\nad}{\ion{Na}{1}~D}
+% \newcommand{\mgb}{\ion{Mg}{1}~b}
+% \newcommand{\ot}{[\ion{O}{3}]}
+% \newcommand{\otl}{[\ion{O}{3}]$\lambda5007$}
+% \newcommand{\nt}{[\ion{N}{2}]}
+% \newcommand{\ntl}{[\ion{N}{2}]$\lambda6583$}
+% \newcommand{\cf}{\ifmmode C_f\else $C_f$\fi}
+% \newcommand {\apgt} {\ {\raise-.5ex\hbox{$\buildrel>\over\sim$}}\ }
+% \newcommand {\aplt} {\ {\raise-.5ex\hbox{$\buildrel<\over\sim$}}\ }

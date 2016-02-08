@@ -1,0 +1,200 @@
+% History
+%  04/29/08  jcv few more final mods
+%  01/27/08  jcv some modifications and simplifying
+%  05/15/06  kg made available to UMD Astro Wiki
+%  01/12/05  kg retrieved from DSR 
+%  05/27/04  DSR  retrieved from Wayne Baumgartner
+%
+
+% Official version for University
+% Also, do not use \makecover for official version.
+\documentclass[12pt,letterpaper,oneside]{dissertation}
+
+% Use the following instead of the above for duplex printing.
+%  Makes ``inside'' margins 1.5 inches.  Also forces odd-numbered
+%  pages to be on the right, and forces new chapters to be on
+%  odd-numbered pages
+%\documentclass[12pt,letterpaper,twoside]{dissertation}
+
+%jam added this to get glossaries to work
+% arara: pdflatex
+% arara: bibtex
+% arara: makeglossaries
+% arara: pdflatex    
+%% arara: pdflatex  
+\usepackage{longtable} 
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{ifthen}
+\usepackage{epstopdf}
+% To use AAS macros
+\usepackage{aastex_hack}
+% Use improved verbatim package for included code and force single
+% spacing in it.
+\usepackage{fancyvrb}
+\fvset{baselinestretch=1}
+% Package to deal with acronyms nicely
+\usepackage{acronym} %jam maybe comment this out?
+%Jam added glossaries
+%Jame trying to get deluxetable to play nice with glossaries which includes supertabular
+
+
+
+\usepackage[nomain,acronym,toc, nonumberlist]{glossaries}
+\let\shead = \tablehead
+\let\stail = \tabletail
+\let\tablehead\relax
+\let\tabletail\relax
+\let\tablecaption\relax
+\usepackage{deluxetable}
+\let\thead=\tablehead
+\let\ttail=\tabletail
+\let\tcap=\tablecaption
+\let\tablehead =\thead
+\let\tabletail =\ttail
+\let\tablecaption =\tcap
+
+\renewcommand*{\acronymname}{List of Symbols and Acronyms}
+\loadglsentries{abbrev}
+%\include{abbrev}
+\makeglossaries
+%jam not sure I need an index
+%\usepackage[xindy]{imakeidx}
+%\makeindex
+
+% Instruction to natbib package to omit comma between name and date
+% within citations as well as to do name-date citation style the sort
+% option forces output of multiple items to be in the order that they
+% show up in Bibliography.
+\usepackage[authoryear,round,sort]{natbib}
+\bibpunct{(}{)}{;}{a}{}{,}
+\usepackage{natbibspacing}
+
+% Where I define my personal macros; probably should input this instead
+\usepackage{mydefs}
+
+% To fiddle with captions
+\usepackage[small]{caption}
+% Instruction to caption.sty to make a 20pt margin on each side of
+% captions
+\setlength{\captionmargin}{20pt}
+% To single space captions, tables, etc.
+\usepackage{atbeginend}
+
+% To reduce the size of chapter, etc headings
+\usepackage{sectsty}
+\chapterfont{\huge\centering}
+\usepackage[nobottomtitles]{titlesec}
+
+\usepackage{pdfpages}
+\usepackage{hyperref}
+\hypersetup{
+pdfauthor = {Jamie Michael Cohen},
+pdftitle = {Doctor of Philosophy, 2016},
+pdfsubject = {Subject Dissertation},
+}
+% Depth of section numbering in body 
+%\setcounter{secnumdepth}{3}
+
+% Fix spacing in floats
+% atbeginend.sty stuff: (spacing commands defined in dissertation.sty)
+\BeforeBegin{deluxetable}{\spacing{1}}
+\AfterEnd{deluxetable}{\spacing{\bodyspacing}}
+\BeforeBegin{table}{\spacing{1.1}}
+\AfterEnd{table}{\spacing{\bodyspacing}}
+\BeforeBegin{figure}{\spacing{1.1}}
+\AfterEnd{figure}{\spacing{\bodyspacing}}
+\BeforeBegin{figure*}{\spacing{1.1}}
+\AfterEnd{figure*}{\spacing{\bodyspacing}}
+
+% For intelligent float placement fiddle with these
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\floatpagefraction}{0.75}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\dbltopfraction}{0.75}
+
+% Make the front matter 
+% Long titles need to have breaks forced within them with \\ at break.
+\title{Of Plerions and Supernova Remnants:\\ $\gamma$-Ray Observations of the Stellar Graveyard.}
+
+\author{Jamie Michael Cohen} % You should really have full name here.
+\date{2016} % Date of your degree.
+\department{Astroparticle Physics Laboratory, Code 661 \\ NASA Goddard Space Flight Center}
+\advisor{Doctor Elizabeth Hays}
+\chairtitle{Chair/Advisor}
+\advtitle{Advisor}
+\chairdept{Department of Astronomy \\ University of Maryland}
+\chairname{Professor M. Coleman Miller}
+% Rest of committee in alphabetical order with title.  Any type of
+% professor (assistant, associate, or adjunct) gets ``Professor.''
+\committee{Professor Christopher S. Reynolds \\
+                Professor Derek C. Richardson \\
+                Doctor Who}
+
+% Comment out the following three lines if you don't want to dedicate
+% your thesis, you uninspired piece of scum.
+\phantomsection
+\label{mydedication}
+\dedication{\centering To Vanessa!}
+
+% Abstract is required for UMD as of 2006.
+\abstractfile{abstract}
+
+% Just comment out if you don't want to acknowledge anyone, you
+% ungrateful little pipsqueak.
+\acknowledgements{\input{acknowledgements}}
+
+% Just comment out if you don't want to ace your work.
+\prefacefile{preface}
+
+% If you can't figure out what the following are for, you shouldn't be
+% getting a PhD.
+\setboolean{hasfigures}{true}
+\setboolean{hastables}{true}
+\setboolean{hascopyright}{true}
+
+\begin{document}
+%\makecover adds a file cover.pdf to the front for UNOFFICIAL Version
+%only.
+%\makecover
+\makefrontmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CHAPTERS one include for each
+\include{intro}
+\include{gamAstr}
+\include{LAT}
+\include{Rems}
+\include{fermiData}
+\include{snrcat}
+\include{2FHL}
+\include{G150}
+\include{other}
+\include{conc}
+%\input{abbrev}
+
+% APPENDICES --- Note: only use the \appendix command once before the
+%                      first appendix
+%%\appendix
+%%input{appendix.tex}
+%\input{acronyms}
+
+% Make Glossary
+\printglossaries
+%\printglossary
+
+% BIBLIOGRAPHY
+\phantomsection
+\cleardoublepage %Jame added this to get  bib page # in toc corect with glossary included
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{apj}
+%\bibliographystyle{astroadswithlinks} %jam added this from mmks, but it doesn't get the bib right
+%This one give full titles for papers.
+%\bibliographystyle{apalike}
+%\bibliography{thesis-refs}
+\bibliography{biblio}
+%\bibliography{snrCat}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

@@ -1,0 +1,242 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Abdo} {et~al.}(2009){Abdo}, {Ackermann}, {Ajello}, {Anderson},
+  {Atwood}, {Axelsson}, {Baldini}, {Ballet}, {Barbiellini}, {Baring},
+  {Bastieri}, {Baughman}, {Bechtol}, {Bellazzini}, {Berenji}, {Bignami},
+  {Blandford}, {Bloom}, {Bonamente}, {Borgland}, {Bregeon}, {Brez}, {Brigida},
+  {Bruel}, {Burnett}, {Caliandro}, {Cameron}, {Caraveo}, {Casandjian},
+  {Cecchi}, {{\c C}elik}, {Chekhtman}, {Cheung}, {Chiang}, {Ciprini}, {Claus},
+  {Cohen-Tanugi}, {Conrad}, {Cutini}, {Dermer}, {de Angelis}, {de Luca}, {de
+  Palma}, {Digel}, {Dormody}, {do Couto e Silva}, {Drell}, {Dubois}, {Dumora},
+  {Farnier}, {Favuzzi}, {Fegan}, {Fukazawa}, {Funk}, {Fusco}, {Gargano},
+  {Gasparrini}, {Gehrels}, {Germani}, {Giebels}, {Giglietto}, {Giommi},
+  {Giordano}, {Glanzman}, {Godfrey}, {Grenier}, {Grondin}, {Grove},
+  {Guillemot}, {Guiriec}, {Gwon}, {Hanabata}, {Harding}, {Hayashida}, {Hays},
+  {Hughes}, {J{\'o}hannesson}, {Johnson}, {Johnson}, {Johnson}, {Kamae},
+  {Katagiri}, {Kataoka}, {Kawai}, {Kerr}, {Kn{\"o}dlseder}, {Kocian}, {Kuss},
+  {Lande}, {Latronico}, {Lemoine-Goumard}, {Longo}, {Loparco}, {Lott},
+  {Lovellette}, {Lubrano}, {Madejski}, {Makeev}, {Marelli}, {Mazziotta},
+  {McConville}, {McEnery}, {Meurer}, {Michelson}, {Mitthumsiri}, {Mizuno},
+  {Monte}, {Monzani}, {Morselli}, {Moskalenko}, {Murgia}, {Nolan}, {Norris},
+  {Nuss}, {Ohsugi}, {Omodei}, {Orlando}, {Ormes}, {Paneque}, {Parent},
+  {Pelassa}, {Pepe}, {Pesce-Rollins}, {Pierbattista}, {Piron}, {Porter},
+  {Primack}, {Rain{\`o}}, {Rando}, {Ray}, {Razzano}, {Rea}, {Reimer}, {Reimer},
+  {Reposeur}, {Ritz}, {Rochester}, {Rodriguez}, {Romani}, {Ryde},
+  {Sadrozinski}, {Sanchez}, {Sander}, {Parkinson}, {Scargle}, {Sgr{\`o}},
+  {Siskind}, {Smith}, {Smith}, {Spandre}, {Spinelli}, {Starck}, {Strickman},
+  {Suson}, {Tajima}, {Takahashi}, {Takahashi}, {Tanaka}, {Thayer}, {Thompson},
+  {Tibaldo}, {Tibolla}, {Torres}, {Tosti}, {Tramacere}, {Uchiyama}, {Usher},
+  {Van Etten}, {Vasileiou}, {Vilchez}, {Vitale}, {Waite}, {Wang}, {Watters},
+  {Winer}, {Wolff}, {Wood}, {Ylinen}, {Ziegler}, \& {Fermi LAT
+  Collaboration}}]{AbdoBlindPSR09}
+{Abdo}, A.~A., {Ackermann}, M., {Ajello}, M., {et~al.} 2009, Science, 325, 840
+
+\bibitem[{{Abdo} {et~al.}(2013){Abdo}, {Ajello}, {Allafort}, {Baldini},
+  {Ballet}, {Barbiellini}, {Baring}, {Bastieri}, {Belfiore}, {Bellazzini}, \&
+  et~al.}]{2PC}
+{Abdo}, A.~A., {Ajello}, M., {Allafort}, A., {et~al.} 2013, \apjs, 208, 17
+
+\bibitem[{{Abramowski} {et~al.}(2011){Abramowski}, {Acero}, {Aharonian},
+  {Akhperjanian}, {Anton}, {Balzer}, {Barnacka}, {Barres de Almeida},
+  {Becherini}, {Becker}, {Behera}, {Bernl{\"o}hr}, {Bochow}, {Boisson},
+  {Bolmont}, {Bordas}, {Brucker}, {Brun}, {Brun}, {Bulik}, {B{\"u}sching},
+  {Carrigan}, {Casanova}, {Cerruti}, {Chadwick}, {Charbonnier}, {Chaves},
+  {Cheesebrough}, {Chounet}, {Clapson}, {Coignet}, {Cologna}, {Conrad},
+  {Dalton}, {Daniel}, {Davids}, {Degrange}, {Deil}, {Dickinson},
+  {Djannati-Ata{\"i}}, {Domainko}, {O'C.~Drury}, {Dubois}, {Dubus}, {Dutson},
+  {Dyks}, {Dyrda}, {Egberts}, {Eger}, {Espigat}, {Fallon}, {Farnier}, {Fegan},
+  {Feinstein}, {Fernandes}, {Fiasson}, {Fontaine}, {F{\"o}rster},
+  {F{\"u}ssling}, {Gallant}, {Gast}, {G{\'e}rard}, {Gerbig}, {Giebels},
+  {Glicenstein}, {Gl{\"u}ck}, {Goret}, {G{\"o}ring}, {H{\"a}ffner}, {Hague},
+  {Hampf}, {Hauser}, {Heinz}, {Heinzelmann}, {Henri}, {Hermann}, {Hinton},
+  {Hoffmann}, {Hofmann}, {Hofverberg}, {Holler}, {Horns}, {Jacholkowska}, {de
+  Jager}, {Jahn}, {Jamrozy}, {Jung}, {Kastendieck}, {Katarzynski}, {Katz},
+  {Kaufmann}, {Keogh}, {Khangulyan}, {Kh{\'e}lifi}, {Klochkov}, {Kluzniak},
+  {Kneiske}, {Komin}, {Kosack}, {Kossakowski}, {Laffon}, {Lamanna}, {Lennarz},
+  {Lohse}, {Lopatin}, {Lu}, {Marandon}, {Marcowith}, {Masbou}, {Maurin},
+  {Maxted}, {Mayer}, {McComb}, {Medina}, {M{\'e}hault}, {Moderski}, {Moulin},
+  {Naumann}, {Naumann-Godo}, {de Naurois}, {Nedbal}, {Nekrassov}, {Nguyen},
+  {Nicholas}, {Niemiec}, {Nolan}, {Ohm}, {de Ona Wilhelmi}, {Opitz},
+  {Ostrowski}, {Oya}, {Panter}, {Paz Arribas}, {Pedaletti}, {Pelletier},
+  {Petrucci}, {Pita}, {P{\"u}hlhofer}, {Punch}, {Quirrenbach}, {Raue},
+  {Rayner}, {Reimer}, {Reimer}, {Renaud}, {de Los Reyes}, {Rieger}, {Ripken},
+  {Rob}, {Rosier-Lees}, {Rowell}, {Rudak}, {Rulten}, {Ruppel}, {Sahakian},
+  {Sanchez}, {Santangelo}, {Schlickeiser}, {Sch{\"o}ck}, {Schulz}, {Schwanke},
+  {Schwarzburg}, {Schwemmer}, {Sikora}, {Skilton}, {Sol}, {Spengler},
+  {Stawarz}, {Steenkamp}, {Stegmann}, {Stinzing}, {Stycz}, {Sushch}, {Szostek},
+  {Tavernet}, {Terrier}, {Tluczykont}, {Valerius}, {van Eldik}, {Vasileiadis},
+  {Venter}, {Vialle}, {Viana}, {Vincent}, {V{\"o}lk}, {Volpe}, {Vorobiov},
+  {Vorster}, {Wagner}, {Ward}, {White}, {Wierzcholska}, {Zacharias}, {Zajczyk},
+  {Zdziarski}, {Zech}, \& {Zechlin}}]{Abramowski11}
+{Abramowski}, A., {Acero}, F., {Aharonian}, F., {et~al.} 2011, \aap, 533, A103
+
+\bibitem[{{Abramowski} {et~al.}(2015{\natexlab{a}}){Abramowski}, {Aharonian},
+  {Ait Benkhali}, {Akhperjanian}, {Ang{\"u}ner}, {Anton}, {Backes},
+  {Balenderan}, {Balzer}, \& et~al.}]{HESSLATW41}
+{Abramowski}, A., {Aharonian}, F., {Ait Benkhali}, F., {et~al.}
+  2015{\natexlab{a}}, \aap, 574, A27
+
+\bibitem[{{Abramowski} {et~al.}(2015{\natexlab{b}}){Abramowski}, {Aharonian},
+  {Ait Benkhali}, {Akhperjanian}, {Ang{\"u}ner}, {Anton}, {Backes},
+  {Balenderan}, {Balzer}, \& et~al.}]{W41}
+---. 2015{\natexlab{b}}, \aap, 574, A27
+
+\bibitem[{{Acero} {et~al.}(2013){Acero}, {Ackermann}, {Ajello}, {Allafort},
+  {Baldini}, {Ballet}, {Barbiellini}, {Bastieri}, {Bechtol}, {Bellazzini},
+  {Blandford}, {Bloom}, {Bonamente}, {Bottacini}, {Brandt}, {Bregeon},
+  {Brigida}, {Bruel}, {Buehler}, {Buson}, {Caliandro}, {Cameron}, {Caraveo},
+  {Cecchi}, {Charles}, {Chaves}, {Chekhtman}, {Chiang}, {Chiaro}, {Ciprini},
+  {Claus}, {Cohen-Tanugi}, {Conrad}, {Cutini}, {Dalton}, {D'Ammando}, {de
+  Palma}, {Dermer}, {Di Venere}, {Silva}, {Drell}, {Drlica-Wagner}, {Falletti},
+  {Favuzzi}, {Fegan}, {Ferrara}, {Focke}, {Franckowiak}, {Fukazawa}, {Funk},
+  {Fusco}, {Gargano}, {Gasparrini}, {Giglietto}, {Giordano}, {Giroletti},
+  {Glanzman}, {Godfrey}, {Gr{\'e}goire}, {Grenier}, {Grondin}, {Grove},
+  {Guiriec}, {Hadasch}, {Hanabata}, {Harding}, {Hayashida}, {Hayashi}, {Hays},
+  {Hewitt}, {Hill}, {Horan}, {Hou}, {Hughes}, {Inoue}, {Jackson}, {Jogler},
+  {J{\'o}hannesson}, {Johnson}, {Kamae}, {Kawano}, {Kerr}, {Kn{\"o}dlseder},
+  {Kuss}, {Lande}, {Larsson}, {Latronico}, {Lemoine-Goumard}, {Longo},
+  {Loparco}, {Lovellette}, {Lubrano}, {Marelli}, {Massaro}, {Mayer},
+  {Mazziotta}, {McEnery}, {Mehault}, {Michelson}, {Mitthumsiri}, {Mizuno},
+  {Monte}, {Monzani}, {Morselli}, {Moskalenko}, {Murgia}, {Nakamori}, {Nemmen},
+  {Nuss}, {Ohsugi}, {Okumura}, {Orienti}, {Orlando}, {Ormes}, {Paneque},
+  {Panetta}, {Perkins}, {Pesce-Rollins}, {Piron}, {Pivato}, {Porter},
+  {Rain{\`o}}, {Rando}, {Razzano}, {Reimer}, {Reimer}, {Reposeur}, {Ritz},
+  {Roth}, {Rousseau}, {Saz Parkinson}, {Schulz}, {Sgr{\`o}}, {Siskind},
+  {Smith}, {Spandre}, {Spinelli}, {Suson}, {Takahashi}, {Takeuchi}, {Thayer},
+  {Thayer}, {Thompson}, {Tibaldo}, {Tibolla}, {Tinivella}, {Torres}, {Tosti},
+  {Troja}, {Uchiyama}, {Vandenbroucke}, {Vasileiou}, {Vianello}, {Vitale},
+  {Werner}, {Winer}, {Wood}, \& {Yang}}]{Acero13}
+{Acero}, F., {Ackermann}, M., {Ajello}, M., {et~al.} 2013, \apj, 773, 77
+
+\bibitem[{{Acero} {et~al.}(2015){Acero}, {Ackermann}, {Ajello}, {Allafort},
+  {Baldini}, {Ballet}, {Barbiellini}, {Bastieri}, {Bechtol}, {Bellazzini},
+  {Blandford}, {Bloom}, {Bonamente}, {Bottacini}, {Brandt}, {Bregeon},
+  {Brigida}, {Bruel}, {Buehler}, {Buson}, {Caliandro}, {Cameron}, {Caraveo},
+  {Cecchi}, {Charles}, {Chaves}, {Chekhtman}, {Chiang}, {Chiaro}, {Ciprini},
+  {Claus}, {Cohen-Tanugi}, {Conrad}, {Cutini}, {Dalton}, {D'Ammando}, {de
+  Palma}, {Dermer}, {Di Venere}, {Silva}, {Drell}, {Drlica-Wagner}, {Falletti},
+  {Favuzzi}, {Fegan}, {Ferrara}, {Focke}, {Franckowiak}, {Fukazawa}, {Funk},
+  {Fusco}, {Gargano}, {Gasparrini}, {Giglietto}, {Giordano}, {Giroletti},
+  {Glanzman}, {Godfrey}, {Gr{\'e}goire}, {Grenier}, {Grondin}, {Grove},
+  {Guiriec}, {Hadasch}, {Hanabata}, {Harding}, {Hayashida}, {Hayashi}, {Hays},
+  {Hewitt}, {Hill}, {Horan}, {Hou}, {Hughes}, {Inoue}, {Jackson}, {Jogler},
+  {J{\'o}hannesson}, {Johnson}, {Kamae}, {Kawano}, {Kerr}, {Kn{\"o}dlseder},
+  {Kuss}, {Lande}, {Larsson}, {Latronico}, {Lemoine-Goumard}, {Longo},
+  {Loparco}, {Lovellette}, {Lubrano}, {Marelli}, {Massaro}, {Mayer},
+  {Mazziotta}, {McEnery}, {Mehault}, {Michelson}, {Mitthumsiri}, {Mizuno},
+  {Monte}, {Monzani}, {Morselli}, {Moskalenko}, {Murgia}, {Nakamori}, {Nemmen},
+  {Nuss}, {Ohsugi}, {Okumura}, {Orienti}, {Orlando}, {Ormes}, {Paneque},
+  {Panetta}, {Perkins}, {Pesce-Rollins}, {Piron}, {Pivato}, {Porter},
+  {Rain{\`o}}, {Rando}, {Razzano}, {Reimer}, {Reimer}, {Reposeur}, {Ritz},
+  {Roth}, {Rousseau}, {Saz Parkinson}, {Schulz}, {Sgr{\`o}}, {Siskind},
+  {Smith}, {Spandre}, {Spinelli}, {Suson}, {Takahashi}, {Takeuchi}, {Thayer},
+  {Thayer}, {Thompson}, {Tibaldo}, {Tibolla}, {Tinivella}, {Torres}, {Tosti},
+  {Troja}, {Uchiyama}, {Vandenbroucke}, {Vasileiou}, {Vianello}, {Vitale},
+  {Werner}, {Winer}, {Wood}, \& {Yang}}]{3FGL}
+---. 2015, ArXiv:1501.02003, arXiv:1501.02003:1501.02003
+
+\bibitem[{{Aharonian} {et~al.}(2006){Aharonian}, {Akhperjanian}, {Bazer-Bachi},
+  {Beilicke}, {Benbow}, {Berge}, {Bernl{\"o}hr}, {Boisson}, {Bolz}, {Borrel},
+  {Braun}, {Brown}, {B{\"u}hler}, {B{\"u}sching}, {Carrigan}, {Chadwick},
+  {Chounet}, {Cornils}, {Costamante}, {Degrange}, {Dickinson},
+  {Djannati-Ata{\"i}}, {O'C.~Drury}, {Dubus}, {Egberts}, {Emmanoulopoulos},
+  {Espigat}, {Feinstein}, {Ferrero}, {Fiasson}, {Fontaine}, {Funk}, {Funk},
+  {F{\"u}{\ss}ling}, {Gallant}, {Giebels}, {Glicenstein}, {Goret},
+  {Hadjichristidis}, {Hauser}, {Hauser}, {Heinzelmann}, {Henri}, {Hermann},
+  {Hinton}, {Hoffmann}, {Hofmann}, {Holleran}, {Horns}, {Jacholkowska}, {de
+  Jager}, {Kendziorra}, {Kh{\'e}lifi}, {Komin}, {Konopelko}, {Kosack},
+  {Latham}, {Le Gallou}, {Lemi{\`e}re}, {Lemoine-Goumard}, {Lohse}, {Martin},
+  {Martineau-Huynh}, {Marcowith}, {Masterson}, {Maurin}, {McComb}, {de
+  Naurois}, {Nedbal}, {Nolan}, {Noutsos}, {Orford}, {Osborne}, {Ouchrif},
+  {Panter}, {Pelletier}, {Pita}, {P{\"u}hlhofer}, {Punch}, {Raubenheimer},
+  {Raue}, {Rayner}, {Reimer}, {Reimer}, {Ripken}, {Rob}, {Rolland}, {Rowell},
+  {Sahakian}, {Santangelo}, {Saug{\'e}}, {Schlenker}, {Schlickeiser},
+  {Schr{\"o}der}, {Schwanke}, {Schwarzburg}, {Shalchi}, {Sol}, {Spangler},
+  {Spanier}, {Steenkamp}, {Stegmann}, {Superina}, {Tavernet}, {Terrier},
+  {Th{\'e}oret}, {Tluczykont}, {van Eldik}, {Vasileiadis}, {Venter}, {Vincent},
+  {V{\"o}lk}, {Wagner}, \& {Ward}}]{AharonianKook06}
+{Aharonian}, F., {Akhperjanian}, A.~G., {Bazer-Bachi}, A.~R., {et~al.} 2006,
+  \aap, 456, 245
+
+\bibitem[{{Aharonian} {et~al.}(2009){Aharonian}, {Akhperjanian}, {de Almeida},
+  {Bazer-Bachi}, {Behera}, {Beilicke}, {Benbow}, {Bernl{\"o}hr}, {Boisson},
+  {Bochow}, {Borrel}, {Braun}, {Brion}, {Brucker}, {B{\"u}hler}, {Bulik},
+  {B{\"u}sching}, {Boutelier}, {Carrigan}, {Chadwick}, {Charbonnier}, {Chaves},
+  {Chounet}, {Clapson}, {Coignet}, {Costamante}, {Dalton}, {Degrange},
+  {Dickinson}, {Djannati-Ata{\"i}}, {Domainko}, {Drury}, {Dubois}, {Dubus},
+  {Dyks}, {Egberts}, {Emmanoulopoulos}, {Espigat}, {Farnier}, {Feinstein},
+  {Fiasson}, {F{\"o}rster}, {Fontaine}, {F{\"u}{\ss}ling}, {Gabici}, {Gallant},
+  {G{\'e}rard}, {Giebels}, {Glicenstein}, {Gl{\"u}ck}, {Goret},
+  {Hadjichristidis}, {Hauser}, {Hauser}, {Heinzelmann}, {Henri}, {Hermann},
+  {Hinton}, {Hoffmann}, {Hofmann}, {Holleran}, {Hoppe}, {Horns},
+  {Jacholkowska}, {de Jager}, {Jung}, {Katarzy{\'n}ski}, {Kaufmann},
+  {Kendziorra}, {Kerschhaggl}, {Khangulyan}, {Kh{\'e}lifi}, {Keogh}, {Komin},
+  {Kosack}, {Lamanna}, {Latham}, {Lemoine-Goumard}, {Lenain}, {Lohse},
+  {Marandon}, {Martin}, {Martineau-Huynh}, {Marcowith}, {Masterson}, {Maurin},
+  {McComb}, {Medina}, {Moderski}, {Moulin}, {Naumann-Godo}, {de Naurois},
+  {Nedbal}, {Nekrassov}, {Niemiec}, {Nolan}, {Ohm}, {Olive}, {de O{\~n}a
+  Wilhelmi}, {Orford}, {Osborne}, {Ostrowski}, {Panter}, {Pedaletti},
+  {Pelletier}, {Petrucci}, {Pita}, {P{\"u}hlhofer}, {Punch}, {Quirrenbach},
+  {Raubenheimer}, {Raue}, {Rayner}, {Renaud}, {Rieger}, {Ripken}, {Rob},
+  {Rosier-Lees}, {Rowell}, {Rudak}, {Ruppel}, {Sahakian}, {Santangelo},
+  {Schlickeiser}, {Sch{\"o}ck}, {Schr{\"o}der}, {Schwanke}, {Schwarzburg},
+  {Schwemmer}, {Shalchi}, {Skilton}, {Sol}, {Spangler}, {Stawarz}, {Steenkamp},
+  {Stegmann}, {Superina}, {Tam}, {Tavernet}, {Terrier}, {Tibolla}, {van Eldik},
+  {Vasileiadis}, {Venter}, {Vialle}, {Vincent}, {Vink}, {Vivier}, {V{\"o}lk},
+  {Volpe}, {Wagner}, {Ward}, {Zdziarski}, \& {Zech}}]{Aharonian09}
+{Aharonian}, F., {Akhperjanian}, A.~G., {de Almeida}, U.~B., {et~al.} 2009,
+  \apj, 692, 1500
+
+\bibitem[{{Gao} \& {Han}(2014)}]{Gao14}
+{Gao}, X.~Y., \& {Han}, J.~L. 2014, \aap, 567, A59
+
+\bibitem[{{Gotthelf} \& {Halpern}(2008)}]{Gotthelf08}
+{Gotthelf}, E.~V., \& {Halpern}, J.~P. 2008, \apj, 681, 515
+
+\bibitem[{{Hewitt} {et~al.}(2013){Hewitt}, {Acero}, {Brandt}, {Cohen}, {de
+  Palma}, {Giordano}, \& {for the Fermi LAT Collaboration}}]{hewittSNRcat13}
+{Hewitt}, J.~W., {Acero}, F., {Brandt}, T.~J., {et~al.} 2013, ArXiv
+  e-prints:1307.6570, arXiv:1307.6570
+
+\bibitem[{{Hewitt} \& {Fermi-LAT Collaboration}(2015)}]{Hewitt15}
+{Hewitt}, J.~W., \& {Fermi-LAT Collaboration}. 2015, in American Astronomical
+  Society Meeting Abstracts, Vol. 225, American Astronomical Society Meeting
+  Abstracts, 140.31
+
+\bibitem[{{Kerr}(2010)}]{Kerr10}
+{Kerr}, M. 2010, PhD thesis, University of Washington, arXiv:1101.6072
+
+\bibitem[{{Lande} {et~al.}(2012){Lande}, {Ackermann}, {Allafort}, {Ballet},
+  {Bechtol}, {Burnett}, {Cohen-Tanugi}, {Drlica-Wagner}, {Funk}, {Giordano},
+  {Grondin}, {Kerr}, \& {Lemoine-Goumard}}]{Lande12}
+{Lande}, J., {Ackermann}, M., {Allafort}, A., {et~al.} 2012, \apj, 756, 5
+
+\bibitem[{{Lemoine-Goumard} {et~al.}(2012){Lemoine-Goumard}, {Renaud}, {Vink},
+  {Allen}, {Bamba}, {Giordano}, \& {Uchiyama}}]{Lemoine-Goumard12}
+{Lemoine-Goumard}, M., {Renaud}, M., {Vink}, J., {et~al.} 2012, \aap, 545, A28
+
+\bibitem[{{Lemoine-Goumard} {et~al.}(2011){Lemoine-Goumard}, {Zavlin},
+  {Grondin}, {Shannon}, {Smith}, {Burgay}, {Camilo}, {Cohen-Tanugi}, {Freire},
+  {Grove}, {Guillemot}, {Johnston}, {Keith}, {Kramer}, {Manchester},
+  {Michelson}, {Parent}, {Possenti}, {Ray}, {Renaud}, {Thorsett}, {Weltevrede},
+  \& {Wolff}}]{Lemoine-Goumard11}
+{Lemoine-Goumard}, M., {Zavlin}, V.~E., {Grondin}, M.-H., {et~al.} 2011, \aap,
+  533, A102
+
+\bibitem[{{Roberts} {et~al.}(1999){Roberts}, {Romani}, {Johnston}, \&
+  {Green}}]{Roberts99}
+{Roberts}, M.~S.~E., {Romani}, R.~W., {Johnston}, S., \& {Green}, A.~J. 1999,
+  \apj, 515, 712
+
+\bibitem[{{Rosado} {et~al.}(1996){Rosado}, {Ambrocio-Cruz}, {Le Coarer}, \&
+  {Marcelin}}]{Rosado96}
+{Rosado}, M., {Ambrocio-Cruz}, P., {Le Coarer}, E., \& {Marcelin}, M. 1996,
+  \aap, 315, 243
+
+\bibitem[{{Sollerman} {et~al.}(2003){Sollerman}, {Ghavamian}, {Lundqvist}, \&
+  {Smith}}]{Sollerman03}
+{Sollerman}, J., {Ghavamian}, P., {Lundqvist}, P., \& {Smith}, R.~C. 2003,
+  \aap, 407, 249
+
+\end{thebibliography}
