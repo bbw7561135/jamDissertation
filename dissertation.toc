@@ -15,12 +15,13 @@
 \contentsline {chapter}{\numberline {6}The 1$^{\mathrm {st}}$\emph {Fermi}-LAT Supernova Remnant Catalog}{8}{chapter.6}
 \contentsline {section}{\numberline {6.1}Input Source Model Construction}{8}{section.6.1}
 \contentsline {section}{\numberline {6.2}Comparison of Source Models with 2FGL}{13}{section.6.2}
-\contentsline {chapter}{\numberline {7}2FHL: The Second Catalog of Hard \emph {Fermi}-LAT Sources}{17}{chapter.7}
+\contentsline {chapter}{\numberline {7}Extended Source Detection above 50 GeV: The 2FHL Catalog}{17}{chapter.7}
 \contentsline {section}{\numberline {7.1}Extended Sources Previously Detected by the LAT}{17}{section.7.1}
 \contentsline {section}{\numberline {7.2}Newly Detected Extended Sources}{18}{section.7.2}
 \contentsline {section}{\numberline {7.3}Extended Source Results}{20}{section.7.3}
 \contentsline {chapter}{\numberline {8}SNR G150.3+4.5}{26}{chapter.8}
-\contentsline {chapter}{\numberline {9}SNR-MC, 10 GeV, and anything else?}{27}{chapter.9}
-\contentsline {chapter}{\numberline {10}Conclusions}{28}{chapter.10}
-\contentsline {chapter}{List of Symbols and Acronyms}{29}{section*.14}
-\contentsline {chapter}{Bibliography}{30}{section*.16}
+\contentsline {section}{\numberline {8.1}Summary}{26}{section.8.1}
+\contentsline {chapter}{\numberline {9}SNR-MC, 10 GeV, and anything else?}{28}{chapter.9}
+\contentsline {chapter}{\numberline {10}Conclusions}{29}{chapter.10}
+\contentsline {chapter}{List of Symbols and Acronyms}{30}{section*.14}
+\contentsline {chapter}{Bibliography}{31}{section*.16}

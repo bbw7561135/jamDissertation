@@ -1,21 +1,21 @@
-26 Jan 2016 17:19:17.445 INFO  Arara - Welcome to arara!
-26 Jan 2016 17:19:17.450 INFO  Arara - Processing file 'dissertation.tex', please wait.
-26 Jan 2016 17:19:17.453 INFO  DirectiveExtractor - Reading directives from dissertation.tex.
-26 Jan 2016 17:19:17.458 TRACE DirectiveExtractor - Directive found in line 20 with pdflatex.
-26 Jan 2016 17:19:17.460 TRACE DirectiveExtractor - Directive found in line 21 with bibtex.
-26 Jan 2016 17:19:17.461 TRACE DirectiveExtractor - Directive found in line 22 with makeglossaries.
-26 Jan 2016 17:19:17.461 TRACE DirectiveExtractor - Directive found in line 23 with pdflatex.
-26 Jan 2016 17:19:17.479 INFO  DirectiveParser - Parsing directives.
-26 Jan 2016 17:19:17.483 INFO  TaskDeployer - Deploying tasks into commands.
-26 Jan 2016 17:19:17.483 TRACE TaskDeployer - Task 'pdflatex' found in '/usr/local/texlive/2014/texmf-dist/scripts/arara/rules'.
-26 Jan 2016 17:19:17.715 TRACE TaskDeployer - Task 'bibtex' found in '/usr/local/texlive/2014/texmf-dist/scripts/arara/rules'.
-26 Jan 2016 17:19:17.766 TRACE TaskDeployer - Task 'makeglossaries' found in '/usr/local/texlive/2014/texmf-dist/scripts/arara/rules'.
-26 Jan 2016 17:19:17.770 TRACE TaskDeployer - Task 'pdflatex' found in '/usr/local/texlive/2014/texmf-dist/scripts/arara/rules'.
-26 Jan 2016 17:19:17.777 INFO  CommandTrigger - Ready to run commands.
-26 Jan 2016 17:19:17.777 INFO  CommandTrigger - Running 'PDFLaTeX'.
-26 Jan 2016 17:19:17.777 TRACE CommandTrigger - Command: pdflatex      "dissertation.tex"
-26 Jan 2016 17:19:20.026 TRACE CommandTrigger - Output logging:
-26 Jan 2016 17:19:20.026 TRACE CommandTrigger - This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex)
+16 Feb 2016 17:25:08.080 INFO  Arara - Welcome to arara!
+16 Feb 2016 17:25:08.093 INFO  Arara - Processing file 'dissertation.tex', please wait.
+16 Feb 2016 17:25:08.097 INFO  DirectiveExtractor - Reading directives from dissertation.tex.
+16 Feb 2016 17:25:08.104 TRACE DirectiveExtractor - Directive found in line 20 with pdflatex.
+16 Feb 2016 17:25:08.106 TRACE DirectiveExtractor - Directive found in line 21 with bibtex.
+16 Feb 2016 17:25:08.107 TRACE DirectiveExtractor - Directive found in line 22 with makeglossaries.
+16 Feb 2016 17:25:08.107 TRACE DirectiveExtractor - Directive found in line 23 with pdflatex.
+16 Feb 2016 17:25:08.120 INFO  DirectiveParser - Parsing directives.
+16 Feb 2016 17:25:08.125 INFO  TaskDeployer - Deploying tasks into commands.
+16 Feb 2016 17:25:08.126 TRACE TaskDeployer - Task 'pdflatex' found in '/usr/local/texlive/2014/texmf-dist/scripts/arara/rules'.
+16 Feb 2016 17:25:08.385 TRACE TaskDeployer - Task 'bibtex' found in '/usr/local/texlive/2014/texmf-dist/scripts/arara/rules'.
+16 Feb 2016 17:25:08.429 TRACE TaskDeployer - Task 'makeglossaries' found in '/usr/local/texlive/2014/texmf-dist/scripts/arara/rules'.
+16 Feb 2016 17:25:08.433 TRACE TaskDeployer - Task 'pdflatex' found in '/usr/local/texlive/2014/texmf-dist/scripts/arara/rules'.
+16 Feb 2016 17:25:08.442 INFO  CommandTrigger - Ready to run commands.
+16 Feb 2016 17:25:08.442 INFO  CommandTrigger - Running 'PDFLaTeX'.
+16 Feb 2016 17:25:08.443 TRACE CommandTrigger - Command: pdflatex      "dissertation.tex"
+16 Feb 2016 17:25:10.600 TRACE CommandTrigger - Output logging:
+16 Feb 2016 17:25:10.600 TRACE CommandTrigger - This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
 (./dissertation.tex
@@ -60,6 +60,7 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 (/usr/local/texlive/2014/texmf-dist/tex/latex/bigfoot/suffix.sty)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2014/texmf-dist/tex/generic/xstring/xstring.tex)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lineno/lineno.sty)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 (/usr/local/texlive/2014/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 (/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex))
@@ -145,9 +146,14 @@ Package hyperref Message: Driver (autodetected): hpdftex.
 ) (./dissertation.glsdefs)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
-(./dissertation.out) (./dissertation.out) (./abstract.tex) [1{/usr/local/texliv
-e/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd) [3]
+(./dissertation.out) (./dissertation.out)
+Overfull \hbox (268.8058pt too wide) in paragraph at lines 163--163
+\OT1/cmr/m/n/12 Title of Dis-ser-ta-tion:  []
+(./abstract.tex) [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/p
+dftex.map}]
+Overfull \hbox (352.98503pt too wide) in paragraph at lines 163--163
+ [] 
+[2] (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd) [3]
 (./preface.tex) [2] [3] (./acknowledgements.tex) [4] (./dissertation.toc
 [5]) [6] (./dissertation.lot) [7] (./dissertation.lof) [8] (./intro.tex
 Chapter 1.
@@ -167,14 +173,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.165 \include{intro}
+l.167 \include{intro}
                       [1] (./gamAstr.tex
 Chapter 2.
 )pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.166 \include{gamAstr}
+l.168 \include{gamAstr}
                         [2] (./LAT.tex
 Chapter 3.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
@@ -201,44 +207,100 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-) [8] (./2FHL.tex
+
+Package natbib Warning: Citation `Nolan12-2FGL' on page 8 undefined on input li
+ne 14.
+
+
+Package natbib Warning: Citation `Abdo13-2PC' on page 8 undefined on input line
+ 14.
+
+[8]
+
+Package natbib Warning: Citation `LAT-instrument-paper' on page 9 undefined on 
+input line 24.
+
+
+Package natbib Warning: Citation `Abdo13-2PC' on page 9 undefined on input line
+ 27.
+
+
+Package natbib Warning: Citation `Mattox96-Likelihood' on page 9 undefined on i
+nput line 29.
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[][][]\OT1/cmr/m/n/10 See []$\OT1/cmtt/m/n/10 http : / / fermi . gsfc . nasa . 
+gov / ssc / data / analysis / documentation / Cicerone /
+
+Package natbib Warning: Citation `Nolan12-2FGL' on page 10 undefined on input l
+ine 47.
+
+[10]
+Overfull \hbox (6.0495pt too wide) in paragraph at lines 58--59
+[]\OT1/cmr/m/n/12 The spe-cific value of $[]$ was cho-sen to avoid miss-ing sou
+rces with $[]$,
+[11] [12]
+
+LaTeX Warning: Reference `Sec:DetectMethod' on page 13 undefined on input line 
+94.
+
+[13]
+<figures/addSrcs_2FGLnoAGNPSR_TSgt25_in3deg_2dhist_maj-eps-converted-to.pdf, id
+=326, 578.16pt x 433.62pt>
+<use figures/addSrcs_2FGLnoAGNPSR_TSgt25_in3deg_2dhist_maj-eps-converted-to.pdf
+>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14]
+<figures/addSrcsWassoc_2FGLnoAGNPSR_TSgt25_in3deg_2dhist_maj-eps-converted-to.p
+df, id=333, 578.16pt x 433.62pt>
+<use figures/addSrcsWassoc_2FGLnoAGNPSR_TSgt25_in3deg_2dhist_maj-eps-converted-
+to.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [15 <./figures/addSrcs_2FGLnoAGNPSR_TSgt25_in3deg_2dhist_maj-eps-converted-to
+.pdf>] [16 <./figures/addSrcsWassoc_2FGLnoAGNPSR_TSgt25_in3deg_2dhist_maj-eps-c
+onverted-to.pdf>] (./2FHL.tex
 Chapter 7.
-[9] [10] [11]
+[17] [18] [19]
 
-LaTeX Warning: Reference `sec:sourceDetect' on page 12 undefined on input line 
-34.
+LaTeX Warning: Reference `sec:sourceDetect' on page 20 undefined on input line 
+35.
 
-[12]
-Overfull \hbox (32.5684pt too wide) in paragraph at lines 47--48
+[20]
+Overfull \hbox (32.5684pt too wide) in paragraph at lines 48--49
 \OT1/cmr/m/n/12 sources in the vicin-ity, 2FHL J1834.5$\OMS/cmsy/m/n/12 ^^@$\OT
 1/cmr/m/n/12 0701, 2FHL J1837.4$\OMS/cmsy/m/n/12 ^^@$\OT1/cmr/m/n/12 0717 and 2
 FHL J1839.5$\OMS/cmsy/m/n/12 ^^@$\OT1/cmr/m/n/12 0705,
-[13]
-Overfull \hbox (21.9318pt too wide) in paragraph at lines 56--59
+[21]
+Overfull \hbox (21.9318pt too wide) in paragraph at lines 57--60
 []\OT1/cmr/bx/n/12 2FHL J1419.2$\OMS/cmsy/m/n/12 ^^@$\OT1/cmr/bx/n/12 6048e \OT
 1/cmr/m/n/12 is a newly de-tected ex-tended sources with size $[]$
-[14]
-Overfull \hbox (6.05554pt too wide) in paragraph at lines 64--67
+[22]
+Overfull \hbox (6.05554pt too wide) in paragraph at lines 65--68
 []\OT1/cmr/m/n/12 Finally, \OT1/cmr/bx/n/12 2FHL J0431.2+5553e \OT1/cmr/m/n/12 
 is a large ex-tended source ($[]$),
 
-<Figures/l315_b0_ES_3_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=365, 706.64
+<Figures/l315_b0_ES_3_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=462, 706.64
 pt x 571.13374pt>
 <use Figures/l315_b0_ES_3_residTSmap_2FHL_zoom-eps-converted-to.pdf>
-<Figures/l315_b0_ES_4_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=366, 706.64
+<Figures/l315_b0_ES_4_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=463, 706.64
 pt x 571.13374pt>
 <use Figures/l315_b0_ES_4_residTSmap_2FHL_zoom-eps-converted-to.pdf>
-<Figures/l315_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=367, 706.64
+<Figures/l315_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=464, 706.64
 pt x 579.16376pt>
 <use Figures/l315_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf>
-<Figures/l290_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=368, 706.64
+<Figures/l290_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=465, 706.64
 pt x 579.16376pt>
 <use Figures/l290_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf>
-<Figures/l145_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=369, 706.64
+<Figures/l145_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=466, 706.64
 pt x 579.16376pt>
 <use Figures/l145_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf>
 
-LaTeX Warning: Float too large for page by 344.75064pt on input line 81.
+LaTeX Warning: Float too large for page by 344.75064pt on input line 82.
 
 (./Tables/tab_extended.tex
 Table 7.1 has been set to width 412.8127pt
@@ -249,20 +311,23 @@ Overfull \hbox (39.46165pt too wide) in paragraph at lines 22--31
 Overfull \hbox (39.46165pt too wide) in paragraph at lines 31--31
  []$[]$ 
 Table 7.2 has been set to width 465.8542pt
-)) [15] [16] [17 <./Figures/l315_b0_ES_3_residTSmap_2FHL_zoom-eps-converted-to.
+)) [23] [24] [25 <./Figures/l315_b0_ES_3_residTSmap_2FHL_zoom-eps-converted-to.
 pdf> <./Figures/l315_b0_ES_4_residTSmap_2FHL_zoom-eps-converted-to.pdf> <./Figu
 res/l315_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf> <./Figures/l290_b0_
 ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf> <./Figures/l145_b0_ES_1_residTS
 map_2FHL_zoom-eps-converted-to.pdf>] (./G150.tex
 Chapter 8.
-) [18] (./other.tex
+) [26] [27] (./other.tex
 Chapter 9.
-) [19] (./conc.tex
+) [28] (./conc.tex
 Chapter 10.
-) [20] (./dissertation.acr) [21] (./dissertation.bbl [22] [23] [24] [25]
-[26] [27] [28]) [29] (./dissertation.aux (./intro.aux) (./gamAstr.aux)
-(./LAT.aux) (./Rems.aux) (./fermiData.aux) (./snrcat.aux) (./2FHL.aux)
-(./G150.aux) (./other.aux) (./conc.aux))
+) [29] (./dissertation.acr) [30] (./dissertation.bbl [31])
+
+Package natbib Warning: There were undefined citations.
+
+[32] (./dissertation.aux (./intro.aux) (./gamAstr.aux) (./LAT.aux) (./Rems.aux)
+ (./fermiData.aux) (./snrcat.aux) (./2FHL.aux) (./G150.aux) (./other.aux)
+(./conc.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -270,27 +335,31 @@ LaTeX Warning: There were undefined references.
 (see the transcript file for additional information)</usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmtt12.pfb>
-Output written on dissertation.pdf (39 pages, 391763 bytes).
+xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmti8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt12.pfb>
+Output written on dissertation.pdf (42 pages, 586554 bytes).
 Transcript written on dissertation.log.
 
-26 Jan 2016 17:19:20.027 INFO  CommandTrigger - 'PDFLaTeX' was successfully executed.
-26 Jan 2016 17:19:20.027 INFO  CommandTrigger - Running 'BibTeX'.
-26 Jan 2016 17:19:20.027 TRACE CommandTrigger - Command: bibtex  "dissertation.aux"
-26 Jan 2016 17:19:21.265 TRACE CommandTrigger - Output logging:
-26 Jan 2016 17:19:21.265 TRACE CommandTrigger - This is BibTeX, Version 0.99d (TeX Live 2014)
+16 Feb 2016 17:25:10.609 INFO  CommandTrigger - 'PDFLaTeX' was successfully executed.
+16 Feb 2016 17:25:10.609 INFO  CommandTrigger - Running 'BibTeX'.
+16 Feb 2016 17:25:10.609 TRACE CommandTrigger - Command: bibtex  "dissertation.aux"
+16 Feb 2016 17:25:11.846 TRACE CommandTrigger - Output logging:
+16 Feb 2016 17:25:11.846 TRACE CommandTrigger - This is BibTeX, Version 0.99d (TeX Live 2014)
 The top-level auxiliary file: dissertation.aux
 A level-1 auxiliary file: intro.aux
 A level-1 auxiliary file: gamAstr.aux
@@ -304,27 +373,32 @@ A level-1 auxiliary file: other.aux
 A level-1 auxiliary file: conc.aux
 The style file: apj.bst
 Database file #1: biblio.bib
+Warning--I didn't find a database entry for "Nolan12-2FGL"
+Warning--I didn't find a database entry for "Abdo13-2PC"
+Warning--I didn't find a database entry for "LAT-instrument-paper"
+Warning--I didn't find a database entry for "Mattox96-Likelihood"
+(There were 4 warnings)
 
-26 Jan 2016 17:19:21.265 INFO  CommandTrigger - 'BibTeX' was successfully executed.
-26 Jan 2016 17:19:21.266 INFO  CommandTrigger - Running 'MakeGlossaries'.
-26 Jan 2016 17:19:21.266 TRACE CommandTrigger - Command: makeglossaries  "dissertation"
-26 Jan 2016 17:19:22.101 TRACE CommandTrigger - Output logging:
-26 Jan 2016 17:19:22.102 TRACE CommandTrigger - makeglossaries version 2.14 (2014-03-06)
+16 Feb 2016 17:25:11.846 INFO  CommandTrigger - 'BibTeX' was successfully executed.
+16 Feb 2016 17:25:11.847 INFO  CommandTrigger - Running 'MakeGlossaries'.
+16 Feb 2016 17:25:11.847 TRACE CommandTrigger - Command: makeglossaries  "dissertation"
+16 Feb 2016 17:25:12.677 TRACE CommandTrigger - Output logging:
+16 Feb 2016 17:25:12.677 TRACE CommandTrigger - makeglossaries version 2.14 (2014-03-06)
 added glossary type 'acronym' (alg,acr,acn)
 makeindex  -s "dissertation.ist" -t "dissertation.alg" -o "dissertation.acr" "dissertation.acn"
 This is makeindex, version 2.15 [TeX Live 2014] (kpathsea + Thai support).
 Scanning style file ./dissertation.ist.............................done (29 attributes redefined, 0 ignored).
-Scanning input file dissertation.acn....done (2 entries accepted, 0 rejected).
-Sorting entries....done (2 comparisons).
-Generating output file dissertation.acr....done (9 lines written, 0 warnings).
+Scanning input file dissertation.acn....done (7 entries accepted, 0 rejected).
+Sorting entries....done (26 comparisons).
+Generating output file dissertation.acr....done (10 lines written, 0 warnings).
 Output written in dissertation.acr.
 Transcript written in dissertation.alg.
 
-26 Jan 2016 17:19:22.102 INFO  CommandTrigger - 'MakeGlossaries' was successfully executed.
-26 Jan 2016 17:19:22.102 INFO  CommandTrigger - Running 'PDFLaTeX'.
-26 Jan 2016 17:19:22.102 TRACE CommandTrigger - Command: pdflatex      "dissertation.tex"
-26 Jan 2016 17:19:24.054 TRACE CommandTrigger - Output logging:
-26 Jan 2016 17:19:24.055 TRACE CommandTrigger - This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex)
+16 Feb 2016 17:25:12.677 INFO  CommandTrigger - 'MakeGlossaries' was successfully executed.
+16 Feb 2016 17:25:12.678 INFO  CommandTrigger - Running 'PDFLaTeX'.
+16 Feb 2016 17:25:12.678 TRACE CommandTrigger - Command: pdflatex      "dissertation.tex"
+16 Feb 2016 17:25:14.933 TRACE CommandTrigger - Output logging:
+16 Feb 2016 17:25:14.933 TRACE CommandTrigger - This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
 (./dissertation.tex
@@ -369,6 +443,7 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 (/usr/local/texlive/2014/texmf-dist/tex/latex/bigfoot/suffix.sty)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2014/texmf-dist/tex/generic/xstring/xstring.tex)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lineno/lineno.sty)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 (/usr/local/texlive/2014/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 (/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex))
@@ -454,9 +529,14 @@ Package hyperref Message: Driver (autodetected): hpdftex.
 ) (./dissertation.glsdefs)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
-(./dissertation.out) (./dissertation.out) (./abstract.tex) [1{/usr/local/texliv
-e/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd) [3]
+(./dissertation.out) (./dissertation.out)
+Overfull \hbox (268.8058pt too wide) in paragraph at lines 163--163
+\OT1/cmr/m/n/12 Title of Dis-ser-ta-tion:  []
+(./abstract.tex) [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/p
+dftex.map}]
+Overfull \hbox (352.98503pt too wide) in paragraph at lines 163--163
+ [] 
+[2] (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd) [3]
 (./preface.tex) [2] [3] (./acknowledgements.tex) [4] (./dissertation.toc
 [5]) [6] (./dissertation.lot) [7] (./dissertation.lof) [8] (./intro.tex
 Chapter 1.
@@ -476,14 +556,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.165 \include{intro}
+l.167 \include{intro}
                       [1] (./gamAstr.tex
 Chapter 2.
 )pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.166 \include{gamAstr}
+l.168 \include{gamAstr}
                         [2] (./LAT.tex
 Chapter 3.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
@@ -510,44 +590,100 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-) [8] (./2FHL.tex
+
+Package natbib Warning: Citation `Nolan12-2FGL' on page 8 undefined on input li
+ne 14.
+
+
+Package natbib Warning: Citation `Abdo13-2PC' on page 8 undefined on input line
+ 14.
+
+[8]
+
+Package natbib Warning: Citation `LAT-instrument-paper' on page 9 undefined on 
+input line 24.
+
+
+Package natbib Warning: Citation `Abdo13-2PC' on page 9 undefined on input line
+ 27.
+
+
+Package natbib Warning: Citation `Mattox96-Likelihood' on page 9 undefined on i
+nput line 29.
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[][][]\OT1/cmr/m/n/10 See []$\OT1/cmtt/m/n/10 http : / / fermi . gsfc . nasa . 
+gov / ssc / data / analysis / documentation / Cicerone /
+
+Package natbib Warning: Citation `Nolan12-2FGL' on page 10 undefined on input l
+ine 47.
+
+[10]
+Overfull \hbox (6.0495pt too wide) in paragraph at lines 58--59
+[]\OT1/cmr/m/n/12 The spe-cific value of $[]$ was cho-sen to avoid miss-ing sou
+rces with $[]$,
+[11] [12]
+
+LaTeX Warning: Reference `Sec:DetectMethod' on page 13 undefined on input line 
+94.
+
+[13]
+<figures/addSrcs_2FGLnoAGNPSR_TSgt25_in3deg_2dhist_maj-eps-converted-to.pdf, id
+=326, 578.16pt x 433.62pt>
+<use figures/addSrcs_2FGLnoAGNPSR_TSgt25_in3deg_2dhist_maj-eps-converted-to.pdf
+>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14]
+<figures/addSrcsWassoc_2FGLnoAGNPSR_TSgt25_in3deg_2dhist_maj-eps-converted-to.p
+df, id=333, 578.16pt x 433.62pt>
+<use figures/addSrcsWassoc_2FGLnoAGNPSR_TSgt25_in3deg_2dhist_maj-eps-converted-
+to.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [15 <./figures/addSrcs_2FGLnoAGNPSR_TSgt25_in3deg_2dhist_maj-eps-converted-to
+.pdf>] [16 <./figures/addSrcsWassoc_2FGLnoAGNPSR_TSgt25_in3deg_2dhist_maj-eps-c
+onverted-to.pdf>] (./2FHL.tex
 Chapter 7.
-[9] [10] [11]
+[17] [18] [19]
 
-LaTeX Warning: Reference `sec:sourceDetect' on page 12 undefined on input line 
-34.
+LaTeX Warning: Reference `sec:sourceDetect' on page 20 undefined on input line 
+35.
 
-[12]
-Overfull \hbox (32.5684pt too wide) in paragraph at lines 47--48
+[20]
+Overfull \hbox (32.5684pt too wide) in paragraph at lines 48--49
 \OT1/cmr/m/n/12 sources in the vicin-ity, 2FHL J1834.5$\OMS/cmsy/m/n/12 ^^@$\OT
 1/cmr/m/n/12 0701, 2FHL J1837.4$\OMS/cmsy/m/n/12 ^^@$\OT1/cmr/m/n/12 0717 and 2
 FHL J1839.5$\OMS/cmsy/m/n/12 ^^@$\OT1/cmr/m/n/12 0705,
-[13]
-Overfull \hbox (21.9318pt too wide) in paragraph at lines 56--59
+[21]
+Overfull \hbox (21.9318pt too wide) in paragraph at lines 57--60
 []\OT1/cmr/bx/n/12 2FHL J1419.2$\OMS/cmsy/m/n/12 ^^@$\OT1/cmr/bx/n/12 6048e \OT
 1/cmr/m/n/12 is a newly de-tected ex-tended sources with size $[]$
-[14]
-Overfull \hbox (6.05554pt too wide) in paragraph at lines 64--67
+[22]
+Overfull \hbox (6.05554pt too wide) in paragraph at lines 65--68
 []\OT1/cmr/m/n/12 Finally, \OT1/cmr/bx/n/12 2FHL J0431.2+5553e \OT1/cmr/m/n/12 
 is a large ex-tended source ($[]$),
 
-<Figures/l315_b0_ES_3_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=365, 706.64
+<Figures/l315_b0_ES_3_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=462, 706.64
 pt x 571.13374pt>
 <use Figures/l315_b0_ES_3_residTSmap_2FHL_zoom-eps-converted-to.pdf>
-<Figures/l315_b0_ES_4_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=366, 706.64
+<Figures/l315_b0_ES_4_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=463, 706.64
 pt x 571.13374pt>
 <use Figures/l315_b0_ES_4_residTSmap_2FHL_zoom-eps-converted-to.pdf>
-<Figures/l315_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=367, 706.64
+<Figures/l315_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=464, 706.64
 pt x 579.16376pt>
 <use Figures/l315_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf>
-<Figures/l290_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=368, 706.64
+<Figures/l290_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=465, 706.64
 pt x 579.16376pt>
 <use Figures/l290_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf>
-<Figures/l145_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=369, 706.64
+<Figures/l145_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf, id=466, 706.64
 pt x 579.16376pt>
 <use Figures/l145_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf>
 
-LaTeX Warning: Float too large for page by 344.75064pt on input line 81.
+LaTeX Warning: Float too large for page by 344.75064pt on input line 82.
 
 (./Tables/tab_extended.tex
 Table 7.1 has been set to width 412.8127pt
@@ -558,25 +694,23 @@ Overfull \hbox (39.46165pt too wide) in paragraph at lines 22--31
 Overfull \hbox (39.46165pt too wide) in paragraph at lines 31--31
  []$[]$ 
 Table 7.2 has been set to width 465.8542pt
-)) [15] [16] [17 <./Figures/l315_b0_ES_3_residTSmap_2FHL_zoom-eps-converted-to.
+)) [23] [24] [25 <./Figures/l315_b0_ES_3_residTSmap_2FHL_zoom-eps-converted-to.
 pdf> <./Figures/l315_b0_ES_4_residTSmap_2FHL_zoom-eps-converted-to.pdf> <./Figu
 res/l315_b0_ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf> <./Figures/l290_b0_
 ES_1_residTSmap_2FHL_zoom-eps-converted-to.pdf> <./Figures/l145_b0_ES_1_residTS
 map_2FHL_zoom-eps-converted-to.pdf>] (./G150.tex
 Chapter 8.
-) [18] (./other.tex
+) [26] [27] (./other.tex
 Chapter 9.
-) [19] (./conc.tex
+) [28] (./conc.tex
 Chapter 10.
-) [20] (./dissertation.acr) [21] (./dissertation.bbl [22]) [23]
-(./dissertation.aux (./intro.aux) (./gamAstr.aux) (./LAT.aux) (./Rems.aux)
-(./fermiData.aux) (./snrcat.aux) (./2FHL.aux) (./G150.aux) (./other.aux)
-(./conc.aux)
+) [29] (./dissertation.acr) [30] (./dissertation.bbl [31])
 
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
+Package natbib Warning: There were undefined citations.
 
-)
+[32] (./dissertation.aux (./intro.aux) (./gamAstr.aux) (./LAT.aux) (./Rems.aux)
+ (./fermiData.aux) (./snrcat.aux) (./2FHL.aux) (./G150.aux) (./other.aux)
+(./conc.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -584,22 +718,26 @@ LaTeX Warning: There were undefined references.
 (see the transcript file for additional information)</usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmtt12.pfb>
-Output written on dissertation.pdf (33 pages, 372915 bytes).
+xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmti8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt12.pfb>
+Output written on dissertation.pdf (42 pages, 586554 bytes).
 Transcript written on dissertation.log.
 
-26 Jan 2016 17:19:24.055 INFO  CommandTrigger - 'PDFLaTeX' was successfully executed.
-26 Jan 2016 17:19:24.055 INFO  CommandTrigger - All commands were successfully executed.
-26 Jan 2016 17:19:24.055 INFO  Arara - Done.
+16 Feb 2016 17:25:14.934 INFO  CommandTrigger - 'PDFLaTeX' was successfully executed.
+16 Feb 2016 17:25:14.934 INFO  CommandTrigger - All commands were successfully executed.
+16 Feb 2016 17:25:14.934 INFO  Arara - Done.

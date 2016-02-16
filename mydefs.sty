@@ -10,7 +10,8 @@
 % \kibitz{color}{comment} inserts a colored comment in the text
 \newcommand{\kibitz}[2]{\ifnum\Comments=1\textcolor{#1}{#2}\fi}
 % add yourself here: 
-\newcommand{\jamie}[1]{\kibitz{red}      {[JAM: #1]}}
+\newcommand{\jamie}[1]{\kibitz{cyan}      {[JAM: #1]}}
+\newcommand{\liz}[1]{\kibitz{orange}      {[LIZ: #1]}}
 
 \newcommand{\mev}       {\ensuremath{~\mathrm{MeV}}}
 \newcommand{\gev}       {\ensuremath{~\mathrm{GeV}}}
@@ -35,6 +36,7 @@
 \newcommand{\lat}{\textit{Fermi}-LAT }
 \newcommand{\blat}{$|b|<10{^\circ}$ }
 \newcommand{\blot}{$|b|\geq 10{^\circ}$ }
+\newcommand{\gone}{SNR G150.3+4.5}
 
 %Need these for now if I want to just pull from 2FHL
 \newcommand{\eg}{e.g.~}
