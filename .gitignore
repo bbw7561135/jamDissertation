@@ -15,3 +15,9 @@
 *.blg
 *.fdb_latexmk
 *.fls
+*.acn
+*.acr
+*.alg
+*.glsdefs
+*.ist
+*.xdy
