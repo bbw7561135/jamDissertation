@@ -1,17 +1,19 @@
 \chapter{The 1\st \Fermi -LAT Supernova Remnant Catalog}
 \label{chap:snrCat}
 
-Application of addSrcs searching for point sources, fitting single extended source, results on detected SNRs and population properties, implications for total power in cosmic rays
+\jamie{Change chapter title to reflect the work I've done more}
 
-How much of the SNR cat paper can I put in as is, how much can I take with modifications? Below is just the addSrcs section and appendix A
 
+How much of the \gls{snrcat} paper can I put in as is, how much can I take with modifications? Below is just the addSrcs section and appendix A
+
+\jamie{Refs from snr cat paper aren't working yet}
 \section{Input Source Model Construction}\label{Sec:AddSrcs}
 
 % NB: We didn't remove the FAVA flares before running addSrcs. We do not anticipate that this creates any problems as any source added w addSrcs which becomes insignificant in the main analysis is removed from the analysis. Any source which remains significant should be included anyway. --Terri and Jack
 To characterize each candidate SNR we constructed a %n optimal 
 model of \g-ray emission in the RoI which includes all significant sources of emission as well as the residual background from CRs misclassified as \g-rays. We implemented an analysis method to create and optimize the \jamie{fill this in }~models for each of the 279 RoIs. For each RoI, we started with all sources listed in 
 %We started with a list of cataloged sources within our RoI from 
-the Second \FermiLat{} catalog (2FGL) \citep{Nolan12-2FGL}, based on $2$\,years of Source class data, within the RoI. To this we add pulsars from the LAT Second Pulsar Catalog (2PC) \citep{Abdo13-2PC}, based on $3$\,years of source class data, with 2PC taking precedence for sources that exist in both. 
+the \gls{2fgl} \citep{Nolan12-2FGL}, based on $2$\,years of Source class data, within the RoI. To this we add pulsars from \gls{2pc} \citep{Abdo13-2PC}, based on $3$\,years of source class data, with 2PC taking precedence for sources that exist in both. 
 For the diffuse emission we combined the standard IEM corresponding to our P7 data set, gal\_2yearp7v6\_v0.fits, with the standard %. To this we added a 
 model for isotropic emission, which accounts for extragalactic diffuse \g-ray emission and residual charged particles misclassified as \g-rays. 
 %We used the standard IEM corresponding to our P7 data set, gal\_2yearp7v6\_v0.fits, and the 
@@ -134,3 +136,6 @@ Thus, we find that the method developed and used here produces a model which rep
 	\label{fig:2FGLvAddSrcsAssoc} 
 \end{figure}
 % % %
+
+\section{Summary}\label{snrcat:summ}
+In this chapter, we have presented results from the publication of the \gls{snrcat}. Application of addSrcs adding point sources to characterize emission in an\gls{roi}. Give more details on validation and testing than was given in the paper, as well as details on the code. Work on fitting single extended source, present some work on detected SNRs and population properties, implications for total power in cosmic rays (don't focus on this because it wasn't where I contribute the most). Mock catalog contributions. Testing with extended sources or don't mention too much because we decide not to apply it here?
