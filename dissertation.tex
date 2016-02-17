@@ -28,7 +28,7 @@
 \usepackage{ifthen}
 \usepackage{epstopdf}
 % To use AAS macros
-\usepackage{aastex_hack}
+\usepackage{sty/aastex_hack}
 % Use improved verbatim package for included code and force single
 % spacing in it.
 \usepackage{fancyvrb}
@@ -48,7 +48,7 @@
 \let\tablehead\relax
 \let\tabletail\relax
 \let\tablecaption\relax
-\usepackage{deluxetable}
+\usepackage{sty/deluxetable}
 \let\thead=\tablehead
 \let\ttail=\tabletail
 \let\tcap=\tablecaption
@@ -70,10 +70,10 @@
 % show up in Bibliography.
 \usepackage[authoryear,round,sort]{natbib}
 \bibpunct{(}{)}{;}{a}{}{,}
-\usepackage{natbibspacing}
+\usepackage{sty/natbibspacing}
 
 % Where I define my personal macros; probably should input this instead
-\usepackage{mydefs}
+\usepackage{sty/mydefs}
 
 % To fiddle with captions
 \usepackage[small]{caption}
@@ -81,7 +81,7 @@
 % captions
 \setlength{\captionmargin}{20pt}
 % To single space captions, tables, etc.
-\usepackage{atbeginend}
+\usepackage{sty/atbeginend}
 
 % To reduce the size of chapter, etc headings
 \usepackage{sectsty}
@@ -191,12 +191,12 @@ pdfsubject = {Subject Dissertation},
 \phantomsection
 \cleardoublepage %Jame added this to get  bib page # in toc corect with glossary included
 \addcontentsline{toc}{chapter}{Bibliography}
-\bibliographystyle{apj}
-%\bibliographystyle{astroadswithlinks} %jam added this from mmks, but it doesn't get the bib right
+\bibliographystyle{bst/apj}
+%\bibliographystyle{bst/astroadswithlinks} %jam added this from mmks, but it doesn't get the bib right
 %This one give full titles for papers.
 %\bibliographystyle{apalike}
 %\bibliography{thesis-refs}
-\bibliography{biblio}
+\bibliography{bib/biblio}
 %\bibliography{snrCat}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
