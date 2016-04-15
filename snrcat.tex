@@ -1,24 +1,61 @@
 \chapter{The 1\st \Fermi -LAT Supernova Remnant Catalog}
 \label{chap:snrCat}
-
 \jamie{Change chapter title to reflect the work I've done more}
+\jamie{Refs from snr cat paper aren't working yet}
 
+\section{Introduction}\label{snrCat:Intro}
+One of the primary science goals of \Fermi~was to fill in the high energy gamma sky, the end of the EGRET era left us with 
+\cite{Hartman99}
 
-How much of the \gls{snrcat} paper can I put in as is, how much can I take with modifications? Below is just the addSrcs section and appendix A
+limit of EGRET was it's large error boxes (this just means not great spatial resolution right?)
 
+\citep{Yadigaroglu97} \gam~sources correlate with massive star forming regions (sturnder dermer also?)
+\begin{figure}[h!]%[t] 
+	\centering
+	\makebox[\linewidth]{\includegraphics[width=0.8\columnwidth,angle=90]{Figures/3rd_egret_cat.eps} }
+	\caption{Third EGRET catalog all-sky map. Unidentified sources represented by triangles. Image courtesy of \url{https://heasarc.gsfc.nasa.gov/docs/cgro/images/epo/gallery/skymaps/}}
+	\label{fig:3EGSky} 
+\end{figure}
+Fermi goals:
+
+1. Resolve the \gam~sky: the origins of diffuse emission and the nature of unidentified sources: Source identification through good source localization, measurement of spectra across broad energy range, nearly continuous monitoring of the sky for temporal variability 
+
+2. Understand the mechanisms of particle acceleration in celestial sources: 
+
+271 sources (above 100 \mev, 170 with no firm identification, 81 within \blat
+    -what's to gain from studyng the population
+    
+    -constraint on CR energy density in the Galaxy
+    
+    -do the observed g-ray properties match those
+     of models?
+    -like index etc?
+   
+ EGRET statistical association with SNRs, but not concrete association
+what do we learn about them that's unique to \gam 's and the LAT?
+ 
 Describe how we put together/designed this analysis what questions were we trying to answer?
 
 best fit under simplest assumptions
 
 tested pipeline with 6 sources (I have the tests somewhere, see old Fermi symp poster, Gal Evo too)
-\jamie{Refs from snr cat paper aren't working yet}
-\section{Input Source Model Construction}\label{Sec:AddSrcs}
+\section{\label{snrCat:ptlk}The \ptlike~  Maximum Likelihood Package}
 
-% NB: We didn't remove the FAVA flares before running addSrcs. We do not anticipate that this creates any problems as any source added w addSrcs which becomes insignificant in the main analysis is removed from the analysis. Any source which remains significant should be included anyway. --Terri and Jack
+Describe pointlike and what problems it aims to solve in contrast to gtlike.
+
+pointlike is good at analysis where iteration is key because it takes some shortcuts with some integrals and is faster than gtlike. 
+
+Not sure how much to talk about pointlike here vs. modifiying what's in the next chapter from the snrcat paper. 
+
+The addSrcs framework extends/exploits pointlike 
+
+idk if addSrcs needs to be it's own section yet
+\section{Input Source Model Construction}\label{snrCat:AddSrcs}
+
 To characterize each candidate SNR we constructed a %n optimal 
 model of \g-ray emission in the RoI which includes all significant sources of emission as well as the residual background from CRs misclassified as \g-rays. We implemented an analysis method to create and optimize the \jamie{fill this in }~models for each of the 279 RoIs. For each RoI, we started with all sources listed in 
 %We started with a list of cataloged sources within our RoI from 
-the \twofgl \citep{Nolan12-2FGL}, based on $2$\,years of Source class data, within the RoI. To this we add pulsars from \twopc \citep{Abdo13-2PC}, based on $3$\,years of source class data, with 2PC taking precedence for sources that exist in both. 
+the \twofgl \citep{2FGL}, based on $2$\,years of Source class data, within the RoI. To this we add pulsars from \twopc \citep{2PC}, based on $3$\,years of source class data, with 2PC taking precedence for sources that exist in both. 
 For the diffuse emission we combined the standard IEM corresponding to our P7 data set, gal\_2yearp7v6\_v0.fits, with the standard %. To this we added a 
 model for isotropic emission, which accounts for extragalactic diffuse \g-ray emission and residual charged particles misclassified as \g-rays. 
 %We used the standard IEM corresponding to our P7 data set, gal\_2yearp7v6\_v0.fits, and the 
@@ -28,12 +65,12 @@ Both the corresponding isotropic model, iso\_p7v6source.txt, and the IEM are the
 %To better optimize our model, 
 Compared to 2FGL, we used an additional year of data and limited the energy range to $1-100$\,GeV. This can result in different detection significances and localizations than previously reported in 2FGL. To account for these effects, we recreated the RoIs' inner $3$\degr{}\,radius regions, which encompass the radio extents of all known SNRs, observed to be $\leq 2.6$\degr{} and allows a margin for the LAT PSF. 
 The weighted average $68\%$~containment radius of the LAT PSF for %front and back converting 
-events at $1$\,GeV is $\sim0.7$\degr{} \citep{LAT-instrument-paper}. %Here we call attention to an 
+events at $1$\,GeV is $\sim0.7$\degr{} \citep{lat_perf}. 
 We note that this implicitly assumes that an SNR's GeV extent should not be more than about an order of magnitude larger than its radio extension and also note that the selection biases stated in Green's catalog limit the range of known SNRs' radio extensions. 
 
-To build the inner $3$\degr{}\,radius model of each RoI, we first removed all sources except identified Active Galactic Nuclei (AGN) and pulsars, whose positions on the sky are independently confirmed by precise timing measurements \citep{Abdo13-2PC}. Retained AGN were assigned their 2FGL positions and spectral model forms. Pulsars' positions and spectral forms were taken from 2PC. 2FGL sources identified or associated with SNRs are removed when they lie within the inner $3$\degr{}. %The removal included SNRs included in 2FGL. 
+To build the inner $3$\degr{}\,radius model of each RoI, we first removed all sources except identified Active Galactic Nuclei (AGN) and pulsars, whose positions on the sky are independently confirmed by precise timing measurements \citep{2PC}. Retained AGN were assigned their 2FGL positions and spectral model forms. Pulsars' positions and spectral forms were taken from 2PC. 2FGL sources identified or associated with SNRs are removed when they lie within the inner $3$\degr{}. %The removal included SNRs included in 2FGL. 
 
-We generated a map of source test statistic (TS) defined in \citet{Mattox96-Likelihood} via \ptlike{} on a square grid with $0.1$\degr{}\,$\times$\,$0.1$\degr{} spacing that covers the entire RoI. \ptlike{} employs a binned maximum likelihood method. The source TS is defined as twice the logarithm of the ratio between the likelihood~$\mathcal{L}_1$, here obtained by fitting the model to the data including a test source, and the likelihood~$\mathcal{L}_0$, obtained here by fitting without the source, i.e., $\textrm{TS = 2 log}(\mathcal{L}_1/\mathcal{L}_0$). At the position of the maximum TS value, we added a new point source with a Power Law (PL) spectral model:
+We generated a map of source test statistic (TS) defined in \citet{Mattox96} via \ptlike{} on a square grid with $0.1$\degr{}\,$\times$\,$0.1$\degr{} spacing that covers the entire RoI. \ptlike{} employs a binned maximum likelihood method. The source TS is defined as twice the logarithm of the ratio between the likelihood~$\mathcal{L}_1$, here obtained by fitting the model to the data including a test source, and the likelihood~$\mathcal{L}_0$, obtained here by fitting without the source, i.e., $\textrm{TS = 2 log}(\mathcal{L}_1/\mathcal{L}_0$). At the position of the maximum TS value, we added a new point source with a Power Law (PL) spectral model:
 %\terri{\g{} is implicitly negative here but is used as positive everywhere in the pipeline and following plots. Verify that setting to explicitly positive here works for sections between here and pipeline results.} \jack{done.}
 \begin{equation}
 	\label{eqn:PL}
@@ -51,7 +88,7 @@ the isotropic and Galactic IEM components independently. The isotropic component
 After localizing them, the new sources were tested for spectral curvature. In each of the $4$~energy bands per decade we calculated the TS value for a PL with spectral index fixed to $2$ and then summed the TS values. 
 %We summed TS values for fits in individual energy bands, each calculated in an energy band for a PL model of fixed spectral index~$2$, with $4$~energy bands per decade. 
 We refer to this as $\mathrm{TS_{band fits}}$. A value for $\mathrm{TS_{band fits}}$ much greater than the TS calculated with a PL ($\mathrm{TS_{PL}}$) suggests with a more rapid calculation that the PL model may not accurately describe the source. %, where $\mathrm{TS_{PL}}$ is the TS with a PL fit. 
-Analogously to 2FGL \citep{Nolan12-2FGL}, we allow for deviations of source spectra from a PL form by modeling sources with a log-normal model known colloquially as LogParabola or logP:
+Analogously to 2FGL \citep{2FGL}, we allow for deviations of source spectra from a PL form by modeling sources with a log-normal model known colloquially as LogParabola or logP:
 \begin{equation}
 	\newcommand{\pfrac}[2]{\left(\frac{#1}{#2}\right)} \frac{dN}{dE} = N_0\pfrac{E}{E_b}^{-(\alpha + \beta\log(E/E_b))}
 	\label{eqn:logP}
@@ -141,6 +178,8 @@ Thus, we find that the method developed and used here produces a model which rep
 	\label{fig:2FGLvAddSrcsAssoc} 
 \end{figure}
 % % %
+\section{Scratch}
+How much of the \gls{snrcat} paper can I put in as is, how much can I take with modifications? Below is just the addSrcs section and appendix A
 
-\section{Summary}\label{snrcat:summ}
+\section{Summary}\label{snrCat:summ}
 In this chapter, we have presented results from the publication of the \snrcat. Application of addSrcs adding point sources to characterize emission in an\roi. Give more details on validation and testing than was given in the paper, as well as details on the code. Work on fitting single extended source, present some work on detected SNRs and population properties, implications for total power in cosmic rays (don't focus on this because it wasn't where I contribute the most). Mock catalog contributions. Testing with extended sources or don't mention too much because we decide not to apply it here?
