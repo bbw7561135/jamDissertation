@@ -1,39 +1,52 @@
 \chapter{The \Fermi ~Gamma-Ray Space Telescope and \gam ~Data Analysis}
 \label{chap:FGST}
-\section{\label{sec:FGSTintro}Introduction}
-The \Fermi~Gamma-Ray Space Telescope, successor to the \egret~instrument on \cgro, was successfully launched into orbit around Earth on June 11 2008. \Fermi ~consists of two instruments, the LAT and the \gbm.
 
- \jamie{maybe I don't need any gbm stuff? I mentioned it just to be complete about what fermi is }.  The LAT, which is the primary instrument on \Fermi, is a pair production telescope designed to detect photons from 20 \mev~to greater than 1 \tev. Its standard mode of operation is a sky-survey mode in which it observes the entire sky every 3 hours. The \gbm~is designed to detect \glspl{grb} in a waveband overlapping that of the \lat,  and complementary in lowering that energy range.  It is comprised of two types of scintillator detectors: two bismuth germanate crystals that operate from 150 \kev~ to 30 \mev, and 12 sodium iodide crystals sensitive to photons  between 8 \kev~to 1 \mev.
+\section{\label{FGST:intro}Introduction}
+The \Fermi~Gamma-Ray Space Telescope (\Fermi ~hereafter), successor to the \egret~instrument on \cgro, was successfully launched into orbit around Earth on June 11 2008. \Fermi ~consists of two instruments, the LAT and the \gbm.
 
-Combined the \lat~and \gbm~ make up a formidable observatory, spanning more than 8 decades in energy, and is  currently the only instrument performing all-sky observation in this broad energy range.
+The LAT, which is the primary instrument on \Fermi, is a pair conversion telescope designed to detect photons from 20 \mev~to greater than 1 \tev. Its standard mode of operation is a sky-survey mode in which it observes the entire sky every 3 hours. The \gbm~is designed to detect \glspl{grb} in a waveband overlapping that of the \lat,  and complementary in lowering that energy range.  It is comprised of two types of scintillator detectors: two bismuth germanate crystals that operate from 150 \kev~ to 30 \mev, and 12 sodium iodide crystals sensitive to photons  between 8 \kev~and 1 \mev. 
+
+Combined the \lat~and \gbm~ make up a formidable observatory, spanning more than 8 decades in energy, and is  currently the only instrument performing all-sky observation in this broad energy range.  \jamie{maybe I don't need any gbm stuff? I mentioned it just to be complete about what fermi is, probably won't mention it again, and this last par doesn't really flow into the next }
 
 
-\section{\label{sec:FGSTLAT}The Large Area Telescope}
+\section{\label{FGST:LAT}The Large Area Telescope}
+The need for Fermi in the context of what EGRET did
 
-track and reconstruct the path of 
-Describe it's objectives and strengths over predecessors, it is the only instrument currently operating in all sky mode in this broad energy range
-Details on the LAT and it's design, be sure to focus on things that particularly pertain to the work I've done like what determines the PSF, thing about Pass 8 here maybe? Or maybe later on. 
+What were open questions from EGRET era, state of \gam~detection of SNRs, what question was Fermi deigned to answe
 
-what science was it designed to answer
+Description of the instrument
+ \jamie{not sure this really goes here, separate section for what questions  Fermi was designed to answer?}
+ 
+ 
+ track and reconstruct the path of 
+ Describe it's objectives and strengths over predecessors
+ Details on the LAT and it's design, be sure to focus on things that particularly pertinent to the work I've done like what determines the PSF, thing about Pass 8 here maybe? Or maybe later on. 
+ 
+ what science was it designed to answer
+ 
+ general capabilities
+ 
+ details about aspect of the LAT related to extended sources, what determines PSF
+ \section{\label{FGST:analysis}\gam~Data Analysis}
+ 
+ Why maximum likelihood, how it's formulated,  implemented in the Science Tools, pointlike and the analysis for extended sources. Diffuse emission.
+ 
+ 
+ Four steps to going from observing the sky to final LAT analysis:
+ 
+ Instrument taking data: How we get to counts
+ 
+ Reconstruction : How we get photons
+ 
+ Likelihood: How to characterize sky using response functions, point source  and diffuse modeling
+ 
+ Likelihood for ES: how to use likelihood methods to char and resolve sources measure  extension
+\subsection{\label{FGST:sub}Do I need subsections?}
+\section{Scratch}
 
-general capabilities
 
-details about aspect of the LAT related to extended sources, what determines PSF
 
-Searching for extended Galactic sources leads into stellar remnants section?
 
-Merged this with the LAT analysis  section
-
-I'm not sure about this chapter yet. Maybe it's a general section on Analysis of Fermi data, why maximum likelihood, how it's formulated,  implemented in the Science Tools, pointlike and the analysis for extended sources. Diffuse emission
-
-Four steps to going from observing the sky to final LAT analysis:
-
-Instrument taking data: How we get to counts
-
-Reconstruction : How we get photons
-
-Likelihood: How to characterize sky using response functions, point source  and diffuse modeling
-
-Likelihood for ES: how to use likelihood methods to char and resolve sources measure  extension
+I'm not sure about this chapter yet. Maybe it's a general section on Analysis of Fermi data,
 
 
