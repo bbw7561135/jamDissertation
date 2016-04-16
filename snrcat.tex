@@ -1,15 +1,26 @@
-\chapter{The 1\st \Fermi -LAT Supernova Remnant Catalog}
+\chapter{The 1\st \Fermi -LAT Supernova Remnant Catalog \jamie{Change chapter title to better reflect the work I've done}}
 \label{chap:snrCat}
-\jamie{Change chapter title to reflect the work I've done more}
-\jamie{Refs from snr cat paper aren't working yet}
 
 \section{Introduction}\label{snrCat:Intro}
-One of the primary science goals of \Fermi~was to fill in the high energy gamma sky, the end of the EGRET era left us with 
-\cite{Hartman99}
+One  of the primary science goals of \Fermi~is to   resolve the \gam~sky and uncover the nature of the unidentified sources detected by \egret. By the end of the \egret~era, the telescope had detected 271 sources above 100\mev \jamie{energy range of egret was 30 \mev to 20 \gev, but in the 3EG paper they don't say whether this was the actual max energy used. they do make maps $>1\gev $}, 170 of which had no clear multiwavelength  counterpart, and 81 of those unidentified lying within \blat of the Galactic plane \citep{Hartman99}. The main hindrances to source identification were the numerous potential source counterparts (the \egret ~ \psf~ was energy dependent, with a 67\% containment radius of ${\rm \sim 6 ^\circ}$ at 100 \mev~and smaller for higher energies) and the large \egret~error boxes \citep{Hartman99}. 
+Figure \ref{fig:3EGSky} shows an \egret~all-sky map at ${\rm E > 100 \mev}$ where the preponderance of unidentified sources and locations thereof are made clear. 
 
-limit of EGRET was it's large error boxes (this just means not great spatial resolution right?)
+some more words to add here?
 
-\citep{Yadigaroglu97} \gam~sources correlate with massive star forming regions (sturnder dermer also?)
+
+Despite the difficulties with definitively associating  low-latitude Galactic \egret ~sources with known counterparts, \cite{Sturner95} 
+1. sturner says correlation with SNRs, yad says star forming regions, esposito does stats to suggest numbers
+Despite being unable to make definitive associations 
+Another major goal of \Fermi~is Understand the mechanisms of particle acceleration in celestial sources \jamie{understanding accel plus identification of the potential SNRs motivates the SNR cat }
+
+EGRET statistical association with SNRs, but not concrete association
+
+EGRET was not able to make definitive associations with SNRs, the LAT has the spatial and spectral resolution to do so.
+
+
+
+
+\citep{Yadigaroglu97} \gam~sources correlate with massive star forming regions
 \begin{figure}[h!]%[t] 
 	\centering
 	\makebox[\linewidth]{\includegraphics[width=0.8\columnwidth,angle=90]{Figures/3rd_egret_cat.eps} }
@@ -22,16 +33,16 @@ Fermi goals:
 
 2. Understand the mechanisms of particle acceleration in celestial sources: 
 
-271 sources (above 100 \mev, 170 with no firm identification, 81 within \blat
-    -what's to gain from studyng the population
+    -what's to gain from studyng the population vs individual?
     
     -constraint on CR energy density in the Galaxy
     
     -do the observed g-ray properties match those
      of models?
+
     -like index etc?
    
- EGRET statistical association with SNRs, but not concrete association
+ 
 what do we learn about them that's unique to \gam 's and the LAT?
  
 Describe how we put together/designed this analysis what questions were we trying to answer?
@@ -39,6 +50,8 @@ Describe how we put together/designed this analysis what questions were we tryin
 best fit under simplest assumptions
 
 tested pipeline with 6 sources (I have the tests somewhere, see old Fermi symp poster, Gal Evo too)
+
+
 \section{\label{snrCat:ptlk}The \ptlike~  Maximum Likelihood Package}
 
 Describe pointlike and what problems it aims to solve in contrast to gtlike.
@@ -178,8 +191,11 @@ Thus, we find that the method developed and used here produces a model which rep
 	\label{fig:2FGLvAddSrcsAssoc} 
 \end{figure}
 % % %
-\section{Scratch}
-How much of the \gls{snrcat} paper can I put in as is, how much can I take with modifications? Below is just the addSrcs section and appendix A
 
 \section{Summary}\label{snrCat:summ}
 In this chapter, we have presented results from the publication of the \snrcat. Application of addSrcs adding point sources to characterize emission in an\roi. Give more details on validation and testing than was given in the paper, as well as details on the code. Work on fitting single extended source, present some work on detected SNRs and population properties, implications for total power in cosmic rays (don't focus on this because it wasn't where I contribute the most). Mock catalog contributions. Testing with extended sources or don't mention too much because we decide not to apply it here?
+
+\section{Scratch}
+How much of the \gls{snrcat} paper can I put in as is, how much can I take with modifications? Below is just the addSrcs section and appendix A
+
+\cite{Thomson93} gives the 67\% containment radius as $\theta \leq 5.85^\circ (E_\gamma /100 \mev )^{-0.534}$
