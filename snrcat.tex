@@ -1,37 +1,32 @@
-\chapter{The 1\st \Fermi -LAT Supernova Remnant Catalog \jamie{Change chapter title to better reflect the work I've done}}
+\chapter{Revealing the GeV Supernova Remnant Population}
 \label{chap:snrCat}
 
+
 \section{Introduction}\label{snrCat:Intro}
-One  of the primary science goals of \Fermi~is to   resolve the \gam~sky and uncover the nature of the unidentified sources detected by \egret. By the end of the \egret~era, the telescope had detected 271 sources above 100\mev \jamie{energy range of egret was 30 \mev to 20 \gev, but in the 3EG paper they don't say whether this was the actual max energy used. they do make maps $>1\gev $}, 170 of which had no clear multiwavelength  counterpart, and 81 of those unidentified lying within \blat of the Galactic plane \citep{Hartman99}. The main hindrances to source identification were the numerous potential source counterparts (the \egret ~ \psf~ was energy dependent, with a 67\% containment radius of ${\rm \sim 6 ^\circ}$ at 100 \mev~and smaller for higher energies) and the large \egret~error boxes \citep{Hartman99}. 
-Figure \ref{fig:3EGSky} shows an \egret~all-sky map at ${\rm E > 100 \mev}$ where the preponderance of unidentified sources and locations thereof are made clear. 
+By the end of the \egret~era, the telescope had detected 271 sources above 100\mev \jamie{energy range of egret was 30 \mev to 20 \gev, but in the 3EG paper they don't say whether this was the actual max energy used. they do make maps $>1\gev $}, 170 of which had no clear multiwavelength  counterpart, with 81 of those unidentified lying within \blat of the Galactic plane \citep{Hartman99}. The main hindrances to source identification were the numerous potential source counterparts (the \egret ~ \psf~ was energy dependent, with a 67\% containment radius of ${\rm \sim 6 ^\circ}$ at 100\mev~and smaller for higher energies) and the large \egret~error boxes. Figure \ref{fig:3EGSky} shows an \egret~all-sky map at ${\rm E > 100 \mev}$ where the preponderance of unidentified sources and locations thereof are made clear.  
 
-some more words to add here?
-
-
-Despite the difficulties with definitively associating  low-latitude Galactic \egret ~sources with known counterparts, \cite{Sturner95} 
-1. sturner says correlation with SNRs, yad says star forming regions, esposito does stats to suggest numbers
-Despite being unable to make definitive associations 
-Another major goal of \Fermi~is Understand the mechanisms of particle acceleration in celestial sources \jamie{understanding accel plus identification of the potential SNRs motivates the SNR cat }
-
-EGRET statistical association with SNRs, but not concrete association
-
-EGRET was not able to make definitive associations with SNRs, the LAT has the spatial and spectral resolution to do so.
-
-
-
-
-\citep{Yadigaroglu97} \gam~sources correlate with massive star forming regions
 \begin{figure}[h!]%[t] 
 	\centering
 	\makebox[\linewidth]{\includegraphics[width=0.8\columnwidth,angle=90]{Figures/3rd_egret_cat.eps} }
-	\caption{Third EGRET catalog all-sky map. Unidentified sources represented by triangles. Image courtesy of \url{https://heasarc.gsfc.nasa.gov/docs/cgro/images/epo/gallery/skymaps/}}
+	\caption{Third EGRET catalog all-sky map. Unidentified sources represented by triangles. Image courtesy of \url{https://heasarc.gsfc.nasa.gov/docs/cgro/images/epo/gallery/skymaps/}}tw
 	\label{fig:3EGSky} 
 \end{figure}
-Fermi goals:
 
-1. Resolve the \gam~sky: the origins of diffuse emission and the nature of unidentified sources: Source identification through good source localization, measurement of spectra across broad energy range, nearly continuous monitoring of the sky for temporal variability 
+In spite of the difficulties in \egret~source association, many studies have attempted correlating the unidentified \egret~sources with various Galactic populations. In particular, several authors found strong evidence for statistical correlation between \glspl{snr} and some of the low-latitude unidentified sources \citep{Sturner95, Esposito96, Romero99}. In a review of the state of potential \snr~/    \egret~associations, \cite{Torres03}, showed that there were 19 unidentified \egret~sources that had an \snr~fall within its 95\% error box. Performing Monte Carlo simulations of the population of  \egret~sources, they determined that the chance probability for the 19 sources to be coincident with an \snr~was $1.05 \times 10^{-5}$, implying a probability of 0.99998 that at least one of the associations is real. Despite the statistical correlation of \egret~sources with \glspl{snr}, there were no definitive associations of an \snr~with any \egret~sources.
 
-2. Understand the mechanisms of particle acceleration in celestial sources: 
+Two of the primary science goals of \Fermi~are to  resolve the \gam~sky, uncovering the nature of the unidentified sources detected by \egret, and to understand the mechanisms of cosmic particle acceleration. With it's unprecedented sensitivity and angular resolution above 1\gev, the \lat~has the ability to unambiguously detect and identify \glspl{snr} shedding light on the origin of the  mechanisms.
+
+has the spatial and spectral sensitivity to resolve
+
+good spatial and spectral 
+
+
+Another major goal of \Fermi~is Understand the mechanisms of particle acceleration in celestial sources \jamie{understanding accel plus identification of the potential SNRs motivates the SNR cat }
+
+Egret, unid'd, low lat, corr with SNRs but none ID'd, LAT can detect them! LAT science goals, systematically search the locations of all known, radio, SNRs, why GeV.
+
+
+
 
     -what's to gain from studyng the population vs individual?
     
@@ -50,6 +45,17 @@ Describe how we put together/designed this analysis what questions were we tryin
 best fit under simplest assumptions
 
 tested pipeline with 6 sources (I have the tests somewhere, see old Fermi symp poster, Gal Evo too)
+\section{\label{snrCat:catIntro}snrCat Inro}
+\jamie{this doesn't need to be an extra section, just figuring out how much of this, if anything, to pull into the thesis}
+
+
+\section{\label{snrCat:latGam}Supernova Remnants at \gam~Energies}
+
+Since the SNR section is the first real section, and the last section was all about the LAT, I think this section should be discussing why we want to study SNRs with \gam.
+
+And just what is this? Maybe this is a really short section where I talk about why this energy range is unique (pion bump is one reason, but all my studies have been above that energy). Detection, resolution, breaks at GeV, population vs individual. 
+
+Then the next section is how I study SNRs with Fermi and hope to address the open questions
 
 
 \section{\label{snrCat:ptlk}The \ptlike~  Maximum Likelihood Package}
@@ -152,7 +158,7 @@ To complete the construction of our point source RoI model, we took the output o
 
 
 \section{Comparison of Source Models with 2FGL}
-\label{appen:addSrcs2FGL}
+\label{snrcat:addSrcs2FGL}
 
 This SNR catalog was constructed using $3$~years of P7 Source class data in the energy range $1-100$\,GeV, whereas 2FGL used $2$\,years of data over the larger energy range $0.1-100$\,GeV. The differences in observing time and energy range resulted in residual, unmodeled emission in some RoIs as well as changes to some 2FGL sources' spectral model, position localization, and detection significance. Here we compare the input source models constructed for this catalog, described in Section~\ref{Sec:AddSrcs}, with 2FGL to better understand the method's ability to describe the regions studied. Since we rederive the input source model only within a $3\degr$\,radius of the center of each RoI, 
 %removed from our source model all 2FGL sources within a $3\degr$\,radius of the center of each RoI except those identified as AGN and pulsars, 
@@ -192,10 +198,36 @@ Thus, we find that the method developed and used here produces a model which rep
 \end{figure}
 % % %
 
+\section{SNR Catalog Results}
+\label{snrCat:results}
+What to include from SNR cat
+
+Pull parts of the intro/abstract as needed.
+
+sections: 2, 2.1, 2.2, 2.3 (do I need 2.3.1, 2.3.2)
+
+ First par of 3.1 about how we classify. Summarize some of the relevant catalog results of section 3.2. There's no real reason to include the catalog tables I think. Parts of 3.2.1 3.2.2, 3.2.3 just to highlight which sources were newly detected. 
+ 
+ What to include from section 4? I didn't make these plots, but I contributed to the pipeline script and gave advice on things. 
+ 
+ For the mock snrCatalog, I didn't do the analysis, but I ran addSrcs on the mock sources. maybe there's not much to say about this though.
+
+Section 5? It's not my work, but I participated in discussions, edited text in the section a little bit. I think something needs to be included from this because one of the points of the paper was to see what we could say about the total energy in CR in the Galaxy
+
+Parts of conclusion
+
+Which figure to include from snr cat results?
+
+
 \section{Summary}\label{snrCat:summ}
 In this chapter, we have presented results from the publication of the \snrcat. Application of addSrcs adding point sources to characterize emission in an\roi. Give more details on validation and testing than was given in the paper, as well as details on the code. Work on fitting single extended source, present some work on detected SNRs and population properties, implications for total power in cosmic rays (don't focus on this because it wasn't where I contribute the most). Mock catalog contributions. Testing with extended sources or don't mention too much because we decide not to apply it here?
 
-\section{Scratch}
-How much of the \gls{snrcat} paper can I put in as is, how much can I take with modifications? Below is just the addSrcs section and appendix A
 
+\section{Scratch}
 \cite{Thomson93} gives the 67\% containment radius as $\theta \leq 5.85^\circ (E_\gamma /100 \mev )^{-0.534}$
+
+Fermi goals:
+
+1. Resolve the \gam~sky: the origins of diffuse emission and the nature of unidentified sources: Source identification through good source localization, measurement of spectra across broad energy range, nearly continuous monitoring of the sky for temporal variability 
+
+2. Understand the mechanisms of particle acceleration in celestial sources: 
