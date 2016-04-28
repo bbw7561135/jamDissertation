@@ -28,11 +28,23 @@ difficulties, the majority of the analyses undertaken in this thesis are focused
 
 Two of the primary science goals of the \lat{}  are to 1. resolve the \gam~sky, uncovering the nature of the unidentified sources detected by \egret{}, and 2. to understand the mechanisms of cosmic particle acceleration \citep{atwood09}. In this chapter, we describe our efforts towards addressing these questions by studying the \gam{} emission coincident with sources comprising the population of known radio emitting \snrs{}.
 
-Prior to this work, several individual studies with the \lat{} had successfully resolved spatially extended emission from \snrs{} \citep[and references therein]{3FGL}, yet no systematic analysis leveraging the \lat{}'s full-sky coverage had yet been performed. We performed a uniform study of the \snrs{} in aggregate to measure the properties common to these objects. An understanding of these common characteristics allows us to assess \snrs{} as a class of \gam{} and \cray{} emitting objects and serves as the impetus for this uniform analysis of the known Galactic \snrs{}. We  report here on the published results from the \snrcat{} \cite{SNRcat}. \jamie{they aren't published yet, but almost maybe that will change by June}
+Prior to this work, several individual studies with the \lat{} had successfully resolved spatially extended emission from \snrs{} \citep[and references therein]{3FGL}, yet no systematic analysis leveraging the \lat{}'s full-sky coverage had yet been attempted. We performed for the first time a uniform study of the \snrs{} in aggregate to measure the properties common to these objects. An understanding of these common characteristics allows us to assess \snrs{} as a class of \gam{} and \cray{} emitting objects and serves as the impetus for this uniform analysis of the known Galactic \snrs{}. We  report here on the published results from the \snrcat{} \cite{SNRcat}. \jamie{they aren't published yet, but almost. Maybe that will change by June}
  
  \jamie{2FGL only had 7 ID'd SNR, 4 snr, 58 spp. 3FGL had 12 SNR, 11 snr, 49 spp. I'm not sure what made some snr vs. spp. They must have all been point sources right? No known radio pwn, psr?}
 
-\section{\label{snrCat:ptlk}The \ptlike~  Maximum Likelihood Package}
+\section{\label{snrCat:ptlk}The \ptlike~  Maximum-Likelihood Package}
+
+As described in Chapter \ref{chap:FGST}, maximum-likelihood analysis is the ideal method for determining the properties of \lat{}-observed sources due to the ``counting-experiment" nature of \FermiLat{}. The standard maximum-likelihood tools for analyzing \lat{} data are implemented via the \Fermi{} Science Tools, and in particular \gtlike{}.  Despite being the optimum method, likelihood analysis of \lat{} data is complex due to the highly non-linear performance of the instrument and can be computationally expensive. It is necessary to manage the data and response of the telescope as well as the source and background models. Furthermore, due to the broadening of the \psf{} at low energies, even when studying a single source, it is necessary to include in the model descriptions of multiple surrounding sources. The \ptlike{} binned maximum likelihood package was created to ameliorate some of these issues. Described in detail in \cite{Kerr10}, \ptlike{} is an alternate likelihood analysis framework, designed to be interactive and rapidly evaluate likelihoods. It is ideally suited for large-scale studies (\eg{} all-sky analysis like the \lat{} point source catalogs), and ones requiring several iterations (\eg{} source finding and localization, TS map creation \jamie{assume I've mentioned TS maps already}). 
+
+There are several ways in which \ptlike{} improves in efficiency compared to the Science Tools. It saves computational time, while  sacrificing accuracy
+with several assumptions and approximations to integrals, such as the \psf{} not varying strongly with photon incidence angle (allowing a single \psf{} for each individual bin), sources are stationary in time bins \jamie{more herE?}. Most importantly though importantly, \ptlike{} varies the size of spatially binned \heal{} pixels \citep{Gorski05} according to energy. The \psf{} at lower energies is large and can contain many counts, while at higher energies, the \psf{} shrinks and many pixels will not contain even a single count. \ptlike{} creates \heal{} bins that are approximately the size of the \psf{} at a given energy, and disregards empty bins to speed up the likelihood calculation.
+
+
+Next, get into Josh's extension additions to pointlike
+It accomplishes this by binning the sky in  
+
+
+Another assumption to speed things up is that the PSF doesn't vary too much with event incidence angle in individual bins. To ensure this even more, events with a reconstructed angle > 66.4deg (cos theta = 0.4) are removed (idk why this angle)
 
 This section is about the tools (and intricacies there in) developed to study SNRs with Fermi
 
