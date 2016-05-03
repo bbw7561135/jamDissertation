@@ -5,7 +5,7 @@
 %\section{Introduction}\label{snrCat:Intro}
 \section{\label{snrCat:latGam}Supernova Remnants at \gam~Energies}
 
-By the end of the its science run, \egret{} had detected 271 sources above 100\mev{}, within a minimum detection significance of 4$\sigma$, 170 of which had no clear multiwavelength counterpart, with 81 of those unidentified lying within \blat of the Galactic plane \citep{Hartman99}. The main hindrances to source identification were the numerous potential source counterparts (the \egret{} \psf{} was energy dependent, with a 68\% containment radius of ${\rm \sim 6 ^\circ}$ at 100\mev{} and smaller for higher energies) and the large \egret{} error boxes. In addition to this, the primary method for identifying a \gam{} source as an \snr{} is through a compatible angular extent with  observations at some other wavelength, thus the ability to resolve emission from an \snr{} is vital to understanding the mechanisms therein giving rise to \gam{}s. Figure \ref{fig:3EGSky} shows an \egret{} all-sky map at ${\rm E > 100 \mev}$ where the preponderance of unidentified sources and locations thereof are made clear.  
+By the end of the its science run, \egret{} had detected 271 sources above 100\mev{}, within a minimum detection significance of 4$\sigma$, 170 of which had no clear multiwavelength counterpart, with 81 of those unidentified lying within \blat of the Galactic plane \citep{Hartman99}. The main hindrances to source identification were the numerous potential source counterparts (the \egret{} \psf{} was energy dependent, with a 68\% containment radius of ${\rm \sim 6 ^\circ}$ at 100\mev{} and smaller for higher energies) and the large \egret{} error boxes. In addition to this, the primary method for identifying a \gam{} source as an \snr{} is through a compatible angular extent with  observations at some other wavelength, thus the ability to resolve emission from an \snr{} is vital to understanding the mechanisms therein giving rise to \gam{}s. Figure \ref{fig:3EGSky} shows an \egret{} all-sky map at ${\rm E > 100 \mev}$ where the preponderance of unidentified sources and locations thereof are made clear.
 
 
 \begin{figure}[h!]%[t] 
@@ -32,37 +32,22 @@ Prior to this work, several individual studies with the \lat{} had successfully 
  
  \jamie{2FGL only had 7 ID'd SNR, 4 snr, 58 spp. 3FGL had 12 SNR, 11 snr, 49 spp. I'm not sure what made some snr vs. spp. They must have all been point sources right? No known radio pwn, psr?}
 
-\section{\label{snrCat:ptlk}The \ptlike~  Maximum-Likelihood Package}
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
 
-As described in Chapter \ref{chap:FGST}, maximum-likelihood analysis is the ideal method for determining the properties of \lat{}-observed sources due to the ``counting-experiment" nature of \FermiLat{}. The standard maximum-likelihood tools for analyzing \lat{} data are implemented via the \Fermi{} Science Tools, and in particular \gtlike{}.  Despite being the optimum method, likelihood analysis of \lat{} data is complex due to the highly non-linear performance of the instrument and can be computationally expensive. It is necessary to manage the data and response of the telescope as well as the source and background models. Furthermore, due to the broadening of the \psf{} at low energies, even when studying a single source, it is necessary to include in the model descriptions of multiple surrounding sources. The \ptlike{} binned maximum likelihood package was created to ameliorate some of these issues. Described in detail in \cite{Kerr10}, \ptlike{} is an alternate likelihood analysis framework, designed to be interactive and rapidly evaluate likelihoods. It is ideally suited for large-scale studies (\eg{} all-sky analysis like the \lat{} point source catalogs), and ones requiring several iterations (\eg{} source finding and localization, TS map creation \jamie{assume I've mentioned TS maps already}). 
+\section{\label{snrCat:ptlk}The \ptlike{} Maximum-Likelihood Package and \srcs{}}
 
-There are several ways in which \ptlike{} improves in efficiency compared to the Science Tools. It saves computational time, while  sacrificing accuracy
-with several assumptions and approximations to integrals, such as the \psf{} not varying strongly with photon incidence angle (allowing a single \psf{} for each individual bin), sources are stationary in time bins \jamie{more herE?}. Most importantly though importantly, \ptlike{} varies the size of spatially binned \heal{} pixels \citep{Gorski05} according to energy. The \psf{} at lower energies is large and can contain many counts, while at higher energies, the \psf{} shrinks and many pixels will not contain even a single count. \ptlike{} creates \heal{} bins that are approximately the size of the \psf{} at a given energy, and disregards empty bins to speed up the likelihood calculation.
+As described in Chapter \ref{chap:FGST}, maximum-likelihood analysis is the ideal method for determining the properties of \lat{}-observed sources due to the ``counting-experiment" nature of \FermiLat{}. The standard maximum-likelihood tools for analyzing \lat{} data are implemented via the \Fermi{} Science Tools, and in particular \gtlike{}.  Despite being the optimum method, likelihood analysis of \lat{} data is complex due to the highly non-linear performance of the instrument and can be computationally expensive. It is necessary to manage the data and response of the telescope as well as the source and background models. Furthermore, due to the broadening of the \psf{} at low energies, even when studying a single source, it is necessary to include in the model descriptions of multiple surrounding sources. The \ptlike{} binned maximum likelihood package was created to ameliorate some of these issues. Described in detail in \cite{Kerr10}, \ptlike{} is an alternate likelihood analysis framework, designed to be interactive and rapidly evaluate likelihoods.  
 
+There are several ways in which \ptlike{} improves in efficiency compared to the Science Tools. It saves computational time, while  sacrificing accuracy,
+with several assumptions and approximations, such as the \psf{} not varying strongly with photon incidence angle (allowing a single \psf{} for each individual bin), and sources having a steady flux in individual short time bins. Most importantly though, \ptlike{} varies the size of spatially binned \heal{} pixels \citep{Gorski05} according to energy. The \psf{} at lower energies is large and each energy bin can contain multiple counts, while at higher energies, the \psf{} shrinks and many pixels will not contain even a single count. \ptlike{} creates \heal{} bins that are approximately the size of the \psf{} at a given energy, and disregards empty bins to speed up the likelihood calculation.
 
-Next, get into Josh's extension additions to pointlike
-It accomplishes this by binning the sky in  
+With its efficient likelihood calculations, \ptlike{} is ideally suited for large-scale studies, like all-sky analyses performed for the \lat{} point source catalogs, and analyses requiring several iterations, such as source finding/localization and TS map creation \jamie{assume I've mentioned TS maps already}). 
 
+I think I need a sentence linking pointlike to the snrcat, and why I created addSrcs
 
-Another assumption to speed things up is that the PSF doesn't vary too much with event incidence angle in individual bins. To ensure this even more, events with a reconstructed angle > 66.4deg (cos theta = 0.4) are removed (idk why this angle)
-
-This section is about the tools (and intricacies there in) developed to study SNRs with Fermi
-
-Describe pointlike and what problems it aims to solve in contrast to gtlike.
-
-pointlike is good at analysis where iteration is key because it takes some shortcuts with some integrals and is faster than gtlike. 
-
-Not sure how much to talk about pointlike here vs. modifiying what's in the next chapter from the snrcat paper. 
-
-The addSrcs framework extends/exploits pointlike 
-
-addSrcs in this section or merged into the next one?
-
-I need to stress that this is not just a tool developed, but there's an art and finesse to it (talk about the problems we overcame), there was much iteration.
-
-tool plus knowledge to get the best result
-
-what are the aspects of addSrcs tht needed knowhow, finagling
+First something about the SNR cat, and wanting to uniformly study the regions around SNRs, maybe this is a new section
+to facilitate the characterization of the sky
 
 \jamie{the following  is from a confluence page motivating and describing  addSrcs}
 
@@ -77,13 +62,28 @@ Describe how we put together/designed this analysis what questions were we tryin
 
 
 tested pipeline with 6 sources (I have the tests somewhere, see old Fermi symp poster, Gal Evo too)
+
+somewhere say something about the typical pointlike workflow and getting good positions, finding sources, fitting extension then passing the pointlike results into gtlike to get the best spectra
+
+In the following chapter, we detail using \srcs{} 
+
+\section{Galactic Supernova Remnants}\label{snrCat:radSNRs}
+
+In this work we focus on the 279 currently known Galactic SNRs. They are derived from the $274$~SNRs noted in the catalog of \citet[hereafter Green's catalog]{Green09}, plus five additional SNRs identified following its publication. %\jack{Add link to table of SNRs here?} \jack{multiple tables... it's ok without link}
+All but $16$ of these SNRs have been firmly identified by their radio synchrotron emission, so their centroids and extensions are primarily determined from the radio. % is often the primary means of determining. 
+When the radio detection is not secure, positional information is obtained from the optical, X-ray, or TeV observations that identified the SNR. The catalog is thought to be complete down to a $1$\,GHz radio surface brightness limit of $\approx 10^{-20}$\,W\,m$^{-2}$\,Hz$^{-1}$\,sr$^{-1}$ (i.e.\,$1$\,MJy\,sr$^{-1}$). % ($\approx 10^{6}$\,Jy\,sr$^{-1}$). 
+However, selection effects are known to bias radio surveys against the identification of radio faint and small angular size remnants \citep{Green04,Brogan06}. 
+%(see Green 1991, 2004, 2005 for more detailed discussions).
+% may cite Green 2012 review. Discusses selection effects in detail
+We note that as this work neared completion, a revised catalog of $294$~SNRs was published \citep{Green14}, representing only a small increase ($<10\%$) over the previous catalog.
+
 \section{Input Source Model Construction}\label{snrCat:AddSrcs}
 
 \jamie{add some more bkg on the SNR cat here and add more of the snrCat intro}
 
-
+\jamie{I need to describe the basic method and complications, intricacies  in the prevoois section, and then talk about snr cat specific things here}
 To characterize each candidate SNR we constructed a %n optimal 
-model of \g-ray emission in the RoI which includes all significant sources of emission as well as the residual background from CRs misclassified as \g-rays. We implemented an analysis method to create and optimize the \jamie{fill this in }~models for each of the 279 RoIs. For each RoI, we started with all sources listed in 
+model of \g-ray emission in the RoI which includes all significant sources of emission as well as the residual background from CRs misclassified as \g-rays. We implemented an analysis method to create and optimize the 279 models for each of the 279 RoIs. For each RoI, we started with all sources listed in 
 %We started with a list of cataloged sources within our RoI from 
 the \twofgl \citep{2FGL}, based on $2$\,years of Source class data, within the RoI. To this we add pulsars from \twopc \citep{2PC}, based on $3$\,years of source class data, with 2PC taking precedence for sources that exist in both. 
 For the diffuse emission we combined the standard IEM corresponding to our P7 data set, gal\_2yearp7v6\_v0.fits, with the standard %. To this we added a 
@@ -269,3 +269,17 @@ EGRET point source sensitivity is ${\rm \sim1x10^{-7}}\flux{}$
 of models?
 
 -like index etc?
+
+\jamie{Another assumption to speed things up is that the PSF doesn't vary too much with event incidence angle in individual bins. To ensure this even more, events with a reconstructed angle > 66.4deg (cos theta = 0.4) are removed (idk why this angle)}
+
+This section is about the tools (and intricacies there in) developed to study SNRs with Fermi
+
+The addSrcs framework extends/exploits pointlike 
+
+addSrcs in this section or merged into the next one?
+
+I need to stress that this is not just a tool developed, but there's an art and finesse to it (talk about the problems we overcame), there was much iteration.
+
+tool plus knowledge to get the best result
+
+what are the aspects of addSrcs tht needed knowhow, finagling
