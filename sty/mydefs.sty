@@ -10,10 +10,15 @@
 % \kibitz{color}{comment} inserts a colored comment in the text
 \newcommand{\kibitz}[2]{\ifnum\Comments=1\textcolor{#1}{#2}\fi}
 % add yourself here: 
-\newcommand{\jamie}[1]{\kibitz{cyan}      {[JAM: #1]}}
-\newcommand{\liz}[1]{\kibitz{orange}      {[LIZ: #1]}}
+\newcommand{\jamie}[1]{\kibitz{darkpurple}      {[JAM: #1]}}
+\newcommand{\liz}[1]{\kibitz{red}      {[LIZ: #1]}}
 
 
+%\newcommand{\nai}{{\tt naima}}
+%\newcommand{\emc}{{\tt emcee}}
+%\newcommand{\Gone}{G150.3+4.5}
+%\newcommand{\psrLike}{3FGL J0426.7+5437}
+%\newcommand{\ghard}{2FHL J0431.2+5553e}
 \newcommand{\srcs}{{\tt addSrcs}}
 \newcommand{\heal}{{\tt HEALPix}}
 \newcommand{\brems}{bremsstrahlung}
@@ -36,7 +41,9 @@
 \newcommand{\FermiLat}{\emph{Fermi}-LAT}     %Fermi LAT
 \newcommand{\ptlike}{{\tt pointlike}}
 \newcommand{\gtlike}{{\tt gtlike}}
-\newcommand{\logL}{$\log \mathcal{L}$}
+\newcommand{\nai}{{\tt naima}}
+\newcommand{\logL}{\ensuremath{~\mathrm{\log\mathcal{L}}}}
+\newcommand{\like}{\ensuremath{~\mathrm{\mathcal{L}}}}
 \newcommand{\hi}{$\mathrm{H\,\scriptstyle{I}}$}
 \newcommand{\Hii}{$\mathrm{H\,\scriptstyle{II}}$}
 \newcommand{\HII}{\ion{H}{2}}
@@ -95,8 +102,11 @@
 \newcommand{\grb}{\gls{grb}}
 \newcommand{\he}{\gls{he}}
 \newcommand{\ic}{\gls{ic}}
+\newcommand{\iem}{\gls{iem}}
+\newcommand{\irf}{\gls{irf}}
 \newcommand{\ism}{\gls{ism}}
 \newcommand{\lat}{\gls{lat}}
+\newcommand{\lrt}{\gls{lrt}}
 \newcommand{\magic}{\gls{magic}}
 \newcommand{\mc}{\gls{mc}}
 \newcommand{\msp}{\gls{msp}}
@@ -119,6 +129,7 @@
 \newcommand{\mcs}{\glspl{mc}}
 \newcommand{\psrs}{\glspl{psr}}
 \newcommand{\pwne}{\glspl{pwn}}
+\newcommand{\rois}{\glspl{roi}}
 \newcommand{\seds}{\glspl{sed}}
 \newcommand{\snrs}{\glspl{snr}}
 
