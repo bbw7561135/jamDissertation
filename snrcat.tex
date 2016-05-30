@@ -150,8 +150,49 @@ Otherwise we returned the source to the PL model which provided the better globa
 
 We continued iteratively generating TS maps and adding sources within the entire RoI until additional new sources did not significantly change the global likelihood of the fit. The threshold criterion was defined as obtaining $\mathrm{TS < 16}$ for three consecutively added new sources, denoted as $\mathrm{N_{TS < 16} = 3}$. Despite iteratively adding a source at the location of the peak position in the TS map, the TS values of new sources may not decrease monotonically with iteration for several reasons. First, source positions were localized after fitting the RoI and generating the TS map. Second, some added sources were fit with a more complex spectral model than a simple PL. Finally, when creating the TS map, we fixed the source's spectral index to $2$, whereas when adding the actual source to the model, we allowed its index to vary. 
 
-The specific value of $\mathrm{N_{TS < 16} = 3}$ was chosen to avoid missing sources with $\mathrm{TS \geq 25}$, the threshold commonly used for source detection in LAT data, and to optimize computation time. We tested the threshold by selecting eight representative SNRs from both complex and relatively simple regions of the sky, with both hard and soft spectral indices. \jamie{add some more details and figures here demonstrating what we found}We applied the above procedure to the test RoIs using a criterion of $\mathrm{N_{TS < 16} = 6}$ and counted how many $\mathrm{TS \geq 25}$ sources would be excluded if a smaller $\mathrm{N_{TS < 16}}$ criterion was used. Reducing the threshold to $\mathrm{N_{TS < 16} = 3}$ cut only one significant source in any of the regions. Since the maximum number of sources added in any test RoI was $38$, the minimum $14$, and the total number of sources added across all test regions was $221$, we chose to use $\mathrm{N_{TS < 16} = 3}$ for the full sample. To allow for proper convergence of the likelihood fit, we reduced the number of free parameters prior to each new source addition. If the previously added source was between $3$\degr{} and $5$\degr{} of the center of the RoI, just its normalization was freed, and if greater than $5$\degr{} all its source parameters were fixed.
+The specific value of $\mathrm{N_{TS < 16} = 3}$ was chosen to avoid missing sources with $\mathrm{TS \geq 25}$ (the threshold commonly used for source detection in LAT data), and to optimize computation time. We tested the threshold by selecting eight representative SNRs from both complex and relatively simple regions of the sky, with both hard and soft spectral indices. The eight chosen regions were:
 
+{\bfseries SNR043.3-00.2 (W49B)}: A relatively simple region and test case that was previously detected as a point-source  \snr{} \citep{Abdo10-W49B}
+
+{\bfseries SNR034.7-00.4 (W44)}: Previous LAT studies showed the SNR had a GeV extension slightly larger than the radio size as well as surrounding\gev{} emission from nearby extended sources associated with molecular clouds \citep{Abdo10-W44,Uchiyama12-W44Vicin}
+
+{\bfseries SNR078.2+02.1 (gamma Cygni)}: A complex region containing the \snr{} an embedded pulsar, several nearby pulsars, and a large diffuse structure known as the Cygnus cocoon which is believed to be a bubble of hot gas acting as a source of freshly accelerated \crs{} \citep{Ackermann12-CygnusCR,Ackermann11-CygnusCocoon}. The region serves as a test of how robust \srcs{} is in one of the more extreme \rois{}. Despite the complexity of the region, \cite{Lande12} detected \gev{} emission co-spatial with the radio \snr{}.
+
+{\bfseries SNR027.4+00.0 (Kes 73), SNR031.9+00.0 (3C391), SNR292.2-00.5, SNR332.4-00.4 (MSH 16-51), SNR205.5+00.5 (Monoceros)}: These five  sources were found to have large fitted extensions (greater than twice the radio radius of the \snr{}) in preliminary \snrcat{} pipeline runs so were included to understand this occurrence.
+
+We applied the procedure detailed above to the test RoIs using a criterion of $\mathrm{N_{TS < 16} = 6}$ and counted how many $\mathrm{TS \geq 25}$ sources would be excluded if a smaller $\mathrm{N_{TS < 16}}$ criterion was used. Figure \ref{fig:NTSthresh} shows how reducing the threshold to $\mathrm{N_{TS < 16} = 3}$ cut only one significant source in any of the regions. A further criteria to validate the value of $\mathrm{N_{TS < 16}}$ used in this paper was that the spectrum of a source of interest (\ie{} the central extended \snr{} in and \roi{}) or extension was robust to the addition of nearby sources. In Figures \ref{fig:threshFlux}, \ref{fig:threshIndex}, and  \ref{fig:threshSigma}, we show an example of the evolution of the flux, index, and extension of \snr{} gamma Cygni  as subsequent sources are added.  Sources were added to the ROI until $\Delta(\logL{}) < 8$, 6 times in a row, and see that while a significant source added close to the \snr{} can affect the fit of the extended source, these fits stabilize before our threshold is reached. Since the maximum number of sources added in any test RoI was $38$, the minimum $14$, and the total number of sources added across all test regions was $221$, we chose to use $\mathrm{N_{TS < 16} = 3}$ for the full sample of 279 \rois{}. 
+
+\begin{figure}[ht!]
+	\centering
+	\makebox[\linewidth]{\includegraphics[width=1.0\columnwidth]{figures/aboveThreshPSgt25.png}}
+	\caption[Histogram of the number of signiciant soures remaining in each of the 8 test \roi{} for iterations in which $\Delta(\logL) < 8$]{Histogram of the number TS $\geq$ 25 sources remaining in each of the 8 test \roi{} for iterations in which $\Delta(\logL) < 8$ (\ie{} TS $<$ 16). Points are offset for each SNR for clarity. The text boxes detail statistics for the values of TS of significant sources for the 8 studied SNRs for each corresponding value on the x-axis.}
+	\label{fig:NTSthresh}
+\end{figure}
+
+\begin{figure}[ht!]
+	\centering
+	\makebox[\linewidth]{\includegraphics[width=1.0\columnwidth]{figures/{ES_1_Flux_SNR078.2p02.1_ES_noColor}.png}}
+	\caption[Gamma Cygni flux evolution for successive \srcs{} iterations]{Flux evolution of the extended source coincident with \snr{} gamma Cygni (labeled ES 1 in the figure) as successive sources are added to the ROI.  Dotted line is first time $\Delta(\logL) < 8$, dashed line shows the final threshold for this test study. \jamie{these are the wrong figures, they go out 8 times}}
+	\label{fig:threshFlux}
+\end{figure}
+
+\begin{figure}[ht!]
+	\centering
+	\makebox[\linewidth]{\includegraphics[width=1.0\columnwidth]{figures/{ES_1_Index_SNR078.2p02.1_ES_noColor}.png}}
+	\caption[Gamma Cygni index evolution for successive \srcs{} iterations]{Same as Figure \ref{fig:threshFlux} but for the \pl{} spectral index.}
+	\label{fig:threshIndex}
+\end{figure}
+
+\begin{figure}[ht!]
+	\centering
+	\makebox[\linewidth]{\includegraphics[width=1.0\columnwidth]{figures/{ES_1_Sigma_SNR078.2p02.1_ES_noColor}.png}}
+	\caption[Gamma Cygni extension evolution for successive \srcs{} iterations]{Same as Figure \ref{fig:threshFlux} but for the radius of a uniform, symmetric disk.}
+	\label{fig:threshSigma}
+\end{figure}
+
+
+
+To allow for proper convergence of the likelihood fit, we reduced the number of free parameters prior to each new source addition. If the previously added source was between $3$\degr{} and $5$\degr{} of the center of the RoI, just its normalization was freed, and if greater than $5$\degr{} all its source parameters were fixed.
 To avoid having newly added sources overlap with pulsars, we deleted new sources from the RoI if they were within~$0.2$\degr{} of a \g-ray pulsar and refit the pulsar in the $1-100$\,GeV range following the 2PC conventions. 
 2PC modeled pulsar spectra as a PL with an exponential cutoff (PLEC),
 \begin{equation}
@@ -204,7 +245,7 @@ Spatial coincidence is a necessary but not sufficient criterion to identify a \g
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1.0\columnwidth]{figures/size_hist_p.pdf} 
-	\caption[Distribution of SNR radio diameters from Green's catalog]{Distribution of SNR radio diameters from Green's catalog. The vertical dashed lines indicate the minimum detectable extension for a source with a photon flux of $10^{-8}$\,ph\,cm$^{-2}$\,s$^{-1}$ in the $1-100$\,GeV energy range and a PL index of $-2.5$, from simulations of $2$\,years of data and the P7V6 IRFs \citep{Lande12}. In that work, simulations using $10$x and $100$x the isotropic background level (thin-dotted and thick-dashed lines) are used to estimate a reasonable background range for sources in the Galactic plane.\jamie{idk what plot are ok or not to include from papers I am an author on. I didnt make this plot, but I made the first version of it that inspired this one}}
+	\caption[Distribution of SNR radio diameters from Green's catalog]{Distribution of SNR radio diameters from Green's catalog. The vertical dashed lines indicate the minimum detectable extension for a source with a photon flux of $10^{-8}$\,ph\,cm$^{-2}$\,s$^{-1}$ in the $1-100$\,GeV energy range and a PL index of $-2.5$, from simulations of $2$\,years of data and the P7V6 IRFs \citep{Lande12}. In that work, simulations using $10$x and $100$x the isotropic background level (thin-dotted and thick-dashed lines) are used to estimate a reasonable background range for sources in the Galactic plane.\jamie{idk what plots are ok or not to include from papers I am an author on. I didnt make this plot, but I made the first version of it that inspired this one. Should I specifically include a comment for these plots that state they're from the snr cat vs ones not in the paper?}}
 	\label{fig:size_hist_p}
 \end{figure}
 
@@ -239,25 +280,6 @@ We determined the final RoI model by selecting the most likely hypothesis based 
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{SNR Catalog Results}
-\label{snrCat:results}
-What to include from SNR cat
-
-Pull parts of the intro/abstract as needed.
-
-sections: 2, 2.1, 2.2, 2.3 (do I need 2.3.1, 2.3.2)
-
- First par of 3.1 about how we classify. Summarize some of the relevant catalog results of section 3.2. There's no real reason to include the catalog tables I think. Parts of 3.2.1 3.2.2, 3.2.3 just to highlight which sources were newly detected. 
- 
- What to include from section 4? I didn't make these plots, but I contributed to the pipeline script and gave advice on things. 
- 
- For the mock snrCatalog, I didn't do the analysis, but I ran addSrcs on the mock sources. maybe there's not much to say about this though.
-
-Section 5? It's not my work, but I participated in discussions, edited text in the section a little bit. I think something needs to be included from this because one of the points of the paper was to see what we could say about the total energy in CR in the Galaxy
-
-Parts of conclusion
-
-Which figure to include from snr cat results?
 
 \section{Summary}\label{snrCat:summ}
 In this chapter, we have presented results from the publication of the \snrcat. Application of addSrcs adding point sources to characterize emission in an\roi. Give more details on validation and testing than was given in the paper, as well as details on the code. Work on fitting single extended source, present some work on detected SNRs and population properties, implications for total power in cosmic rays (don't focus on this because it wasn't where I contribute the most). Mock catalog contributions. Testing with extended sources or don't mention too much because we decide not to apply it here?
@@ -329,3 +351,24 @@ How to distinguish addSrcs from how addSrcs was applied to the SNR cat. For the 
 tested pipeline with 6 sources (I have the tests somewhere, see old Fermi symp poster, Gal Evo too)
 
 The min bias line is specifically for the SNR cat since we removed catalog sources....intended to minimize possible bias introduced by the initial model for an ROI (e.g 2FGL) It is  used to derive the input sources model for the SNR catalog. The goal of this work is to use this "add sources" method to aid in characterization of GeV emission near SNRs and nearby molecular clouds.
+
+left to do in this section:
+
+figure out which other sections to pull from.
+
+I think I might just take the first part of the results of the catalog, and summarize the comparison results (so maybe just the most relevant population plots and points about correlation?)
+
+The one other part that I need to write is about the 8 sources tested on. pull from pres, and poster and confluence. 
+
+Reread the chapter, figure out what other plots to include
+
+
+First par of 3.1 about how we classify. Summarize some of the relevant catalog results of section 3.2. There's no real reason to include the catalog tables I think. Parts of 3.2.1 3.2.2, 3.2.3 just to highlight which sources were newly detected. 
+
+What to include from section 4? I didn't make these plots, but I contributed to the pipeline script and gave advice on things. 
+
+For the mock snrCatalog, I didn't do the analysis, but I ran addSrcs on the mock sources. maybe there's not much to say about this though.
+
+Section 5? It's not my work, but I participated in discussions, edited text in the section a little bit. I think something needs to be included from this because one of the points of the paper was to see what we could say about the total energy in CR in the Galaxy
+
+Parts of conclusion
