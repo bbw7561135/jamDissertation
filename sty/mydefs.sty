@@ -133,8 +133,52 @@
 \newcommand{\seds}{\glspl{sed}}
 \newcommand{\snrs}{\glspl{snr}}
 
+
+%%%%
+%some snr cat  commands, mostly numbers of objects
+\newcommand{\nGalSNRs}{$279$} % Number of known SNRs studied
+\newcommand{\ndist}{$112$} % Number of SNRs with distances listed in Table 4.
+\newcommand{\nodist}{$167$} % Number of SNRs without distances listed in Table 4.
+\newcommand{\nclassified}{$34$} % Number of sources that are classified as likely SNRs 
+\newcommand{\nassocprobclassified}{$36$} % Number of sources that are classified as likely SNRs 
+\newcommand{\nclassifiedsnrs}{$30$} % Number of sources associated with SNRs 
+\newcommand{\nnotsnrs}{four} % Number of sources that pass classification but are NOT SNRs.
+\newcommand{\nnotsnrsCap}{Four} % Number of sources that pass classification but are NOT SNRs.
+\newcommand{\nmarginal}{$14$} % Number of sources classified as marginal
+\newcommand{\nclassifiedandmarginal}{$48$} % Number of sources classified *and* marginal 
+\newcommand{\nother}{$54$} % Number of sources that fail classification  
+\newcommand{\noclass}{$177$} % Number of sources that are not detected 
+\newcommand{\ndetected}{$102$} % Number of sources that are detected 
+\newcommand{\nULs}{$245$} % Number of sources have ULs
+\newcommand{\nextended}{$17$} % Number of extended SNRs
+\newcommand{\npointlike}{$13$} % Number of point SNRs 
+\newcommand{\nnewpointlike}{$10$} % Number of new point SNRs: 14-3 
+\newcommand{\nnewextended}{four} % Number of new extended SNRs  17-13 
+\newcommand{\Nnewextended}{Four} % Number of new extended SNRs  17-13 
+\newcommand{\notherLogPpct}{$7\%$} % percent of all other candidates w logP preferred
+\newcommand{\nclassLogPpct}{$6\%$} % percent of all classified candidates w logP preferred
+
+\newcommand{\nmock}{two} % Number of mock candidate "classified" coincidences
+\newcommand{\nmockN}{2}  % for use in equations
+\newcommand{\nmockpercent}{$\sim6\%$} 
+\newcommand{\nmockclassifiedandmarginal}{nine} % Number of mock candidate "marginal classified" *and* "classified" coincidences
+\newcommand{\nmockclassifiedandmarginalpercent}{$19\%$} %
+\newcommand{\nninetyfivemock}{eight} % 95% confidence maximum number of mock candidate "classified" coincidences
+\newcommand{\nninetyfivemockpercent}{$22\%$} % 95% confidence maximum number of mock candidate "classified" coincidences percentage
+\newcommand{\nninetyfivemockclassifiedandmarginal}{$18$} % 95% confidence maximum number of mock candidate "classified" coincidences
+\newcommand{\nninetyfivemockclassifiedandmarginalpercent}{$38\%$} % 95% confidence maximum number of mock candidate "classified" coincidences percentage 
+
+\newcommand{\nmarginalAIEM}{two} % Number of sources that demoted from classified to marginal due to at least 1 aIEM having no significant source
+\newcommand{\notherAIEM}{nine} % Number of sources that are detected but had issues with aIEMs not being significant
+\newcommand{\notherAIEMcap}{Nine} % Number of sources that are detected but had issues with aIEMs not being significant (capitalized!)
+\newcommand{\overlaploc}{\mathrm{Overlap}_\mathrm{loc}}
+\newcommand{\overlapext}{\mathrm{Overlap}_\mathrm{ext}}
+\newcommand{\overlapprod}{\mathrm{Overlap}_\mathrm{assoc}}
+
+
 %This needed to be here to work as opposed to in abbrev.tex
 \newacronym{snrcat}{SNRcat}{First \FermiLat{} Supernova Remnant Catalog}
+
 %% Rupke's defs
 % \newcommand{\kms}{\ifmmode \mathrm{km~s^{-1}}\else km~s$^{-1}$\fi}
 % \newcommand{\smpy}{\ifmmode M_\sun~\mathrm{yr}^{-1}\else M$_\sun$~yr$^{-1}$\fi}

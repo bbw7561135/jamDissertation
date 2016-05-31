@@ -19,7 +19,7 @@ In spite of the difficulties in \egret{} source association, many studies have a
 
 As the successor to \egret{}, the \lat{} was designed to improve upon its predecessor in a multitude of areas relevant to detecting \snrs{} \citep{atwood09,lat_perf}. The \lat{} has a much improved angular resolution (68\% single-photon containment radius $\sim 0.4^{\circ}$ at 1\gev{} for photons with the best quality direction reconstruction, PSF3 event type, compared to $\sim 1.7^{\circ}$ for \egret{} at the same energy), necessary to resolve \snrs{} as extended objects. The \lat{} also benefits from a superior sensitivity due to a combination of the improved \psf, larger peak effective area ($ {\rm > 9000~cm^2}$ vs. ${\rm \sim 1500~cm^2}$), wider \fov{} (2.4 sr, which is nearly 5 times that of \egret{}), and deeper, more-uniform sky exposure (afforded by the \lat's scanning observations as opposed to \egret's pointing operation). 
 
-This bump in sensitivity results in the \lat{} detecting considerably more sources than \egret. Remarkably, within its first three months of commission, the \lat{} detected 205 sources above {\rm 10$\sigma$ significance \citep{lat_3m}, and by 11 months, 1451 sources above 4$\sigma$ \citep{1FGL}, compared to  the aforementioned 271 over the entire \egret{} mission. In fact, over its lifetime, \egret{} detected a total of about ${\rm 1.5~x~10^6}$ cosmic photons, while as of March 2016, the \lat{} has detected ${\rm \sim 863~x~10^6}$ \jamie{change this number in June} source class photons. The \lat's point-source sensitivity peaks between 1 and 10\gev{}, depending on location on the sky. \jamie{plot comparing lat to egret sensitivity?}. With its increased sensitivity and higher energy range (up to $\sim$ 2\tev{} with the recent Pass 8 event reconstruction improvements, which is nearly an order of magnitude higher than \egret{}), the \lat{} is uniquely situated to study the \gam{} morphology and spectra of \snrs{}.
+This bump in sensitivity results in the \lat{} detecting considerably more sources than \egret. Remarkably, within its first three months of commission, the \lat{} detected 205 sources above {\rm 10$\sigma$ significance \citep{lat_3m}, and by 11 months, 1451 sources above 4$\sigma$ \citep{1FGL}, compared to  the aforementioned 271 over the entire \egret{} mission. In fact, over its lifetime, \egret{} detected a total of about ${\rm 1.5~x~10^6}$ cosmic photons \citep{Thomson93}, while as of March 2016, the \lat{} has detected ${\rm \sim 863~x~10^6}$ \jamie{change this number in June} source class photons. The \lat's point-source sensitivity peaks between 1 and 10\gev{}, depending on location on the sky. \jamie{plot comparing lat to egret sensitivity?}. With its increased sensitivity and higher energy range (up to $\sim$ 2\tev{} with the recent Pass 8 event reconstruction improvements, which is nearly an order of magnitude higher than \egret{}), the \lat{} is uniquely situated to study the \gam{} morphology and spectra of \snrs{}.
 
 Both energetic lepton interactions (\ie \ic{} radiation of relativistic electrons interacting with ambient photon fields, and nonthermal \brems{}) and hadronic processes ($\pi_0$ decay \gam{}s from \cray{} protons encountering surrounding nuclei) produce spectra observable at \gam{} energies (see Chapter \ref{chap:gamAstr} for details). While the \ic{} generating electron population is also observable through emission of radio \sync{} photons, the proton-proton interaction solely emits \gam{}s. Despite being the prime energy range to observe the effects of cosmic particle acceleration, complexities at the lower \lat{} energy range stymie \snr{} morphology studies.
 
@@ -160,7 +160,7 @@ The specific value of $\mathrm{N_{TS < 16} = 3}$ was chosen to avoid missing sou
 
 {\bfseries SNR027.4+00.0 (Kes 73), SNR031.9+00.0 (3C391), SNR292.2-00.5, SNR332.4-00.4 (MSH 16-51), SNR205.5+00.5 (Monoceros)}: These five  sources were found to have large fitted extensions (greater than twice the radio radius of the \snr{}) in preliminary \snrcat{} pipeline runs so were included to understand this occurrence.
 
-We applied the procedure detailed above to the test RoIs using a criterion of $\mathrm{N_{TS < 16} = 6}$ and counted how many $\mathrm{TS \geq 25}$ sources would be excluded if a smaller $\mathrm{N_{TS < 16}}$ criterion was used. Figure \ref{fig:NTSthresh} shows how reducing the threshold to $\mathrm{N_{TS < 16} = 3}$ cut only one significant source in any of the regions. A further criteria to validate the value of $\mathrm{N_{TS < 16}}$ used in this paper was that the spectrum of a source of interest (\ie{} the central extended \snr{} in and \roi{}) or extension was robust to the addition of nearby sources. In Figures \ref{fig:threshFlux}, \ref{fig:threshIndex}, and  \ref{fig:threshSigma}, we show an example of the evolution of the flux, index, and extension of \snr{} gamma Cygni  as subsequent sources are added.  Sources were added to the ROI until $\Delta(\logL{}) < 8$, 6 times in a row, and see that while a significant source added close to the \snr{} can affect the fit of the extended source, these fits stabilize before our threshold is reached. Since the maximum number of sources added in any test RoI was $38$, the minimum $14$, and the total number of sources added across all test regions was $221$, we chose to use $\mathrm{N_{TS < 16} = 3}$ for the full sample of 279 \rois{}. 
+We applied the procedure detailed above to the test RoIs using a criterion of $\mathrm{N_{TS < 16} = 6}$ and counted how many $\mathrm{TS \geq 25}$ sources would be excluded if a smaller $\mathrm{N_{TS < 16}}$ criterion was used. Figure \ref{fig:NTSthresh} shows how reducing the threshold to $\mathrm{N_{TS < 16} = 3}$ cut only one significant source in any of the regions. A further criteria to validate the value of $\mathrm{N_{TS < 16}}$ used in this paper was that the spectrum of a source of interest (\ie{} the central extended \snr{} in an \roi{}) or extension was robust to the addition of nearby sources. In Figures \ref{fig:threshFlux}, \ref{fig:threshIndex}, and  \ref{fig:threshSigma}, we show an example of the evolution of the flux, index, and extension of \snr{} gamma Cygni  as subsequent sources are added.  Sources were added to the ROI until $\Delta(\logL{}) < 8$, 6 times in a row, and see that while a significant source added close to the \snr{} can affect the fit of the extended source, these fits stabilize before our threshold is reached. Since the maximum number of sources added in any test RoI was $38$, the minimum $14$, and the total number of sources added across all test regions was $221$, we chose to use $\mathrm{N_{TS < 16} = 3}$ for the full sample of 279 \rois{}. 
 
 \begin{figure}[ht!]
 	\centering
@@ -201,13 +201,12 @@ To avoid having newly added sources overlap with pulsars, we deleted new sources
 \end{equation}
 where \textit{$N_0$} is the normalization factor, \textit{$\Gamma$} is the photon spectral index, \textit{$E_c$} the cutoff energy, and $b$ determines to the sharpness of the cutoff. 2PC assessed the validity of fixing $b$ to $1$ in Equation~\ref{eqn:PLEC} (PLEC1) by repeating the analysis using a PL model, as well as the more general exponentially cut off PL form, allowing the parameter $b$ in Equation~\ref{eqn:PLEC} to vary. For the pulsar spectra in this analysis, we compared the maximum likelihood values for spectral models with and without a cutoff and with and without the value of $b$ being free, via $\mathrm{TS_{cut}} \equiv 2 ($\logL{}$_{\mathrm{PLEC1}}-$\logL{}$_{\mathrm{PL}})$ and $\mathrm{TS}_{b} \equiv 2 ($\logL{}$_{\mathrm{PLEC}}-$\logL{}$_{\mathrm{PLEC1}})$ to determine which to use. If $\mathrm{TS_{cut}} < 9$ is reported for the pulsar in 2PC then a PL model is used. If TS$_{\mathrm cut} \geq 9$, we then check to see if the cutoff energy fit in 2PC lies within the restricted energy range of $1-100$\,GeV used in this work. For pulsars with cutoffs $\geq 1$\,GeV, we then use the PLEC model if TS$_{\mathrm b} \geq 9$, and the PLEC model with cutoff freed otherwise. For those pulsars with cutoffs less than 1 GeV the spectral parameters are fixed to the 2PC values.
 
-To complete the construction of our point source RoI model, we took the output of the previous steps and removed all sources with TS~$< 16$. This final model was then used as the starting model for analyzing candidate SNR emission. We conservatively allow sources with TS down to $16$ $(\sim4\,\sigma)$ in order to account for the effects of at least the brightest sub-threshold sources on the parameter fits for the other sources in the model. Furthermore, while the SNR analysis method described in the chapter \ref{snrcat:DetectMethod} is allowed to remove sources, it cannot add them. Thus we start from a set of sources designed to allow the final model to capture all significant emission within the central region. To corroborate our method of systematically adding sources to a region, we compare our RoI source models with those found by the 2FGL approach in Chapter \ref{snrcat:addSrcs2FGL}. 
+To complete the construction of our point source RoI model, we took the output of the previous steps and removed all sources with TS~$< 16$. This final model was then used as the starting model for analyzing candidate SNR emission. In Figure \ref{fig:w44initRoi}, we show a residual TS map of the region around \snr{} W44 as an example of the source configuration in an \roi{} prior to running \srcs{}. Figure \ref{fig:w44finRoi} is a residual \ts{} map of the same region after running \srcs{} to decompose the region into point sources.
 
-\jamie{still need to add a sentence or two about the resid tsmaps}
 \begin{figure}[ht!]
 	\centering
 	\makebox[\linewidth]{\includegraphics[width=1.0\columnwidth]{figures/{PS_00_tsmap_wo2FGL_SNR034.7-00.4_PS}.png}}
-	\caption[1-100GeV  residual TS map for \snr{} W44 before running \srcs{} and with 2FGL sources removed from the inner 3$^\circ$ radius.]{1-100GeV  residual TS map for \snr{W44} before running \srcs{} and with 2FGL sources removed from the inner 3$^\circ$ radius (yellow circle). Bin size is 0.2°/pixel. Magenta circle shows a 5$^\circ$ radius. 2FGL sources are shown as green crosses.}
+	\caption[1-100GeV  residual TS map for \snr{} W44 before running \srcs{} and with 2FGL sources removed from the inner 3$^\circ$ radius.]{1-100GeV  residual TS map for \snr{W44} before running \srcs{} and with 2FGL sources removed from the inner 3$^\circ$ radius (yellow circle). Bin size is 0.2°/pixel. Magenta circle shows a 5$^\circ$ radius. 2FGL and newly added sources are shown as green crosses.}
 	\label{fig:w44initRoi}
 \end{figure}
 
@@ -217,6 +216,10 @@ To complete the construction of our point source RoI model, we took the output o
 	\caption[1-100GeV  residual TS map for \snr{} W44 after \srcs{} has completed.]{1-100GeV  residual TS map for \snr{} W44 after \srcs{} has completed. 2FGL sources have been removed from the inner 3$^\circ$ radius (yellow circle), and the bin size is 0.2°/pixel. Magenta circle shows a 5$^\circ$ radius. 2FGL sources are shown as green crosses.}
 	\label{fig:w44finRoi}
 \end{figure}
+
+We conservatively allow sources with TS down to $16$ $(\sim4\,\sigma)$ in order to account for the effects of at least the brightest sub-threshold sources on the parameter fits for the other sources in the model. Furthermore, while the SNR analysis method described in the chapter \ref{snrcat:DetectMethod} is allowed to remove sources, it cannot add them. Thus we start from a set of sources designed to allow the final model to capture all significant emission within the central region. To corroborate our method of systematically adding sources to a region, we compare our RoI source models with those found by the 2FGL approach in Chapter \ref{snrcat:addSrcs2FGL}. 
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -268,7 +271,7 @@ In order to determine the best representation for each SNR, we analyzed each SNR
 
 For each hypothesis, we started with the input model described in Chapters \ref{snrcat:Data} and~\ref{snrcat:AddSrcs}. We removed sources falling within the SNR's radio disk unless they had been identified as an AGN or pulsar, as described in Chapter \ref{snrcat:AddSrcs}. We then proceeded to evaluate the following point and extended source hypotheses. For the point source hypothesis, a point source with a PL index initialized to $2.5$ was placed at the radio centroid of the SNR. The positions, spectral index, and spectral normalization of the point source were then fit. As for the initial input model described in Chapter \ref{snrcat:AddSrcs}, we tested the source for spectral curvature. To test the extended source hypothesis, we employed two separate procedures. Both employed a uniform disk model initially placed at the center of the RoI with a radius equal to that observed in the radio. In the first procedure, called the ``disk" hypothesis, we fit both the position and extension of the disk, as well as tested for spectral curvature. A second procedure, which results in a model we call the ``neardisk" hypothesis, additionally examines the significance of sources nearby the disk, removing those which are not considered independently significant and refitting the disk position and radius. This procedure is described in Chapter \ref{snrcat:LocExtSpec}.
 
-Having evaluated these hypotheses, we compared the global likelihood values of the final extended hypothesis and of the point source hypothesis to determine which model had the largest maximum likelihood. If the source is significant in the best hypothesis, the model parameters are reported as Tables 1 and 2 in \cite{snrCat}. If no hypothesis had a significant \gam{} source coincident with the radio SNR, we calculated the upper limit on the flux from a region consistent with the radio SNR, described in Chapter \ref{snrcat:FluxULs}, and report  the results in Table 3 in \cite{snrCat}. \jamie{should I include the tables here? only if they're short, or abridged. I should def include the dist table because I did that work}
+Having evaluated these hypotheses, we compared the global likelihood values of the final extended hypothesis and of the point source hypothesis to determine which model had the largest maximum likelihood. If the source is significant in the best hypothesis, the model parameters are reported as Tables 1 and 2 in \cite{snrCat} \jamie{should I include abridged tables?}. If no hypothesis had a significant \gam{} source coincident with the radio SNR, we calculated the upper limit on the flux from a region consistent with the radio SNR, described in Chapter \ref{snrcat:FluxULs}, and report  the results in Table 3 in \cite{snrCat}. \jamie{should I include the tables here? only if they're short, or abridged. I should def include the dist table because I did that work}
 
 \subsection{Localization, Extension, and Spectral Curvature}\label{snrcat:LocExtSpec}
 
@@ -295,95 +298,54 @@ We determined the final RoI model by selecting the most likely hypothesis based 
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 
+\section{Catalog Results}\label{snrcat:TheCatalog}
+\jamie{from SNRcat}
+We detected \ndetected~candidates with a final source TS\,$\geq 25$ in the \nGalSNRs~SNR RoIs (see Chapter \ref{snrcat:DetectMethod}). Of the \ndetected~detected candidates, \nassocprobclassified{} passed the association probability threshold (see \cite{snrCat}). Of these, \nclassifiedsnrs~SNRs ($\sim11\%$ of the total) show significant emission for all alternative IEMs and are classified as likely GeV SNRs. An additional \nnotsnrs{} were identified as sources which are not SNRs.Two other candidates were demoted to marginal due to their dependence on the IEM, as described in the next paragraph. Of the sources likely to be GeV SNRs, \nextended~show evidence for extension (TS${\rm_{ext} > 16}$). Only sources associated with SNRs G34.7$-$0.4 and G189.1+3.0 show evidence of significant spectral curvature in the $1-100$\,GeV range and are fit with logP spectra. Of the classified candidates, \nnewextended~extended and \nnewpointlike~point SNRs are new and published here for the first time. Descriptions of the new extended (G24.7+0.6, G205.5+0.5, G296.5+10.0, and G326.3$-$1.8) \snrs{} is given in \cite{snrCat}.
+%We describe the \nnewextended~new extended SNRs, G24.7+0.6, G205.5+0.5, G296.5+10.0, and G326.3$-$1.8, in Section~\ref{snrcat:NewSNRs}. 
 
-\section{Summary}\label{snrCat:summ}
-In this chapter, we have presented results from the publication of the \snrcat. Application of addSrcs adding point sources to characterize emission in an\roi. Give more details on validation and testing than was given in the paper, as well as details on the code. Work on fitting single extended source, present some work on detected SNRs and population properties, implications for total power in cosmic rays (don't focus on this because it wasn't where I contribute the most). Mock catalog contributions. Testing with extended sources or don't mention too much because we decide not to apply it here?
+For those \nULs~SNRs that are either not detected by this analysis or which fail to meet the most stringent threshold for classification as a detected SNR, upper limits assuming the radio disk morphology of Green's catalog with PL indices of $2.0$ and $2.5$ are reported in Table 3 in \cite{snrCat}. For those candidates which fail to meet the most stringent threshold, we replaced the source with the radio disk. We do not calculate upper limits for the \nnotsnrs~sources which are identified as not SNRs. A FITS version of the catalog is available through the \Fermi{} Science Support Center, as described in \cite{snrCat}\footnote{\url{ http://fermi.gsfc.nasa.gov/ssc/data/access/lat/1st_SNR_catalog/}}. \jamie{not including the detailed description of the new SNRs}
 
-With its unprecedented sensitivity and angular resolution above 1\gev, the \lat~provides for the first time the opportunity to distinguish SNR-emitted photons from their backgrounds, and  to unambiguously detect and identify dozens of \glspl{snr}. \jamie{maybe this is for the intro/abstract because it's a little vague}
+\jamie{all the multiwavelength CR stuff and  I wasn't so involved in, but it's kind of the crux of the paper. I don't know how much of if it, if any to include here.}
 
-The \lat{} is uniquely situated to address these goals and definitively detect and identify dozens \snrs
+%%%JAM COMMENTED OUT THESE TABLES
+%\input{t1.tex} %{tables/results_v4_0516_det_spatial.tex}  % reference as \ref{Tab:ResultsSpat}
+%\input{t2.tex} %{tables/fluxTable2_v7/results_v4_0516_det_spectral_v7.tex} % reference as \ref{Tab:ResultsSpec}
+%\input{t3.tex} %{tables/results_v4_0516_UL.tex}   % reference as \ref{Tab:ResultsULs}
 
-Focus our efforts on
-
-\section{Scratch}
-has the spatial and spectral sensitivity to resolve
-
-good spatial and spectral 
-
-
-talk about how much "power" comes from the higher energy  range,
-
-EGRET point source sensitivity is ${\rm \sim1x10^{-7}}\flux{}$
-\url{http://fermi.gsfc.nasa.gov/science/instruments/table1-1.html} get this number from somewhere else
+%%%%JAM commented this out for now
+%\begin{figure}[h!]
+%   \centering
+%   \includegraphics[width=0.8\columnwidth]{f9.pdf} %{figures/gev_flux_vs_index.pdf}
+%   \caption{
+%       The distribution of fitted photon index and flux in the energy range $1-100$\,GeV. The index shown for sources for which the logP form is more significant is determined from re-fitting the sources with a PL spectral form rather than their parabolic index $\alpha$, for consistency. Open circles indicate extended SNRs while filled circles indicate point-like sources. All SNRs that passed classification are shown as black unless also classified as young non-thermal X-ray SNRs (blue) or as interacting with MCs (red). Candidates which did not pass classification but still had both fractional overlaps $>0.1$ are grey. If they are also young or interacting, they are outlined in blue or red, respectively\protect\footnotemark. These classes are further defined in Section~\ref{Sec:GeVSNRDiscussion}. Statistical error bars have caps; error bars without caps represent the systematic error, described in Section~\ref{Sec:SysErr}. 
+%       \label{fig:GeVFluxGeVIndex}}
+%\end{figure}
+%\footnotetext{No extended marginally classified candidates were also identified as young or interacting.} 
 
 
-\jamie{somewhere I should also say that identifying an extended source as such gives better spectra, see 2FHL}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cite{Thomson93}, egret observed a total of 1.5 million celestial \gam{}
+\section{Results and Discussion Summary}\label{snrcat:resSum}
 
-\jamie{ Fermi goals: 1. Resolve the \gam~sky: the origins of diffuse emission and the nature of unidentified sources: Source identification through good source localization, measurement of spectra across broad energy range, nearly continuous monitoring of the sky for temporal variability
-	2. Understand the mechanisms of particle acceleration in celestial sources:}
+Here, we summarize some of the most pertinent results found in the \snrcat{}.
 
-\jamie{understanding accel plus identification of the potential SNRs motivates the SNR cat }
+\jamie{plots showing change of spectral slop between GeV/TeV, softening and brightening at GeV with age}
+\jamie{plot showing how indices don't match with IC/brsmss/pi0}
+\jamie{something about the CR conent}
 
 \jamie{snrs as source of Galactic cosmic rays, and thus as drivers of Galactic evolution}
 
--what's to gain from studyng the population vs individual?
+\section{Conclusions}\label{Sec:Conclusions}
+In this Chapter, we have discussed the state of \gam{} observations of \snrs{} prior to the launch of \Fermi{}, and the unique role that the \lat{} plays in identifying \snrs{} and exploring \gam{} production mechanisms therein. We presented the new automated source addition and analysis method, \srcs{}, and its application to studying the population of \snrs{} emitting\gev{} \gam{}s, published in \cite{snrCat}. With this first \FermiLat{} SNR Catalog we have systematically characterized GeV emission in regions containing known radio SNRs, creating new methods to systematically address issues associated with these typically complex regions. These include methods for systematically adding sources to a region and better estimating the systematic error due to choice of interstellar emission model. From this, we have determined characteristics of the GeV SNR population, down to our measurement limit, finding \nclassifiedsnrs~classified and \nmarginal~marginal candidates with a false identification limit of $<$\nninetyfivemockpercent (discussed in detail in \cite{snrCat}). This GeV data provide a crucial context for the detailed modeling of individual SNRs. In combination with MW measurements, the GeV data now challenge simple, previously sufficient SNR emission models. Within the limits of existing MW data, our observations generally support previous findings of changes in spectral slope at or near TeV energies and a softening and brightening in the GeV range with age and effective age, yet we see indications that new candidates and new MW data may provide evidence of exceptions to this trend. With uniformly measured data for all known SNRs, we also constrain SNRs' aggregate, maximal contribution to the population of Galactic CRs. With the GeV and other MW data, we find that the candidates and upper limits are generally within expectations if SNRs provide the majority of Galactic CRs and anticipate these limits will improve with both a larger GeV data set with better sensitivity, as will be provided by \FermiLat~Pass 8 data, and with more and better distance and density estimates.
 
--constraint on CR energy density in the Galaxy
+\section{Scratch}
 
--do the observed g-ray properties match those
-of models?
+EGRET point source sensitivity is ${\rm \sim1x10^{-7}}\flux{}$
+\url{http://fermi.gsfc.nasa.gov/science/instruments/table1-1.html} get this number from some paper instead?
 
--like index etc?
+\jamie{Another pointlike assumption to speed things up is that the PSF doesn't vary too much with event incidence angle in individual bins. To ensure this even more, events with a reconstructed angle > 66.4deg (cos theta = 0.4) are removed (idk why this angle)}
 
-\jamie{Another assumption to speed things up is that the PSF doesn't vary too much with event incidence angle in individual bins. To ensure this even more, events with a reconstructed angle > 66.4deg (cos theta = 0.4) are removed (idk why this angle)}
+I did work for mock catalog, but it was really just running addsrcs centered on the mock positions. 
 
-This section is about the tools (and intricacies there in) developed to study SNRs with Fermi
-
-The addSrcs framework extends/exploits pointlike 
-
-addSrcs in this section or merged into the next one?
-
-I need to stress that this is not just a tool developed, but there's an art and finesse to it (talk about the problems we overcame), there was much iteration.
-
-tool plus knowledge to get the best result
-
-what are the aspects of addSrcs tht needed knowhow, finagling
-
-, \ts{} map creation and extension fitting.
-\jamie{assume I've mentioned \ts{} maps already}  For these reasons, we utilized \ptlike{} to perform an analysis of 
-
-we endeavored to take 
-
-First something about the SNR cat, and wanting to uniformly study the regions around SNRs, maybe this is a new section
-to facilitate the characterization of the sky
-
-what are some motivations for various addSrcs decisions 
-
-How to distinguish addSrcs from how addSrcs was applied to the SNR cat. For the SNRcat, it was addSrcs in PS mode with specifics relevant to the SNR cat needs (like what?)
-
-tested pipeline with 6 sources (I have the tests somewhere, see old Fermi symp poster, Gal Evo too)
-
-The min bias line is specifically for the SNR cat since we removed catalog sources....intended to minimize possible bias introduced by the initial model for an ROI (e.g 2FGL) It is  used to derive the input sources model for the SNR catalog. The goal of this work is to use this "add sources" method to aid in characterization of GeV emission near SNRs and nearby molecular clouds.
-
-left to do in this section:
-
-figure out which other sections to pull from.
-
-I think I might just take the first part of the results of the catalog, and summarize the comparison results (so maybe just the most relevant population plots and points about correlation?)
-
-The one other part that I need to write is about the 8 sources tested on. pull from pres, and poster and confluence. 
-
-Reread the chapter, figure out what other plots to include
-
-
-First par of 3.1 about how we classify. Summarize some of the relevant catalog results of section 3.2. There's no real reason to include the catalog tables I think. Parts of 3.2.1 3.2.2, 3.2.3 just to highlight which sources were newly detected. 
-
-What to include from section 4? I didn't make these plots, but I contributed to the pipeline script and gave advice on things. 
-
-For the mock snrCatalog, I didn't do the analysis, but I ran addSrcs on the mock sources. maybe there's not much to say about this though.
-
-Section 5? It's not my work, but I participated in discussions, edited text in the section a little bit. I think something needs to be included from this because one of the points of the paper was to see what we could say about the total energy in CR in the Galaxy
-
-Parts of conclusion
+I did a bunch of work getting distance and multiwavelength info so should work those in somehow
