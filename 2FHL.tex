@@ -73,7 +73,7 @@ coincident  with the so-called {\it Fermi} bubbles \citep{su10,lat_bubbles}.
 
 \begin{figure*}[!ht]
 	\begin{centering} 
-		\includegraphics[scale=0.85]{Figures/all-sky_countmap-Marco.eps}
+		\includegraphics[width =\textwidth]{Figures/all-sky_countmap-Marco.eps}
 		\caption{Adaptively smoothed count map in the 50\,GeV--2\,TeV band represented in Galactic coordinates and Hammer-Aitoff projection. The image has been smoothed with a Gaussian kernel whose size was varied to achieve a minimum signal-to-noise ratio under the kernel of 2. The color scale is logarithmic and the units are counts per (0.1\,deg)$^2$.
 			\label{fig:skymap}}
 	\end{centering}
@@ -224,7 +224,7 @@ We only consider a source to be extended if $\rm TS_{ext}~ >$ $\rm TS_{2pts}$  (
 
 \begin{figure*}[!ht]
 	\centering
-	\includegraphics[width=16cm,trim=0 0 0 0cm]{Figures/all-sky_assoc.eps} 
+	\includegraphics[width=\textwidth]{Figures/all-sky_assoc.eps} 
 	\caption{Sky map, in Galactic coordinates and Hammer-Aitoff projection,
 		showing the sources in the 2FHL catalog classified by their most likely association. 
 		\label{fig:all_sky}}
@@ -395,11 +395,10 @@ We find that 2FHL~J1022.0$-$5750 is spatially compatible with
 	whose emission might be due to a PWN powered by PSR~J1023$-$5746 \citep{Acero13}. }
 %Westerlund 2 (TeV~J1023$-$5747), a massive star cluster already detected as an extended source at TeV energies \citep{westerlund2_hess11}.
 2FHL~J1505.1$-$5808 is spatially coincident with the unidentified
-object HESS~J1503$-$582, which has a size of 0.26$^{\circ}$
-{ and a flux above 1\,TeV \citep{renaud08} 
-	compatible with the extrapolation of the 2FHL J1505.1$-$5808 spectrum.}
+object HESS~J1503$-$582, which has a size of 0.26$^{\circ}$ and a flux above 1\,TeV \citep{renaud08} compatible with the extrapolation of the 2FHL J1505.1$-$5808 spectrum.
 Its spectrum, reminiscent of that of a PWN 
-\citep[\eg, HESS~J1825$-$137,][]{grondin2011} is reported in Figure~\ref{fig:gal_sed}.
+\citep[\eg, HESS~J1825$-$137,][]{grondin2011},
+ is reported in Figure~\ref{fig:gal_sed}.
 
 
 2FHL~J1507.4$-$6213 is spatially coincident with HESS~J1507$-$622, an extended source with a radius of 0.15$^{\circ}$ located  3.5$^{\circ}$ from the plane \citep{acero11}. The analysis of multiwavelength data showed that it is not possible to discriminate between a hadronic and leptonic origin of the emission, but that the latter scenario, if the emission is powered by a PWN, would require a pulsar generated in the explosion of a hyper-velocity star in order to reach the required distance from the plane \citep{domainko2012}.
@@ -428,8 +427,6 @@ versus $2.17\pm 0.11$ as measured by H.E.S.S.).
 
 Finally, 2FHL~J1856.8+0256 is coincident with HESS~J1857+026, an almost radially symmetric extended source  \citep{aharonian08_unid}, whose emission likely originates from a PWN powered by PSR~J1856+0245 \citep{rosseau2012}.
 
-
-
 \begin{figure*}[ht]
 	\begin{center}
 		\begin{tabular}{ll}
@@ -452,10 +449,10 @@ Finally, 2FHL~J1856.8+0256 is coincident with HESS~J1857+026, an almost radially
 \subsection{\label{2fhl:ESresults}Extended Source Results}
 
 
-In total, 31 sources are modeled as spatially extended and input into the ML analysis: 25 listed in 3FGL, 5 sources detected in the {\tt pointlike} analysis (described in $\S$ \ref{sec:3FGL_ES}) that were not { detected as extended at the time of} 3FGL, and one, SNR W41, reported  recently by both the H.E.S.S. and LAT teams \citep{HESSLATW41}. Names and properties of the extended sources  are provided in Tables \ref{tab:extended} and \ref{tab:new_extended}. 
+In total, 31 sources are modeled as spatially extended and input into the ML analysis: 25 listed in 3FGL, 5 sources detected in the {\tt pointlike} analysis (described in $\S$ \ref{2fhl:3FGL_ES}) that were not { detected as extended at the time of} 3FGL, and one, SNR W41, reported  recently by both the H.E.S.S. and LAT teams \citep{HESSLATW41}. Names and properties of the extended sources  are provided in Tables \ref{tab:extended} and \ref{tab:new_extended}. 
 Six extended sources, detected in 3FGL, were not detected in 2FHL: the SMC, S~147 ({the point source 2FHL~J0534.1+2753 was detected inside it}), the lobes of Centaurus A (although we detect its core as a point source, 2FHL J1325.6$-$4301), W~44, HB~21 and the Cygnus Loop.
 
-We detect a weak source, 2FHL~J1714.1$-$4012 (TS = 27), just outside the southwestern edge of the 3FGL spatial template used to model the emission from SNR RX J1713.7$-$3946 (2FHL~J1713.5$-$3945e). 2FHL~J1714.1$-$4012 has a hard spectral index $\Gamma = 1.63 \pm 0.38$, that is within errors of the spectral index derived for the SNR, $\Gamma = 2.03 \pm 0.20$. It is unclear whether 2FHL~J1714.1$-$4012 is a distinct source separated from the SNR, or the result of un-modeled residual emission due to an imperfection in the spatial template adopted for the extended source.
+We detect a weak source, 2FHL~J1714.1$-$4012 (TS = 27), just outside the southwestern edge of the 3FGL spatial template used to model the emission from SNR RX J1713.7$-$3946 (2FHL~J1713.5$-$3945e). 2FHL~J1714.1$-$4012 has a hard spectral index $\Gamma = 1.63 \pm 0.38$, that is within errors of the spectral index derived for the SNR, $\Gamma = 2.03 \pm 0.20$ \citep{Abdo11-RXJ1713}. It is unclear whether 2FHL~J1714.1$-$4012 is a distinct source separated from the SNR, or the result of un-modeled residual emission due to an imperfection in the spatial template adopted for the extended source.
 
 
 2FHL~J1836.5$-$0655e is associated with the PWN HESS J1837$-$069. The 3FGL catalog contains  several point sources in the vicinity of the PWN. We detect three sources in the vicinity, 2FHL~J1834.5$-$0701, 2FHL~J1837.4$-$0717 and 2FHL~J1839.5$-$0705, the first two of which are coincident with 3FGL sources (3FGL J1834.6$-$0659, 3FGL J1837.6$-$0717 respectively). The power-law spectral indices of the three 2FHL point sources and 2FHL J1836.5$-$0655e are all consistent with each other. The concentration of sources around HESS J1837$-$069 combined with the spectral compatibility of the sources is suggestive of a common origin to the $\gamma$-ray emission in this region. However, the surrounding $\gamma$ rays could arise from other sources in the region \citep{Gotthelf08}; further analysis is necessary to determine the nature of the sources in this region. 
@@ -465,20 +462,22 @@ A brief description of the five new 2FHL extended sources is given below with re
 
 {\bfseries 2FHL~J1443.2$-$6221e} overlaps with the young, radio-detected SNR RCW 86 (G315.4−2.3). RCW 86 is a 42$'$ diameter SNR that lies at a distance of 2.3-2.8 kpc and is likely associated with the first recorded supernova, SN 185 AD \citep{Rosado96,Sollerman03}. With more than 40 months of data and using the {\tt P7SOURCE} dataset, the LAT did not significantly detect the SNR, but upper limits on detection at GeV energies combined with detection of significant extension in the TeV \citep{Aharonian09} were sufficient to strongly favor a leptonic origin for the emission \citep{Lemoine-Goumard12}.
 
-An updated LAT analysis of RCW~86 using 76 months of data, as well as the Pass 8 event-level analysis, resulted in detection of the SNR by the LAT as well as significant extension measurement \citep{Hewitt15}. In this paper, we report the results derived for 2FHL~J1443.2$-$6221e from the {\tt pointlike} analysis described in $\S$ \ref{sec:3FGL_ES}.
+An updated LAT analysis of RCW~86 using 76 months of data, as well as the Pass 8 event-level analysis, resulted in detection of the SNR by the LAT as well as significant extension measurement \citep[the former published after \cite{2FHL}]{Ajello_rcw86,Hewitt15a}. In this paper, we report the results derived for 2FHL~J1443.2$-$6221e from the {\tt pointlike} analysis described in $\S$ \ref{2fhl:3FGL_ES}.
 
 {\bfseries 2FHL~J1419.2$-$6048e} is a newly detected extended sources with size
-%an extended source from which we detect for the first time with the LAT significant GeV extension, 
-${\rm \sigma_{disk} =  0.36 ^{\circ} \pm}$ $0.03 ^{\circ}$, that overlaps two nearby PWN/PSR complexes in the Kookaburra region. In the southwest of Kookaburra, HESS~J1418$-$609 \citep{AharonianKook06} is coincident with both the extended non-thermal X-ray ``Rabbit" PWN \citep[G313.3+0.1,][]{Roberts99}, and the $\gamma$-ray detected pulsar PSR~J1418$-$6058 \citep{AbdoBlindPSR09}. The northeast region, called ``K3", contains HESS~J1420$-$607, coincident with PWN~G313.5+0.3 and PSR J1420$-$6048. \cite{Acero13} detected, with \lat, emission from both HESS~J1418$-$609 (with a soft spectral index, pulsar-like spectrum) and HESS~J1420$-$607 (with a hard power-law index) above 10 GeV, but only HESS J1420$-$607 was significantly detected above 30 GeV. Neither showed significant extension. Our result for the fitted power-law spectral index of 2FHL~J1419.2$-$6048e is in agreement with the previous GeV and TeV results, yet our measured radius is considerably larger than the TeV extension. To compare the extensions of the uniform disk model used for 2FHL~J1419.2$-$6048e in this paper to the Gaussian model of \cite{AharonianKook06}, we defined the radius which contains 68\% of the source's intensity as r$_{68}$, with ${\rm r_{68,Gaussian} = 1.51\sigma}$, and ${\rm r_{68,disk} = 0.82\sigma}$  \citep{Lande12}. We find that ${\rm r_{68} \simeq 0.30^{\circ}}$ for 2FHL~J1419.2$-$6048e, and ${\rm r_{68}} \simeq 0.09^{\circ}$ for HESS~J1420$-$607.
+ ${\rm \sigma_{disk} =}$ ${\rm 0.36 ^{\circ} \pm}$ $0.03 ^{\circ}$, that overlaps two nearby PWN/PSR complexes in the Kookaburra region. In the southwest of Kookaburra, HESS~J1418$-$609 \citep{AharonianKook06} is coincident with both the extended non-thermal X-ray ``Rabbit" PWN \citep[G313.3+0.1,][]{Roberts99}, and the $\gamma$-ray detected pulsar PSR~J1418$-$6058 \citep{AbdoBlindPSR09}. The northeast region, called ``K3", contains HESS~J1420$-$607, coincident with PWN~G313.5+0.3 and PSR J1420$-$6048. \cite{Acero13} detected, with \lat, emission from both HESS~J1418$-$609 (with a soft spectral index, pulsar-like spectrum) and HESS~J1420$-$607 (with a hard power-law index) above 10 GeV, but only HESS J1420$-$607 was significantly detected above 30 GeV. Neither showed significant extension. Our result for the fitted power-law spectral index of 2FHL~J1419.2$-$6048e is in agreement with the previous GeV and TeV results, yet our measured radius is considerably larger than the TeV extension. To compare the extensions of the uniform disk model used for 2FHL~J1419.2$-$6048e in this paper to the Gaussian model of \cite{AharonianKook06}, we defined the radius which contains 68\% of the source's intensity as r$_{68}$, with ${\rm r_{68,Gaussian} = 1.51\sigma}$, and ${\rm r_{68,disk} = 0.82\sigma}$  \citep{Lande12}. We find that ${\rm r_{68} \simeq 0.30^{\circ}}$ for 2FHL~J1419.2$-$6048e, and ${\rm r_{68}} \simeq 0.09^{\circ}$ for HESS~J1420$-$607. \jamie{Include details on the small kookaburra study if I have time}
 
-{\bfseries 2FHL J1355.2$-$6430e}, coincident with the VHE source HESS J1356$-$645, is detected as extended (${\rm \sigma_{disk} =  0.57^{\circ} \pm 0.02^{\circ}}$) for the first time by the LAT in this work. The  source HESS J1356$-$645 \citep{Abramowski11} is associated with the pulsar PSR J1357$-$6429, which was determined to be powering a surrounding extended radio and X-ray PWN \citep{Lemoine-Goumard11}. \cite{Acero13} detected faint emission from the nebula, and derived a 99\% c.l. Bayesian upper limit on extension (${\rm \sigma_{Gauss} < 0.39^{\circ}}$) in the absence of significant extension. The fitted spectral index for 2FHL J1355.2$-$6430e is compatible with the GeV and TeV results \citep{Acero13,Abramowski11}, however, the fitted disk extension is larger than that of the TeV detection, with ${\rm r_{68} \simeq 0.47^{\circ}}$ for 2FHL~J1355.2$-$6430e and ${\rm r_{68}}$ $\simeq 0.30^{\circ}$ for HESS~J1356$-$645.
+{\bfseries 2FHL J1355.2$-$6430e}, coincident with the VHE source HESS J1356$-$645, is detected as extended (${\rm \sigma_{disk} =  0.57^{\circ} \pm 0.02^{\circ}}$) for the first time by the LAT in this work. The  source HESS J1356$-$645 \citep{Abramowski11} is associated with the pulsar PSR J1357$-$6429, which was determined to be powering a surrounding extended radio and X-ray PWN \citep{Lemoine-Goumard11}. \cite{Acero13} detected faint emission from the nebula, and derived a 99\% confifdence limit, Bayesian upper limit on extension (${\rm \sigma_{Gauss} < 0.39^{\circ}}$) in the absence of significant extension. The fitted spectral index for 2FHL J1355.2$-$6430e is compatible with the GeV and TeV results \citep{Acero13,Abramowski11}, however, the fitted disk extension is larger than that of the TeV detection, with ${\rm r_{68} \simeq 0.47^{\circ}}$ for 2FHL~J1355.2$-$6430e and ${\rm r_{68}}$ $\simeq 0.30^{\circ}$ for HESS~J1356$-$645.
 
 {\bfseries 2FHL J1112.4$-$6059e} is an extended source (${\rm \sigma_{disk} =  0.53^{\circ} \pm 0.03^{\circ}}$) newly detected by the LAT that encircles two 3FGL sources, 3FGL J1111.9$-$6058 and 3FGL J1111.9$-$6038, and has another, 3FGL J1112.0$-$6135, just outside its boundary \citep{3FGL}. The extended source also partially overlaps the massive star forming region NGC 3603. %A detailed LAT analysis of this region is underway and will be presented elsewhere. % MA COMMENTED it. in \jamie{need a ref for Junichiro's work}.
 
 Finally, {\bfseries 2FHL J0431.2+5553e} is a large extended source (${\rm \sigma_{disk} =  1.27^{\circ} \pm 0.04^{\circ}}$), with { a hard spectrum}, that has not been previously detected at $\gamma$-ray energies. It overlaps the recently discovered radio SNR G150.3+4.5 \citep{Gao14}. G150.3+4.5 is a ${\rm 2.5^{\circ}}\times {\rm 3^{\circ}}$ (Galactic coordinates)
 % wide (GLON) and ${\rm 3^{\circ}}$ high (GLAT) 
-elliptical shell type SNR that has a steep radio synchrotron spectrum ($\alpha = -0.6$), indicative of radio SNRs.% An in depth LAT analysis of this source extending to energy $E>1$~GeV is in preparation. 
+elliptical shell type SNR that has a steep radio synchrotron spectrum ($\alpha = -0.6$), indicative of radio SNRs. An in depth LAT analysis of this source extending then energy down to$E > 1$~GeV  presented in Chapter \ref{chap:G150}
 
+\jamie{where to add in things about comparing my point sources with alberto's}
+
+\jamie{I also did this quick check looking to see if any extragal sources had close neighbors and might be extended.}
 
 \begin{figure*}[ht]
 	\begin{center}
@@ -499,18 +498,59 @@ elliptical shell type SNR that has a steep radio synchrotron spectrum ($\alpha =
 \input{Tables/tab_extended_new.tex}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%         Summary
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+\label{sec:summary}
+
+We have presented an all-sky analysis at $\geq$ 50\,GeV
+of 80\,months of \lat{} data relying on the new Pass~8 event-level analysis.
+Pass~8 delivers improvements in the acceptance and the PSF, reduces
+background of misclassified charged particles
+and extends the energy range at which the \lat{} is sensitive.
+All this allowed the \lat{} to detect 360 sources in the 50\,GeV--2\,TeV range,
+performing an unbiased census of the $>$50\,GeV sky for the first time.
+%This is the first time that \lat can thoroughly explore this energy range.
+This catalog of sources (dubbed 2FHL) provides a bridge between
+the traditional 0.1--100\,GeV band of \lat{} catalogs \citep{3FGL}
+and the $\gtrsim$100\,GeV band probed by IACTs from the ground.
+The 2FHL catalog has the potential to improve the efficiency with
+which new sources are detected at TeV energies since only
+about 25\,\% of the 2FHL sources were previously detected by IACTs.
+
+The majority ($\gtrsim$80\,\%)
+of sources detected in the 2FHL catalog are likely extragalactic
+because they are either located at high Galactic latitude or are associated with blazars. BL Lacs represent the largest population of sources detected by the LAT 
+(54\,\%), followed by blazars of uncertain classification (16\,\%) and unassociated
+sources (13\,\%). Most BL Lacs in 2FHL belong to the HSP class and display the hardest
+(among blazars) $\gamma$-ray spectra and substantial emission in the 50\,GeV--2\,TeV
+band. These sources are powerful probes of the EBL and this work has shown
+that \lat{} has detected emission from many blazars at optical depths $>$1.
+
+The 2FHL includes 103 sources in the direction of the Galactic plane ($|b|<10^{\circ}$).
+While a fraction of the sources ($\sim$39\,\%) is associated with blazars, the rest
+are Galactic and unassociated sources. Galactic sources generally display
+much harder photon indices than blazars (median of $\sim$2 versus $\sim$3)
+and copious TeV emission, both signs of efficient particle acceleration.
+Most Galactic sources are associated with PWNe and SNRs, systems at the end
+of the stellar evolution cycle, and are detected as spatially extended.
+All the hard (spectral index $<2$) unassociated  sources within the plane
+of our Galaxy are likely of Galactic origin, since very few blazars 
+have spectra as hard.
+
+A comparison with a similarly long dataset of Pass~7 photons shows that
+Pass~8 allows the LAT to detect 35\,\% more sources. It is thus
+clear that Pass~8 and the accumulated exposure allow the LAT to extend its reach
+to higher energy and to open a new window on the sub-TeV sky. Sensitivity improves linearly with time in the photon-limited regime, thus 
+further observations by the LAT in the coming years
+will probe the $>$\,50\,GeV sky even more deeply, providing
+important targets for current and future 
+Cherenkov telescopes.
 
 %%%%%%
 
-
-\section{\label{2FGL:summ}Summary} In this chapter, we have presented the publication on \twofhl, focusing primarily on the Galactic results of the publication and in particular detected extended sources. Extension of addSrcs to search for spatially extended sources, applied to 8 years \jamie{check} of LAT data above 50 \gev. Detected x extended. y were known 3FGL, z were new;y detected as extended at \gev~energies, \Gone ~was brand new. Galactic seem to have harder indices than extra gal, suggests which unid'd in the plane are gal vs. egal. All extended harder than diffuse. Hints of different morphology between \twofhl and \twofgl, didn't study here, but this is one of the motivations for $>$ 10 \gev study.
 \section{Scratch}
-Add stuff to first section about extension fitting with pointlike
-In addition to being optimized for speed and large-scale studies (\ie{} those including many sources), \ptlike{}
-
-I should probably give more detail about Josh's code than I did for just the regular pointlike?
-
-Next, get into Josh's extension additions to pointlike
-It accomplishes this by binning the sky in  
-
-Should I say some things about why extension fitting is important in general?
+ Galactic seem to have harder indices than extra gal, suggests which unid'd in the plane are gal vs. egal. All extended harder than diffuse. Hints of different morphology between \twofhl and \twofgl, didn't study here, but this is one of the motivations for $>$ 10 \gev study.
