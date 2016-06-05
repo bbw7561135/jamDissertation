@@ -1,5 +1,5 @@
 \chapter{Revealing the GeV Supernova Remnant Population: The First \FermiLat{} Supernova Remnant Catalog}
-\label{chap:snrCat}
+\label{chap:snrcat}
 
 
 %\section{Introduction}\label{snrCat:Intro}
@@ -35,7 +35,7 @@ Prior to this work, several individual studies with the \lat{} had successfully 
 %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%
 
-\section{\label{snrCat:ptlk}The \ptlike{} Maximum-Likelihood Package and \srcs{}}
+\section{\label{snrcat:ptlk}The \ptlike{} Maximum-Likelihood Package and \srcs{}}
 
 As described in Chapter \ref{chap:FGST}, maximum-likelihood analysis is the ideal method for determining the properties of \lat{}-observed sources due to the ``counting-experiment" nature of \FermiLat{}. The standard maximum-likelihood tools for analyzing \lat{} data are implemented via the \Fermi{} Science Tools, and in particular \gtlike{}.  Despite being the optimum method, likelihood analysis of \lat{} data is complex due to the highly non-linear performance of the instrument and can be computationally expensive. It is necessary to manage the data and response of the telescope as well as the source and background models. Furthermore, due to the broadening of the \psf{} at low energies, even when studying a single source, it is necessary to include in the model descriptions of multiple surrounding sources. The \ptlike{} binned maximum likelihood package was created to ameliorate some of these issues. Described in detail in \cite{Kerr10}, \ptlike{} is an alternate likelihood analysis framework (a collection of Python modules with additional wrappers for accessing C++ code), designed to be interactive and rapidly evaluate likelihoods.  
 
@@ -114,7 +114,7 @@ To avoid times during which transient sources near SNRs were flaring, we removed
 %%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%
 \section{Input Source Model Construction}\label{snrcat:AddSrcs}
-To characterize each candidate SNR we constructed a model of \gam{} emission in the RoI which includes all significant sources of emission as well as the residual background from CRs misclassified as \gam{}s. We implemented an analysis method, built upon the \srcs{} method described in \ref{snrCat:ptlk}, to create and optimize the 279 models for each of the $279$~RoIs. For each RoI, we initially included all sources within the $10$\degr{} RoI listed in the \twofgl{} \citep{2FGL}, based on $2$\,years of Source class data. To this we added pulsars from the \twopc{} \citep{2PC}, based on $3$\,years of source class data, with 2PC taking precedence for sources that exist in both. 
+To characterize each candidate SNR we constructed a model of \gam{} emission in the RoI which includes all significant sources of emission as well as the residual background from CRs misclassified as \gam{}s. We implemented an analysis method, built upon the \srcs{} method described in \ref{sncat:ptlk}, to create and optimize the 279 models for each of the $279$~RoIs. For each RoI, we initially included all sources within the $10$\degr{} RoI listed in the \twofgl{} \citep{2FGL}, based on $2$\,years of Source class data. To this we added pulsars from the \twopc{} \citep{2PC}, based on $3$\,years of source class data, with 2PC taking precedence for sources that exist in both. 
 For the diffuse emission we combined the standard \iem{} corresponding to our P7 data set, gal\_2yearp7v6\_v0.fits, with the standard model for isotropic emission, which accounts for extragalactic diffuse \gam{} emission and residual charged particles misclassified as \gam{}s. Both the corresponding isotropic model, iso\_p7v6source.txt, and the IEM are the same as used for the 2FGL catalog analysis\footnote{Further details on the diffuse emission models are available at \url{http://fermi.gsfc.nasa.gov/ssc/data/access/lat/BackgroundModels.html} \jamie{and in Chapter blah]}}. 
 
 Compared to 2FGL, we used an additional year of data and limited the energy range to $1-100$\,GeV. This can result in different detection significances and localizations than previously reported in 2FGL. To account for these effects, we recreated the RoIs' inner $3$\degr{}\,radius regions, which encompass the radio extents of all known SNRs, observed to be $\leq 2.6$\degr{} and allows a margin for the LAT PSF. The weighted average $68\%$~containment radius of the LAT PSF for events at $1$\,GeV is $\sim0.7$\degr{} \citep{lat_perfo}. We note that this implicitly assumes that an SNR's GeV extent should not be more than about an order of magnitude larger than its radio extension and also note that the selection biases stated in Green's catalog limit the range of known SNRs' radio extensions. 
@@ -157,32 +157,23 @@ We applied the procedure detailed above to the test RoIs using a criterion of $\
 
 \begin{figure}[ht!]
 	\centering
-	\makebox[\linewidth]{\includegraphics[width=1.0\columnwidth]{figures/aboveThreshPSgt25.png}}
+	\makebox[\linewidth]{\includegraphics[width=1.0\columnwidth]{Figures/aboveThreshPSgt25.png}}
 	\caption[Histogram of the number of signiciant soures remaining in each of the 8 test \roi{} for iterations in which $\Delta(\logL) < 8$]{Histogram of the number TS $\geq$ 25 sources remaining in each of the 8 test \roi{} for iterations in which $\Delta(\logL) < 8$ (\ie{} TS $<$ 16). Points are offset for each SNR for clarity. The text boxes detail statistics for the values of TS of significant sources for the 8 studied SNRs for each corresponding value on the x-axis.}
 	\label{fig:NTSthresh}
 \end{figure}
 
-\begin{figure}[ht!]
-	\centering
-	\makebox[\linewidth]{\includegraphics[width=1.0\columnwidth]{figures/{ES_1_Flux_SNR078.2p02.1_ES_noColor}.png}}
-	\caption[SNR Gamma Cygni flux evolution for successive \srcs{} iterations]{Flux evolution of the extended source coincident with \snr{} gamma Cygni (labeled ES 1 in the figure) as successive sources are added to the ROI.  Dotted line is first time $\Delta(\logL) < 8$, dashed line shows the final threshold for this test study.}
-	\label{fig:threshFlux}
-\end{figure}
-
-\begin{figure}[ht!]
-	\centering
-	\makebox[\linewidth]{\includegraphics[width=1.0\columnwidth]{figures/{ES_1_Index_SNR078.2p02.1_ES_noColor}.png}}
-	\caption[SNR Gamma Cygni index evolution for successive \srcs{} iterations]{Same as Figure \ref{fig:threshFlux} but for the \pl{} spectral index.}
-	\label{fig:threshIndex}
-\end{figure}
-
-\begin{figure}[ht!]
-	\centering
-	\makebox[\linewidth]{\includegraphics[width=1.0\columnwidth]{figures/{ES_1_Sigma_SNR078.2p02.1_ES_noColor}.png}}
-	\caption[SNR Gamma Cygni extension evolution for successive \srcs{} iterations]{Same as Figure \ref{fig:threshFlux} but for the radius of a uniform, symmetric disk.}
-	\label{fig:threshSigma}
-\end{figure}
-
+\begin{figure*}[ht]
+	\begin{center}
+		\hspace*{-1.5cm} \begin{tabular}{ll}
+			\includegraphics[width=8cm]{Figures/{ES_1_Flux_SNR078.2p02.1_ES_noColor}.png} &
+			\includegraphics[width=8cm]{Figures/{ES_1_Index_SNR078.2p02.1_ES_noColor}.png} \\
+			\multicolumn{2}{c}{\includegraphics[width=8cm]{Figures/{ES_1_Sigma_SNR078.2p02.1_ES_noColor}.png}}\\
+		\end{tabular}
+	\end{center}
+	\caption{
+		\label{fig:test}[SNR Gamma Cygni flux, index, and extension evolution for successive \srcs{} iterations]{Flux (upper left), \pl{} spectral index (upper right), and extension (lower panel) evolution of the extended source coincident with \snr{} gamma Cygni (labeled ES 1 in the figures) as successive sources are added to the \roi{}.  Dotted line is first time $\Delta(\logL) < 8$, dashed line shows the final threshold for this test study.}
+	}
+\end{figure*}
 
 
 To allow for proper convergence of the likelihood fit, we reduced the number of free parameters prior to each new source addition. If the previously added source was between $3$\degr{} and $5$\degr{} of the center of the RoI, just its normalization was freed, and if greater than $5$\degr{} all its source parameters were fixed.
