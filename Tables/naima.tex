@@ -1,0 +1,37 @@
+\begin{deluxetable}{cccccc}
+\setlength{\tabcolsep}{0.04in}
+\tablewidth{0pt}
+\tabletypesize{\scriptsize}
+\tablecaption{Naima Model Best Fit Parameters\label{tab:naima}}
+\tablehead{
+\colhead{s} & 
+\colhead{${\rm K_{ep}}$} & 
+\colhead{${\rm A_p}$ } &
+\colhead{B\tablenotemark{a}} & 
+\colhead{${\rm E_{cutoff(e)}}$} &
+\colhead{${\rm E_{cutoff (p)}}$}} %\\
+%\colhead{} & 
+%\colhead{} & 
+%\colhead{${\rm 10^48}~TeV^{-1}$  } &
+%\colhead{} &
+%\colhead{} &
+%\colhead{}
+\startdata
+\sidehead{\underline{Fixed ${\rm K_{ep}} = 0.01$}}
+1.5 $\pm$ 0.2     &    0.01 &     -32.850 &  49.80  & LMC   & 2 \\ 
+
+\sidehead{\underline{Fixed ${\rm K_{ep}} = 0.1$}}
+1.5 $\pm$ 0.2    &    0.1 &     -3.277  &  63.87  & Puppis A    & 2    \\
+
+\sidehead{\underline{Fixed ${\rm K_{ep}} =1$}}
+1.5 $\pm$ 0.2    &    1 &     -3.277  &  63.87  & Puppis A      & 2 \\
+
+\sidehead{\underline{Fixed s}}
+2 $\pm$ 0.2    &    1 &     -3.277  &  63.87  & Puppis A      & 2 \\
+%\sidehead{Uniform Disk}
+
+\enddata
+\tablecomments{~ \jamie{add better caption} Results from naima model?  Right now the free params are index, kep, eleccut, protcut, B. Fixed are nh, all the IC photon field values distance (this is just for determining flux) \jamie{Correct values aren't in yet}\jamie{}add units to params}
+
+\tablenotetext{a}{Calculated in \gtlike}
+\end{deluxetable}

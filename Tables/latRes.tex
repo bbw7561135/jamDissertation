@@ -1,34 +1,40 @@
-\begin{deluxetable}{cccccccc}
+\begin{deluxetable*}{ccccccc}
 \setlength{\tabcolsep}{0.04in}
 \tablewidth{0pt}
 \tabletypesize{\scriptsize}
-\tablecaption{LAT Analysis Results\label{tab:LATres}}
+\tablecaption{Extended Source Analysis Results\label{tab:LATres}}
 \tablehead{
-\colhead{Spatial Model\,\tablenotemark{a}} & 
-\colhead{TS} & 
-\colhead{TS$_{ext}$} &
-\colhead{$\sigma$} &
-\colhead{Association} &
-\colhead{Class} &
-\colhead{Spatial model} &
-\colhead{Extension [deg]} \\
-\colhead{} & 
-\colhead{} & 
-\colhead{} &
-\colhead{$^\circ$} &
-\colhead{} &
-\colhead{} &
-\colhead{} &
-\colhead{}}
+\colhead{Spatial Model} & 
+\colhead{TS${\rm _{ext}}$} &
+\colhead{TS\tablenotemark{a}} & 
+\colhead{$\sigma$ [$^\circ$]} &
+\colhead{R.A. [$^\circ$]} &
+\colhead{DEC [$^\circ$]} & %\\
+\colhead{Index}}
+%\colhead{} & 
+%\colhead{} & 
+%\colhead{} &
+%\colhead{} &
+%\colhead{} &
+%\colhead{}
 \startdata
-J0526.6$-$6825e      &    278.843 &    -32.850 & 49.80  & LMC                & gal    & 2D Gaussian         & 1.87 \\
-J0617.2+2234e        &    189.048 &      3.033 & 398.64 & IC~443             & snr    & 2D Gaussian         & 0.27 \\
-J0822.6$-$4250e      &    260.317 &  -3.277 &  63.87 & Puppis A       & snr    & ...               & 0.37 \\
+Disk             &    298  &     410 &  $1.40^\circ \pm 0.03^\circ}$  & $55.46^\circ \pm 0.03^\circ$          & $66.91^\circ \pm 0.03^\circ$ & $1.82 \pm 0.04$  \\
+Elliptical Disk  &    189.048 &   34 &  $1.78^\circ / 1.23^\circ \pm 0.02^\circ$  & $66.61^\circ \pm 0.04^\circ$ & $55.43^\circ \ pm 0.03^\circ$   & $1.86 \pm 0.04$ \\
+2FHL (free)\tablenotemark{b}  &    260.317 &     17  &  $0.80^\circ \pm 0.04^\circ$  & $69.33^\circ \pm 0.06^\circ$      & $56.00^\circ \pm 0.06^\circ$ & $1.34 \pm 0.17$   \\
+2FHL (fixed) &    260.317 &     -3.277  &  63.87  & Puppis A      & snr    & 1.4\\
+Disk \& 2FHL\tablenotemark{b}     & 4 &     17  &  $0.80^\circ \pm 0.04^\circ$  & $69.33^\circ \pm 0.06^\circ$      & $56.00^\circ \pm 0.06^\circ$ & $1.34 \pm 0.17$   \\
+
 %\cutinhead{Thee Point Sources}
 %\sidehead{Uniform Disk}
-
 \enddata
-\tablecomments{~This is mostly from 2FHL, just playing with the table. Don't need a table for just disk hypothesis, but maybe to have disk 3  point sources compatison. I tried adding more sources on top of the 3FGL sources and there's no significant residual. where to say something about testing searching for point sources overlapping the extended source and trying to fit an extended source on top as well? in this table give the disk model with best spectral spatial params, TS, TSext  dof, LL, then the model with just the 3 3FGL sources (no disk) spectrum of each, TS, dof + LL( didn't relocalize the se sources), separate spatial spectral tables?
-}
-\tablenotetext{a}{comments and notes?}
-\end{deluxetable}
+\tablecomments{~ 2FHL (free) corresonds to the model where a disk matching \ghard{}, was included in the likelihood model and the spectral and spatial parameters we free to vary. For the 2FHL (fixed) model, \ghard{} was included with spatial parameters fixed. In the Disk \& 2FHL model, we included both the best-fit disk determined in $\S$\ref{sec:LATmorph}, fixed in position and size, and added a source resembling the \ghard{} with free spectral and spatial parameters. This model reports the fit values of \ghard{}
+ }
+
+\tablenotetext{a}{Calculated in \gtlike}
+\tablenotetext{b}{Started with disk matching the spectral/spatial parameters of \ghard{}, then left them free to fit in the likelihood model.}
+\end{deluxetable*}
+
+
+
+
+                
