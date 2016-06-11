@@ -2,35 +2,54 @@
 \label{chap:FGST}
 
 \section{\label{FGST:intro}Introduction}
-The \Fermi{} Gamma-Ray Space Telescope (\Fermi{} ~hereafter), successor to the \egret{} instrument on the \cgro{}, was successfully launched into orbit around Earth on June 11 2008. \Fermi{} consists of two instruments, the \lat{} and the \gbm{}. The \lat{}, which is the primary instrument on \Fermi{}, is a pair conversion telescope designed to detect photons from 20\mev{} to greater than 1\tev{} \cite{atwood09, lat_perf, 2FHL} Its standard mode of operation is a sky-survey mode in which it observes the entire sky every 3 hours. The \gbm{} was designed to detect \grb{}s in a waveband overlapping that of the \lat{} yet complementary in that its energy extends considerably lower. Combined the \lat{} and \gbm{} comprise a formidable observatory, spanning more than 8 decades in energy, and it is currently the only instrument performing all-sky observation in this broad energy range. \jamie{add figure showing Fermi or launch}
+The \Fermi{} Gamma-Ray Space Telescope (\Fermi{} ~hereafter), successor to the \egret{} instrument on the \cgro{}, was successfully launched into orbit around Earth on June 11 2008. \Fermi{} consists of two instruments, the \lat{} and the \gbm{}. The \lat{}, which is the primary instrument on \Fermi{}, is a pair conversion telescope designed to detect photons from 20\mev{} to greater than 1\tev{} \cite{atwood09, lat_perf, 2FHL} Its standard mode of operation is a sky-survey mode in which it observes the entire sky every 3 hours. The secondary instrument aboard \Fermi{}, the \gbm{}, was designed to detect \gam{} bursts in a waveband overlapping that of the \lat{} yet complementary in that its energy extends considerably lower. Combined the \lat{} and \gbm{} comprise a formidable observatory, spanning more than 8 decades in energy, and it is currently the only instrument performing all-sky observation in this broad energy range. 
+
+\begin{figure*}[!]
+	\begin{center}
+		\hspace*{-1.5cm} \begin{tabular}{ll}
+			\includegraphics[width=6.5cm]{Figures/{231388main_fairopen-lg_full}.jpg} &
+			\includegraphics[width=6.5cm]{Figures/{glast_readytogo}.jpg} \\
+			
+			\includegraphics[width=6.5cm]{Figures/{seth_02}.jpg} &
+			\includegraphics[width=6.5cm]{Figures/{seth_2356}.jpg} \\
+
+		\end{tabular}
+	\end{center}
+	\caption[\Fermi{} launch images.]{
+		\label{fig:Launch}{Top left: \Fermi{} being loaded on to a Delta II 7920-H rocket after arriving at Cape Canaveral. Top right: Delta II rocket  at Space Launch Complex 17B with \Fermi{} on board. Lower Left: Dr. Elizabeth Hays at Cape Canaveral marveling at the majestic launch of the \Fermi{} observatory. Lower right:.\Fermi{} was launched into a 550 km, low Earth orbit, on June 11 2008, at 16:05 UTC. Images courtesy of NASA and Seth Diegel.}
+	}
+\end{figure*}
 
 \section{\label{FGST:LAT}The Large Area Telescope}
+\jamie{add super cool pic of fermi}
 Due the the nature of interaction between \gam{}s and matter, photons of \gam{} energies cannot be reflected or refracted in the same way as lower energy light can be, which restricts the design possibilities of a \gam{} telescope. Because of this limitation, \Fermi{} uses the photon pair-production phenomenon to detect \gam{} photons. Photon pair production refers to the mechanism by which a
-photon with sufficient energy (at least twice the rest mass of an electron) can convert to an electron/positron pair. The conversion from photon to antimatter pair can only occur in the presence of a nucleus whose Coulomb field can absorb and thus conserve the momentum of the photon. Figure \ref{fig:pairProd} top shows the probability of photon conversion for given energies, demonstrating how higher Z nuclei (and thus stronger field), are more conducive to conversion by providing a larger interaction cross section. Figure \ref{fig:pairProd} bottom plots the interaction cross section versus photon energy. Above about 10 \mev{}, photon pair production (${\rm \kappa_{nuc}}$) is the clearly dominant photon interaction process \cite{Beringer12}.
+photon with sufficient energy (at least twice the rest mass of an electron) can convert to an electron/positron pair. The conversion from photon to antimatter pair can only occur in the presence of a nucleus whose Coulomb field can absorb and thus conserve the momentum of the photon. Figure \ref{fig:pairProd} top shows the probability of photon conversion for given energies, demonstrating how higher Z (and thus stronger field) nuclei, are more conducive to conversion by providing a larger interaction cross section. Figure \ref{fig:pairProd} bottom plots the interaction cross section versus photon energy. Above 10 \mev{}, photon pair production (${\rm \kappa_{nuc}}$) is the clearly dominant photon interaction process \cite{Beringer12}.
 
 \begin{figure}[!]
 	\centering
 	\vspace{-0.5cm}
 		\includegraphics[width=0.85\columnwidth]{Figures/Beringer12_30_17.png}
 		\includegraphics[width=0.85\columnwidth]{Figures/Beringer12_30_15.png}
-	\caption[Top:Probability of photon conversion to e$^-$ e$^+$ pair. Bottom: Photon cross section versus energy]{Top: Probability that a photon interaction with various nuclei will result in an \ee{} pair as a function of energy. Bottom: Photon cross section versus energy for various photon-matter interaction channels. Both figures originally from \cite{Beringer12} as Figure 30.17 and 30.15 }
+	\caption[Top:Probability of photon conversion to e$^-$ e$^+$ pair. Bottom: Photon cross section versus energy]{Top: Probability that a photon interacting with various nuclei will result in an \ee{} pair as a function of energy. Bottom: Photon cross section versus energy for various photon-matter interaction channels. Both figures originally from \cite{Beringer12} as Figure 30.17 and 30.15.}
 	\label{fig:pairProd}
 \end{figure}
 
-The \lat{} instrument on board \Fermi{} is composed of three subsystems, all designed to take advantage of the pair production mechanism. First and foremost, is the \tkr{}. The \lat{}'s \tkr{} is a module consisting of 18 x-y paired silicon strip detectors that measure the trajectories of the pair-produced charged particles. The silicon strips are interleaved with a tungsten foil to promote \gam{}s passing through the material to convert to \ee{} pairs. The \lat{} is made up of 16 towers (arranged in a 4x4 grid), with each tower containing the 18 interlaced silicon, tungsten planes. The top 12 layers of the \tkr{} comprise the "front section" and are made of 3\% radiation length tungsten. The next 4 layers constitute the "back section" of the \tkr{} and are made of thicker, 18\% radiation length tungsten foil. The final two \tkr{} layers contain no tungsten and are present as a requirement of the \tkr{} trigger which requires hits in adjacent layers to trigger \cite{lat_perf}. The front section of the \tkr{} was designed to minimize the separation between tungsten and silicon (\ie{} the point of conversion and subsequent detection) minimizing multiple scattering effects therein, and thus optimizing the \psf{} for events converted in this section. The 6-times-thicker back layers were designed to further promote conversion, maximizing the effective area of the \lat{}, yet sacrificing resolution for events converting in this layer. Figure \ref{fig:Tower}, shows a diagram of a single tower with \tkr{} components included.
+The \lat{} instrument on board \Fermi{} is composed of three subsystems, all designed to take advantage of the pair production mechanism. First and foremost, is the \tkr{}. The \lat{}'s \tkr{} is a module consisting of 18 x-y paired silicon strip detectors that measure the trajectories of the pair-produced charged particles. The silicon strips are interleaved with a tungsten foil to promote \gam{}s passing through the material to convert to \ee{} pairs. The \lat{} is made up of 16 towers (arranged in a 4x4 grid), with each tower containing the 18 interlaced silicon, tungsten planes. The top 12 layers of the \tkr{} comprise the "front section" and are made of 3\% radiation length tungsten. The next 4 layers constitute the "back section" of the \tkr{} and are made of thicker, 18\% radiation length tungsten foil. The final two \tkr{} layers contain no tungsten and are present as a requirement of the \tkr{} trigger which requires at least three hits in adjacent layers to trigger \cite{lat_perf}. The front section of the \tkr{} was designed to minimize the separation between tungsten and silicon (\ie{} the point of conversion and subsequent detection) minimizing multiple scattering effects therein, and thus optimizing the \psf{} for events converted in this section. The 6-times-thicker back layers were designed to further promote conversion, maximizing the effective area of the \lat{}, yet sacrificing resolution for events converting in this layer. Figure \ref{fig:Tower}, shows a diagram of a single tower with \tkr{} components included.
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=1.0\columnwidth]{Figures/latPerf_Tower.png}
-	\caption[\lat{} tower schematic ]{\lat{} tower schematic showing the different layers of \tkr{} and ending with the \calo{} on the bottom of the tower. }
-	\label{fig:Tower}
-\end{figure}
 
 The next subsystem of the \lat{} is the \calo{}. The \calo{} (located at the bottom of each of the 16 towers as in Figure \ref{fig:Tower}) is comprised of 96 CsI scintillation crystals, arranged in 8 layers of 12 logs. This construction allows the \calo{} to {\bf 1.} measure the energy deposition of the shower of particles resulting from the incident photon's pair-produced \ee{} pair, and {\bf 2.} to perform 3D imaging of the shower, which can serve as a measurement of shower energy leakage.
 
-The final vital component of the \lat{} is the \acd{}. The role of the \acd{} is to reject background charged particles that enter the \lat{} to avoid misclassifying them as photons. The design of the \acd{} was informed by lessons learned from the \lat{}'s predecessor, the \egret{} instrument on \cgro{} \ref{Mosieev05}. In the \calo{} the electromagnetic shower generated by the incident photon produces secondary particles as well as X-rays. These X-rays can Compton scatter the charged particles out through the tracker (or ``backsplash'') creating false vetoes. This backsplash was present in \egret{} and reduced the efficiency of the instrument above 10 GeV \cite{atwood09}. To overcome the backsplash effect, the \lat{} uses a segmented rather than monolithic layer for the \acd{}, made up of 89 scintillating tiles surrounding the towers (as in Figure \ref{fig:latGuts}).
+\begin{figure}[h!t]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{Figures/latPerf_Tower.png}
+	\caption[\lat{} tower schematic ]{\lat{} tower schematic showing the different \tkr{}layers and ending with the \calo{} on the bottom of the tower. Taken from \cite{lat_perf}}
+	\label{fig:Tower}
+\end{figure}
 
-\begin{figure}[hb!]
+The final vital component of the \lat{} is the \acd{}. The role of the \acd{} is to reject background charged particles that enter the \lat{} to avoid misclassifying them as photons. The design of the \acd{} was informed by lessons learned from the \lat{}'s predecessor, the \egret{} instrument on \cgro{} \citep{Mosieev05}. In the \calo{} the electromagnetic shower generated by the incident photon produces secondary particles as well as X-rays. These X-rays can Compton scatter the charged particles out through the 
+\tkr{} and \acd{} (referred to as ``backsplash'') creating false vetoes. This backsplash was present in \egret{} and reduced the efficiency of the instrument above 10 GeV \cite{atwood09}. To overcome the backsplash effect, the \lat{} uses a segmented rather than monolithic layer for the \acd{}, made up of 89 scintillating tiles surrounding the towers (as in Figure \ref{fig:latGuts}).
+
+\begin{figure}[ht!]
 	\centering
 	\includegraphics[width=1.0\columnwidth]{Figures/latGuts.png}
 	\caption[Diagram of the three primary \lat{} subsytems.]{Diagram of the \lat{} subsystems demonstrating how an incident \gam{} can enter through the top layer of the \acd{}, convert to a \ee{} pair in a layer of the \tkr{}, and finally deposit its energy in the \calo{}.}
@@ -38,33 +57,71 @@ The final vital component of the \lat{} is the \acd{}. The role of the \acd{} is
 \end{figure}
  
 \section{\label{FGST:analysis}\lat{} Performance}
-The \lat{} performance is dictated by the telescopes hardware and software designs (\eg{}  event reconstruction methods, background and event classifications). The parameterizations of the performance are referred to as the \irf{}. The \lat{} \irf{} are factorized into three terms: \jamie{include figures for each?}
+The \lat{} performance is dictated by the telescopes hardware and software designs (\eg{}  event reconstruction methods, background and event classifications). The parameterizations of the performance are referred to as the \irf{}. The \lat{} \irf{} are factorized into three terms:
 \begin{enumerate}
 	\item {\bfseries \psf{}, P${\mathbf{(\hat{v^\prime};E,\hat{v})}}$:} Represents the angular resolution of the \lat{}. It is the probability density for reconstructing an incident \gam{} with position $\hat{v^\prime}$ if the true position is $\hat{v}$ for given energy E. The \psf{} is strongly energy dependent. At low energies, this dependence is dominated by multiple scattering in the \tkr{} causing the \psf{} to broaden, and at higher energies (above a few \gev{}) it is dominated by the strip pitch, or the distance between adjacent silicon strip centers, which limits how fine the \psf{} can be at high energies.
 	
-	\item {\bfseries Effective Area, A${\mathbf{ _{eff}(E,\hat{v})}}$}: Represents the collecting area of the \lat{}. It is the product of the geometric cross section of the \lat{} and a dimensionless term that quantifies the efficiency of the \lat{}s event reconstruction. It has units of area.
+	\begin{figure*}[ht]
+		\begin{center}
+			\includegraphics[width=1.\columnwidth]{Figures/{gPsfAve95Energy_P8R2_SOURCE_V6fb_10MeV}.png}
+		\end{center}
+		\caption[\lat{} P8R2\_SOURCE\_V6 angular resolution.]{
+			\label{fig:PSF}{\lat{} angular resolution for 68\% and 95\% containment radius and front and back converting events as a function of energy for the P8R2\_SOURCE\_V6 event classification. Figure from \url{https://www.slac.stanford.edu/exp/glast/groups/canda/lat_Performance.htm}}}
+	\end{figure*}
 	
-	\item {\bfseries Energy Dispersion, D${\mathbf{(\hat{E^\prime};E,\hat{v})}}$}: Represents the energy resolution of the \lat{}. It is the probability density for reconstructing an incident \gam{} with energy $\hat{E^\prime}$ if the true energy is $\hat{E}$ for given direction on the sky.
+	\item {\bfseries Effective Area, A${\mathbf{ _{eff}(E,\hat{v})}}$}: Represents the collecting area of the \lat{}. It is the product of the geometric cross section of the \lat{} and a dimensionless term that quantifies the efficiency of the \lat{}'s event reconstruction. It has units of area. 
+	
+	\begin{figure*}[ht]
+			\begin{center}
+				\includegraphics[width=1.\columnwidth]{Figures/{gAeffEnergy_P8R2_SOURCE_V6fb_10MeV}.png}
+			\end{center}
+			\caption[\lat{} P8R2\_SOURCE\_V6 effective area]{
+				\label{fig:Aeff}{\lat{} effective area for front, back, and total converting events as a function of energy for the P8R2\_SOURCE\_V6 event classification. Figure from \url{https://www.slac.stanford.edu/exp/glast/groups/canda/lat_Performance.htm}.}}
+	\end{figure*}
+	
+	\item {\bfseries Energy Dispersion, D${\mathbf{(\hat{E^\prime};E,\hat{v})}}$}: Represents the energy resolution of the \lat{}. It is the probability density for reconstructing an incident \gam{} with energy $\hat{E^\prime}$ if the true energy is $\hat{E}$ for given direction on the sky. Energy dispersion effects are often ignored in \lat{} analysis above a few hundred \mev{} as \cite{lat_perf} showed that the effects of neglecting it are of the order of a few percent.
+	
+		\begin{figure*}[ht]
+			\begin{center}
+				\includegraphics[width=1.\columnwidth]{Figures/{gEdispAve68Energy_P8R2_SOURCE_V6fb_sep_10MeV}.png}
+			\end{center}
+			\caption[[\lat{} P8R2\_SOURCE\_V6 energy resolution]{
+				\label{fig:Edisp}{\lat{} energy resolution for front, back, and total converting events as a function of energy for the P8R2\_SOURCE\_V6 event classification. Figure from \url{https://www.slac.stanford.edu/exp/glast/groups/canda/lat_Performance.htm}.}}
+		\end{figure*}
+	
 \end{enumerate}
 
-\begin{figure*}[ht]
-	\begin{center}
-		\hspace*{-1.5cm} \begin{tabular}{ll}
-			\includegraphics[width=0.6\columnwidth]{Figures/{gPsfAve95Energy_P8R2_SOURCE_V6fb_10MeV}.png} &
-			\includegraphics[width=0.6\columnwidth]{Figures/{gAeffEnergy_P8R2_SOURCE_V6fb_10MeV}.png} \\
-			\multicolumn{2}{c}{\includegraphics[width=0.6\columnwidth]{Figures/{gEdispAve68Energy_P8R2_SOURCE_V6fb_sep_10MeV}.png}}\\
-		\end{tabular}
-	\end{center}
-	\caption[Aeff plots]{
-		\label{fig:Aefft}{Aeff.}
-	}
+In general, the \lat{} has a large effective area (${\rm \sim 9500 cm^2}$ at a few \gev{}) (Figure \ref{fig:Aeff}), energy resolution of 5\% (at 10 \gev{}) to 20\% (at 100 \mev{}) (Figure \ref{fig:Edisp}), and a single-photon angular resolution ranging from $\sim 3.2^\circ$ at 100 \mev{} to $
+\lesssim 0.16^\circ$ for E $>$ 10 \gev{} (Figure \ref{fig:PSF}). With its rocking mode observation strategy (35$^\circ$ north of the zenith axis for one orbit, and then south for the next) and its  wide \fov{} of 2.4 sr, the \lat{} attains a nearly uniform coverage of the sky within two orbits, or 3 hours. The culmination of the \lat{}'s performance can be summed up as its capability to detect distinct sources on the sky. Figures \ref{fig:sensMap} and \ref{fig:sensSlice} depict the \lat{}'s threshold for detecting emission from a point source above the structured Galactic diffuse emission \ref{FGST:}. Figure \ref{fig:sensMap} demonstrates what level of emission the \lat{} can detect when integrating over the majority of its energy range, and Figure \ref{fig:sensSlice} shows what the  source detection threshold is for detecting sources in individual energy bins and at four locations on the sky. See \ref{snrCat:Intro} for a comparison of the \lat{}'s capabilities with that of \egret{},
+
+\begin{figure*}[!ht]
+	%\begin{centering}
+	\hspace{-2.7cm}
+	\includegraphics[width=1.3\columnwidth]{Figures/allsky_flux_sensitivity_p8r2_source_v6_all_10yr_zmax100_powerlaw_g200_n10_ts25.png}
+	\caption[\lat{} 10 year, P8R2\_SOURCE\_V6 integral-flux sensitivity map]{\lat{} 10 year, integral-flux sensitivity map for P8R2\_SOURCE\_V6 event classification. The all-sky map was created for energies above 100\mev{} and for a point source (modeled as a \pl{} of spectral index 2) to obtain a $5\sigma$ significance. Figure from \url{https://www.slac.stanford.edu/exp/glast/groups/canda/lat_Performance.htm}.
+		\label{fig:sensMap}}
+	%\end{centering}
 \end{figure*}
-For a given \gam{} source model $S(E,\hat{p})$, where $\hat{p}$ is the direction on the sky (\ie{} the number of photons per unit time, per unit energy, per units solid angle at a given time, energy, and position on the sky), we can convolve the source model (times the effective area) with the dispersion components (\psf{} and  energy dispersion) to obtain the predicted differential source counts (in counts per unit energy/time/solid angle)
+
+\begin{figure*}[!ht]
+	\begin{centering}
+		\includegraphics[width=1.0\columnwidth]{{Figures/differential_flux_sensitivity_p8r2_source_v6_all_10yr_zmax100_n10.0_e1.50_ts25}.png}
+		\caption[\lat{} 10 year, P8R2\_SOURCE\_V6 differential-flux sensitivity for four locations on the sky.]{\lat{} 10 year, differential-flux sensitivity map for P8R2\_SOURCE\_V6 event classification. The all-sky map was created for energies above 100 \mev{} and for a point source (modeled as a \pl{} of spectral index 2) to obtain a $5\sigma$ significance. Figure from \url{https://www.slac.stanford.edu/exp/glast/groups/canda/lat_Performance.htm}.
+			\label{fig:sensSlice}}
+	\end{centering}
+\end{figure*}
+
+\jamie{one to two sentences about recontruction and pass 8.}
+All the values discussed thus far in this chapter are in regard to the recent even-level reconstruction update colloquially referred to as Pass 8. 
+
+\jamie{should I move this to the next section?}
+For a given \gam{} source model $S(E,\hat{p})$, \ie{} the number of photons per unit time, energy, and solid angle at a given time, energy, and position on the sky, where $\hat{p}$ is the direction on the sky, we can convolve the source model (times the effective area) with the dispersion components (\psf{} and  energy dispersion) to obtain the predicted differential source counts (in counts per unit energy/time/solid angle)
 \begin{align}\label{eq:exCountsPred}
 	M(E^{\,\prime},\hat{p}^{\,\prime}) =  \int \int \int S(E,\hat{p}) A _{eff}(E,\hat{v}) \times \nonumber \\
 	P(\hat{v}'(t,\hat{p}^{\,\prime}); E, \hat{v}(t;\hat{p})) D(E^{\,\prime}; E, \hat{v}(t;\hat{p})) dE d\Omega dt.
 \end{align}
 
+Where we've integrated over the energy and time range of interest and over the solid angle in the \lat{} reference frame.
 
 %\begin{equation}\label{eq:exposureDef}
 %\mathcal{E}(E,\hat{p},s) = \int  A _{eff}(E,\hat{v}) dt.
@@ -74,20 +131,24 @@ For a given \gam{} source model $S(E,\hat{p})$, where $\hat{p}$ is the direction
 %\mathcal{E}(E,\hat{p},s) = \int  A _{eff}(E,\hat{v}) t_{obs}(\hat{v};\hat{p}) d\Omega.
 %\end{equation}
 
-\begin{figure*}[!ht]
-	\begin{centering}
-		\includegraphics[width=1.0\columnwidth]{{Figures/differential_flux_sensitivity_p8r2_source_v6_all_10yr_zmax100_n10.0_e1.50_ts25}.png}
-		\includegraphics[width=1.0\columnwidth]{Figures/allsky_flux_sensitivity_p8r2_source_v6_all_10yr_zmax100_powerlaw_g200_n10_ts25.png}
-		\caption[sens]{sensi
-			\label{fig:sens}}
-	\end{centering}
-\end{figure*}
-Something about this model being designed for maxlike analyis to lead into the next section.
+
+\jamie{Something about this model being designed for maxlike analyis to lead into the next section.}
 
 \section{\label{FGST:analysis}\gam~Data Analysis}
- 
+The standard method for analyzing astrophysical data at other wavelengths (\eg{} optical) is by performing aperture photometry. This consists of essentially counting the photons ``on-source'' in a extraction region and subtracting off the estimated background ``off-source'' in a neighboring region, where the background is typically assumed to be isotropic. Although not always simple, various source quantities can typically be derived from the data itself (\eg{} intensity, extent if resolvable). The aperture photometry method is not feasible for analysis of \Fermi{} data (as was the case for \egret{} \cite{mattox96}) due to various complexities inherent to detecting \gam{} photons. 
 
- Why maximum likelihood, how it's formulated,  implemented in the Science Tools, pointlike and the analysis for extended sources. Diffuse emission.
+The first such issue is that because of the breadth of the \lat{} \psf{}, and wide energy range of the \lat{}. Due to these factors, source confusion abounds and sources are not truly isolated from one another. The overlapping tails of the \psf{} would make analysis via aperture photometry particularly intractable at low energies (where the \psf{} rises steeply with decreasing energy, see Figure \ref{fig:PSF}) and in the Galactic plane (with a high source density and strongly anisotropic diffuse emission \ref{FGST:diff?}).The second reason is the complex relationship between an individual source and the \irf{}. Since \Fermi{} typically operates in a sky-survey mode, photons from an individual source need to accumulate over long integration times, and the orientation of the space craft with respect to the source of interest will vacillate over time. The response of the telescope is dependent on the orientation of the space craft, so it is non-trivial to determine source and background fluxes by simply counting photons.
+
+To circumvent the issues described above, \cite{Cash79} applied the maximum likelihood method to astrophysical counting-experiments and parameter estimation of X-ray data. \cite{mattox96} then established a framework for analyzing \egret{} \gam{} via the maximum likelihood method.
+
+
+
+how it's formulated,  
+implemented in the Science Tools, 
+
+pointlike and the analysis for extended sources.? 
+
+Diffuse emission.
  
  
  Four steps to going from observing the sky to final LAT analysis:
@@ -100,8 +161,6 @@ Something about this model being designed for maxlike analyis to lead into the n
  
  Likelihood for ES: how to use likelihood methods to char and resolve sources measure  extension
  
- Section on diffuse emission
-\subsection{\label{FGST:sub}Do I need subsections?}
 \section{Scratch}
 
 
