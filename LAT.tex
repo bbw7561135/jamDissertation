@@ -47,7 +47,18 @@ The \lat{} performance is dictated by the telescopes hardware and software desig
 	\item {\bfseries Energy Dispersion, D${\mathbf{(\hat{E^\prime};E,\hat{v})}}$}: Represents the energy resolution of the \lat{}. It is the probability density for reconstructing an incident \gam{} with energy $\hat{E^\prime}$ if the true energy is $\hat{E}$ for given direction on the sky.
 \end{enumerate}
 
-
+\begin{figure*}[ht]
+	\begin{center}
+		\hspace*{-1.5cm} \begin{tabular}{ll}
+			\includegraphics[width=0.6\columnwidth]{Figures/{gPsfAve95Energy_P8R2_SOURCE_V6fb_10MeV}.png} &
+			\includegraphics[width=0.6\columnwidth]{Figures/{gAeffEnergy_P8R2_SOURCE_V6fb_10MeV}.png} \\
+			\multicolumn{2}{c}{\includegraphics[width=0.6\columnwidth]{Figures/{gEdispAve68Energy_P8R2_SOURCE_V6fb_sep_10MeV}.png}}\\
+		\end{tabular}
+	\end{center}
+	\caption[Aeff plots]{
+		\label{fig:Aefft}{Aeff.}
+	}
+\end{figure*}
 For a given \gam{} source model $S(E,\hat{p})$, where $\hat{p}$ is the direction on the sky (\ie{} the number of photons per unit time, per unit energy, per units solid angle at a given time, energy, and position on the sky), we can convolve the source model (times the effective area) with the dispersion components (\psf{} and  energy dispersion) to obtain the predicted differential source counts (in counts per unit energy/time/solid angle)
 \begin{align}\label{eq:exCountsPred}
 	M(E^{\,\prime},\hat{p}^{\,\prime}) =  \int \int \int S(E,\hat{p}) A _{eff}(E,\hat{v}) \times \nonumber \\
@@ -63,6 +74,14 @@ For a given \gam{} source model $S(E,\hat{p})$, where $\hat{p}$ is the direction
 %\mathcal{E}(E,\hat{p},s) = \int  A _{eff}(E,\hat{v}) t_{obs}(\hat{v};\hat{p}) d\Omega.
 %\end{equation}
 
+\begin{figure*}[!ht]
+	\begin{centering}
+		\includegraphics[width=1.0\columnwidth]{{Figures/differential_flux_sensitivity_p8r2_source_v6_all_10yr_zmax100_n10.0_e1.50_ts25}.png}
+		\includegraphics[width=1.0\columnwidth]{Figures/allsky_flux_sensitivity_p8r2_source_v6_all_10yr_zmax100_powerlaw_g200_n10_ts25.png}
+		\caption[sens]{sensi
+			\label{fig:sens}}
+	\end{centering}
+\end{figure*}
 Something about this model being designed for maxlike analyis to lead into the next section.
 
 \section{\label{FGST:analysis}\gam~Data Analysis}
