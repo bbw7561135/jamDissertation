@@ -1,0 +1,30 @@
+\begin{deluxetable}{cc}
+\setlength{\tabcolsep}{0.04in}
+\tablewidth{0pt}
+\tabletypesize{\scriptsize}
+\tcap{Naima Model Best-Fit Parameters\label{tab:naima}}
+\tablehead{
+\colhead{Parameter} & 
+\colhead{Value\tablenotemark{a}}} 
+%\colhead{DEC [$^\circ$]}} %\\
+%\colhead{} & 
+%\colhead{} & 
+%\colhead{} &
+%\colhead{} &
+%\colhead{} &
+%\colhead{}
+\startdata
+\cutinhead{Free  Parameters}
+${\rm A_p}$             &    278.843 ^{+1}_{-1} \\ 
+ ${\rm K_{ep}}$ &    189.048      \\
+Disk + 2FHL      &    260.31       \\
+2FHL (No Disk)   &    260.317     \\
+\cutinhead{Fixed Parameters}
+2FHL (No Disk)   &    260.317     \\
+%\sidehead{Uniform Disk}
+
+\enddata
+\tablecomments{~ Results from naima model? Two cols with param name and value? Split for fit and fixed params? Right now the free params are index, kep, eleccut, protcut, B. Fixed are nh, all the IC photon field values distance (this is just for determining flux)These values are just the same vals from table 1 for now. Make the table the other way, param as col heads, with table note or dagger for free/fixed, vals below. }
+
+\tablenotetext{a}{Calculated in \gtlike}
+\end{deluxetable}
