@@ -2,8 +2,7 @@
 \label{chap:gamAstr}
 
 \section{Introduction}\label{gamAstr:intro}
-\jamie{I might move the emission mechs section into the snr chapter, and move the rest of this section into the introduction, or just call the intro chapter gam Astro}
-The story of \gam 's from astrophysical objects is a tale of the most extreme, energetic, and violent environments in our universe. Discovered by Paul Villard studying radiation from radium and named by Ernest Rutherford, who previously uncovered the nature of $\alpha$ and $\beta$ radiation, \gam's are the highest named energy of light 
+The story of \gam{}s from astrophysical objects is a tale of the most extreme, energetic, and violent environments in our universe. Discovered by Paul Villard studying radiation from radium and named by Ernest Rutherford, who previously uncovered the nature of $\alpha$ and $\beta$ radiation, \gam{}s are the highest named energy of light 
 
 more historical context 
 
@@ -15,38 +14,89 @@ probe of extreme environments
 
 snrs as source of Galactic cosmic rays, and thus as drivers of Galactic evolution
 
-\section{\gam~Emission Mechanisms }\label{gamAstr:Emiss}
+\section{\gam{} Emission Mechanisms }\label{gamAstr:Emiss}
 
-\cite{Sturner97}
-\cite{Gaisser98}
-Gamma-rays as a probe of cosmic rays and cosmic acceleration processes
+Aside from the  nuclear decay of heavy particles, \gam{}s are produced solely by charged particles being accelerated to\gev{} and\tev{} energies and interacting either with a target particle, be it other matter or photon fields.  Below we discuss the various non-thermal emission mechanisms giving rise to \gam{}s, namely, \ic{} radiation, non-thermal \brems{}, and neutral pion decay emission. We also described the \sync{} radiation process. While not typically observed up to \gam{} energies (with \sync{}  emission from the Crab nebula being an exception \cite{AbdoCrab}, extending to hundreds of\mev{}), \sync{} photons plays a significant role in \gam{} emission with the shared particle population between \ic{} and \sync{} emitting electrons. Furthermore, observations of \sync{} emission at radio and X-ray energies is vital in understanding and constraining the charged particle population and \gam{} source spectra. We follow \cite{Houck06} for many of the photon emissivities given below.
 
-PP collisions if one is at rest give two about 67\mev{} photons
-protons are tougher because the mass is higher, interaction cross section is smaller, higher energy B field requited to observe proton synchrotron and we expect it to be weaker.  and we don't typically detect radiation from protons, EXCEPT PP and this leads to gammas
+\subsection{Non-Thermal \brems{}}\label{gamAstr:bremss}
+Bremsstrahlung radiation occurs when charged particles (electron-electron or electron-ion in this case) pass near each other, causing the  primary charge to decelerate, and emit a photon. For a differential spectrum, ${\rm N_e(p)}$, corresponding to the accelerated electrons, the total emissivity is given as the sum of the electron-electron and electron-ion \brems{}. The combined differential photon-emissivity spectrum can be given as:
 
-gamma-ray astronomy as  a proxy for studying cosmic rays and acceleration/diffusion processes. How much to get into CR. 
+\begin{equation}
+{\rm \frac{d n}{d \omega d t} =
+	n_e \int
+	N_e(p) v_e
+	\frac{d \sigma_{e e}}{d \omega}dp +
+	n_Z \int
+	N_e(p) v_e
+	\frac{d \sigma_{e Z}}{d \omega}dp}
+\end{equation}
+where ${\rm d \sigma_{e Z}/d \omega}$ and ${\rm d \sigma_{e e}/d \omega}$ are the differential interaction cross sections for each interaction \citep{Koch59,Haug75}, ${\rm n_e}$ and ${\rm n_Z}$ are the stationary electron and ion densities, and ${\rm v_e}$ is the electron velocity.
 
-Cosmic particle accelerators and \gam's
-accelerator plus target often 
+\subsection{Inverse Compton Scattering}\label{gamAstr:IC}
 
+\ic{} scattering refers to the process by which a high-energy electron collides with a lower-energy photon transferring energy and ``upscattering" the photon to higher energies \citep{Blumenthal70}. The dominant seed photon field available for upscattering by a population of electrons is that of the \cmb{}, with a temperature ${\rm T \approx 2.73~K}$. Other photon fields that may be relevant are \fir{} dust emission (${\rm T \approx 30~K}$), and \nir{} stellar-light (${\rm T \approx 3000~K}$). For a thermal photon-field of number density $n(\omega_i)$, with $\omega_i$ being the incident and photon energy,
 
-What's a CR, quick,  general CR properties that are relevant to SNRs
+\begin{equation}
+n(\omega_i) = 
+\frac{1}{\pi^2\lambda^3} 
+\frac{\omega_i^2}{e^{\omega_i/\Theta} -1}
+\end{equation}
+where  $\Theta=kT/(m_e c^2)$, and the Compton wavelength of the electron is $\lambda=\hbar/(m_e c)$.
+For a momentum distribution of relativistic (Lorentz factor, $\gamma \gg 1$) electrons, N(p), embedded in an isotropic photon-field of number density $n(\omega_i)$, the single-photon differential photon-emissivity spectrum,  is given by:
 
-why use gamma's  to study CR
+\begin{equation}
+{\rm \frac{dn}{d\omega dt} = 
+c \int  n(\omega_i)d \omega_i
+\int_{p_{min}}^\infty 
+N(p)  \sigma_{KN}(\gamma,\omega_i,\omega)dp}
+\end{equation}
+with $\omega$ as the upscattered photon energy, ($\omega\equiv h\nu/(m_e c^2)$), and $\sigma_{KN}$ is the Klein-Nishina scattering  cross section:
+\begin{equation}
+{\rm \sigma_{KN}(\gamma,\omega_i,\omega) = \frac{2\pi r_0^2}{\omega_i \gamma^2}
+\left[
+1 + q - 2q^2 + 2q\ln q + \frac{\Gamma^2 q^2 (1-q)}{2(1+\Gamma q)}
+\right]}
+\end{equation}
+and,
+\begin{equation}
+{\rm q \equiv \frac{\omega}{4 \omega_i \gamma (\gamma-\omega)}}
+\end{equation}
+for ${\rm \Gamma \equiv 4\omega_i \gamma}$, and the classical elec(as in \cite{Houck06})tron radius, ${\rm r_0 = e^2/(m_e c^2)}$
 
-gamma-ray production mechanisms
+\jamie{We note that in the Thomson limit, ${\rm \omega_i \ll omega \ll \gamma mc^2}$ the Klein-Nishina cross section reduces to the Thomson cross section. }
 
-myriad of gamma-ray generating mechanisms operate at this energy, so it's sometimes the only range that we can observe this emission in:
+\subsection{Synchrotron Radiation}\label{gamAstr:sync}
 
--Synch,
--Bremss,
--IC,
--pi0,
+\subsection{Neutral Pion Decay Emission}\label{gamAstr:PP}
+When high energy protons and ions collide with interstellar material, one of the products of the collision is a neutral pion. The neutral pion subsequently (and expediently; within $~10^{-16}$ s)decays into two \gam{} photons, each of rest energy $\omega_0 =(m_{\pi}c^2)/2\approx 67.5\mev{}$. For a differential proton distribution ${\rm N_p(p)}$, the differential photon distribution is given by:
+
+\begin{equation}
+\frac{d n}{d \omega d t} = 
+n_p \int v_p N_p(p) 
+\frac{d \sigma(p_\pi, p)}{d p}dp
+\end{equation}
+where ${\rm n_p}$ is the density of the target protons, ${\rm d \sigma(p_\pi, p)/dp}$ the differential cross section for neutral pion production, and ${\rm v_p}$ the non-thermal proton velocity \citep{Hillier84,Dermer86,Aharonian00}.
 
 \section{Sources of \gam's}\label{gamAstr:Sources}
-Maybe don't need this? The reason to is to say SNRs early on. Would I mention other sources to be complete?
+write about gamma ray sky, diffuse, talk about other catalogs! variety of sources pie chart sources we see
 
-\section{\gam{} Detection}\label{gamAstr:Detect}
+3FGL etc
+
+
+
+\section{\gam{} Observations}\label{gamAstr:obs}
+
+When I get to Egret
+By the end of its science run, \egret{} had detected 271 sources above 100\mev{}, within a minimum detection significance of 4$\sigma$, 170 of which had no clear multiwavelength counterpart, with 81 of those unidentified lying within \blat of the Galactic plane \citep{Hartman99}.
+
+\begin{figure}[h!]%[t] 
+	\centering
+	\makebox[\linewidth]{\includegraphics[width=0.8\columnwidth,angle=90]{Figures/3rd_egret_cat.eps} }
+	\caption[Third EGRET catalog all-sky map.]{Third EGRET catalog all-sky map. Unidentified sources represented by triangles. Image courtesy of \url{https://heasarc.gsfc.nasa.gov/docs/cgro/images/epo/gallery/skymaps/}}
+	\label{fig:3EGSky} 
+\end{figure}
+
+ LAT opened the sky greatly
 Maybe this should just be a quick history of \gam{} telescopes leading up to fermi?
 Quick rehash of method of detecting \gam's? Or is this just about previous \gam ~detectors and the state of the \gam~sky pre-Fermi?  mention telescopes up to EGRET, bit of detail on EGRET and what the pre-Fermi \gam~sky looked like, in particular in the context of SNRs, PWN, Galactic plane
 
@@ -57,6 +107,8 @@ One of the primary goals of fermi was to identify these sources and the site of 
 Brief history of radio detection of SNRs. detection at other wavelengths. what we see at \g-rays?
 
 Motivation for why to study them
+
+manifest
 \citep{Sturner95}
 \citep{Esposito96}
 
