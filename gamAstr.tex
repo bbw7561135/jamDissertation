@@ -112,9 +112,40 @@ n_p \int v_p N_p(p)
 \end{equation}
 where ${\rm n_p}$ is the density of the target protons, ${\rm d \sigma(p_\pi, p)/dp}$ the differential cross section for neutral pion production for proton collisions, and ${\rm v_p}$ the non-thermal proton velocity \citep{Hillier84,Dermer86,Aharonian00}. The peak of the distribution occurs at $\approx 67.5\mev{}$ (which is half the rest mass of the neutral pion), however the peak is broadened due to Doppler shifting of the momentum distribution of the high-energy protons. This feature shows a bilateral symmetry about the peak energy in a photon spectrum representation, but in a ${\rm \nu F_\nu}$ representation, it appears as a hardening of the spectrum at a few hundred\mev{} \cite{Stecker71,Dermer13}. This characteristic pion-decay feature is colloquially referred to as the ``pion-bump", and is a vital instrument in distinguishing the proton-emitting population from the often-overlapping \ic{} and \brems{} spectrum produced at \gam{}s. 
 
-%\section{Sources of \gam's}\label{gamAstr:Sources}
+\section{\gam{} Emitters}\label{gamAstr:Sources}
+Despite the need for extreme environmental conditions to accelerate particles to a high-enough energy to produce \gam{}s, there are a multitude of \gam{} emitters of both Galactic and extragalactic origins. Following, we summarize a subset of these \gam{} objects, with a focus on Galactic \gam{} sources observed with the \Fermi{}-\lat{}  (see Chapter \ref{chap:FGST}, for more on the \Fermi{}-\lat{}). Figure \ref{fig:7yearSkyMap} is an all-sky map using 7 years of  \Fermi{}-\lat{} data, integrated in energy above 1\gev{}. 
+
+\begin{figure*}[!ht]
+	%\begin{centering}
+	\hspace{-2.7cm}
+	\includegraphics[width=1.3\columnwidth]{Figures/intens_ait_84m_gt1000_psf3_gal_0p1_transparent.png}
+	\caption[LAT 7 year, all-sky intensity map]{\lat{}, 7 year all-sky, energy-integrated intensity map. The map is in Hammer-Aitoff projection, was created using Pass 8 Source class (PSF3 event type) photons, and the energy range of integration is $> 1\gev{}$. A logarithmic intensity scale is displayed with minimum intensity ${\rm 3.3 \times  10^{-6} ~cm^{-2}~ s^{-1}~sr^{-1}}$ and maximum intensity ${\rm 0.036 ~cm^{-2}~s^{-1}~sr^{-1}}$, for a pixel size of ${\rm 0.1^\circ / pixels}$. Image courtesy of Seth Digel and the LAT collaboration.
+		\label{fig:7yearSkyMap}}
+	%\end{centering}
+\end{figure*}
+
+The most prominent feature of the map shown in Figure \ref{fig:7yearSkyMap} is the central band of highly structured \gam{}s (particularly at low Galactic latitudes) corresponding to emission from the Milky Way. This radiation results from ambient \crs{} interacting with interstellar gas in the Galaxy through \brems{} and neutral pion decay processes, as well as \ic{} scattering of background radiation fields. The diffuse Galactic radiation is the dominant source of background/foreground confusion for \gam{} analysis in the Galaxy, so to properly characterize both point and spatially-extended \gam{} sources, a  model of the Galactic diffuse radiation is required. A second diffuse \gam{} background component is also apparent in Figure \ref{fig:7yearSkyMap}, seen as the blue haze (approximately) isotropically distributed across the entirety of the sky. In Chapter \ref{FGST:bkg} we discuss the diffuse background models adopted for \gam{} analysis with the \Fermi{}-\lat{}.
+
+On top of the diffuse background emission, many individual \gam{} sources can be discerned. Several catalogs have been developed to characterize the numerous and  varied Galactic and extragalactic \gam{} emitters detectable by the \lat{}. 
+
+The primary \lat{} source catalog (and most current iteration) is the \threefgl{} \citep{3FGL}. The goal of the catalog was to perform a uniform, all-sky study, aimed at characterizing sources in a  broadly applicable energy range, while not biasing the analysis towards one specific source type or region of the sky. \threefgl{} used 4 years of observations, in an energy range from 100\mev{} to 300\gev{} and detected 3033 sources above a 4$\sigma$ detection significance (see Chapter \ref{FGST:analysis} for more on how significance is determined for \lat{} data analysis). 
+
+Of the 3033 sources, 238 were determined to be firmly identified with a multiwavelength counterpart (based on correlated variability or angular size), 1786 had a likely lower-energy association, and 992 were unassociated. Pulsars comprised the largest Galactic source class with  143 identified through pulsation timing analyses, and 24 deemed candidates.  Other Galactic objects included sources identified (or positionally associated) as a \snr{} or \pwn{} (Chapter \ref{chap:Rems} details these remnants of stellar explosions), binary stellar systems, a nova and a star forming region.  25 sources were modeled as spatially extended (all included from prior individual source studies), and of those, 12 were identified as \snrs{} and 9 as \pwne{}.
+
+Several other \lat{} catalogs pertinent to Galactic \gam{} sources have been produced. In general, these catalogs have been developed with an analysis suitable to detecting specific source types, or tailored towards a certain energy range or region of the sky. We briefly summarize these catalogs below.
+
+The \twopc{}, \citep{2PC} used 3 years of \lat{} data above 0.1\gev{} to search for the rapidly-rotating neutron stars known as pulsars. The \gam{} pulsars were identified by either searching for a \gam{} source at the location of a known radio or X-ray pulsar, blindly performing pulsation analyses on \lat{} sources, or by searching for pulsed emission at radio wavelengths in the direction of unidentified \gam{}  sources. \twopc{} reported 117 high-confidence pulsar detections. Through an ''off-peak`` spectral analysis, \twopc{} also significantly detected emission from 4 \pwne{}. Supplementary to \twopc{}, a catalog-style study was performed to identify the population of \lat{} \pwne{}  coincident with known (and potential)\tev{} \pwne{} \citep{Acero13}. This worked was performed at energies higher than 10\gev{} (above the typical pulsar cut-off energy), using 45 months of \lat{} data, confined to 5$^\circ{}$ of the Galactic plane, and resulted in 30 of the 58 sources studied being significantly detected. 
+
+\onefhl{} \citep{1FHL}
+
+\snrcat{}, \citep{snrCat}
+
+\twofhl{} \citep{2FHL}
+
+\jamie{Several other catalogs, maintaining Other catalogs geared analysis to be  suitable to detecting specific source types, or within specific regions of the sky}
 \jamie{]write about gamma ray sky, diffuse, talk about other catalogs! variety of sources pie chart sources we see
 \twofgl{} \threefgl{} \onefhl{} \twopc{} tev pwn cat}
+
 
 
 %\section{\gam{} Observations}\label{gamAstr:obs}
