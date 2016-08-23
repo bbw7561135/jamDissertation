@@ -168,15 +168,9 @@ where PDF(TS) is the probability distribution function for obtaining a specific 
 \section{\label{FGST:bkg}Modeling Diffuse Background Emission}
 As discussed in Chapter \ref{gamAstr:Sources}, to characterize point-like or spatially extended  \lat{} sources, it is necessary to have an accurate model of the Galactic diffuse background emission. The standard model for the Galactic radiation adopted for \lat{} analysis \citep{diffuse16} is derived from a linear combination of gas column density maps (HI and CO) and infrared dust emission maps to trace the interstellar gas for a given \gam{} energy range. The templates describe the \gam{} photon intensity resulting from \crs{} interacting with the gas through \brems{} and neutral pion decay processes. Another component of the templates is derived from the cosmic ray propagation code, {\tt GALPROP} \citep{strong98,strong07}, which calculates the \gam{} intensity of \crs{} \ic{} scattering ambient, interstellar photons. The model assumes a uniform \cray{} density in each template, so to accommodate for possible radial variations in the \cray{} density, the templates are divided into 9 Galactocentric annuli. 
 
-A second, nearly-isotropic, background component is also accounted for in typical \lat{} analyses. The isotropic emission observed by the \lat{} consists of charged particles entering the \lat{} that are misclassified as \gam{}s as well as \gam{}s from unresolved, sub-threshold sources observed across the sky.
+A second, nearly-isotropic, background component is also accounted for in typical \lat{} analyses. The isotropic emission observed by the \lat{} consists of charged particles entering the \lat{} that are misclassified as \gam{}s as well as \gam{}s from unresolved, sub-threshold sources observed across the sky \citep{isoSpec}.
 
-Both the Galactic and isotropic backgrounds are factored into the likelihood analysis framework, described in Chapter \ref{FGST:perf}, and in particular by Equation \ref{eq:exCountsPred}. 
-\jamie{need refs above, ref for iso? maybe 3FGL?}
+Both the Galactic and isotropic backgrounds are factored into the likelihood analysis framework, described in Chapter \ref{FGST:perf}, and in particular by Equation \ref{eq:exCountsPred}. The Galactic diffuse emission is included via the aforementioned spatial and spectral templates which are typically modulated by a power-law function (to account for deviations in intensity from the template at each energy) with a normalization and spectral slope that are free to vary in the likelihood analysis. The isotropic component is simply scaled by a normalization parameter, also typically free to vary.
 
-
-isotropic intensity
-
-likelihood frame work, either with a normalization component free to vary, or templates modulated by a power law with free spectral index and normalization
-something about fitting spatial templates and spatial spectral
 %The model of the sky will contain terms describing the sources (\ie{} the flux density of all the sources in the region, or $S(E,\hat{p})$ in \ref{FGST:LAT}), the background`
 
