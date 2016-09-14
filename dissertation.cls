@@ -336,9 +336,11 @@
  \@date}
  \end{center}
 % \hugeskip\par\mbox{}\hugeskip\par\hspace*{15pt}
+%JAM: changed from 60pt to -27 to  get it to go left
+%JAM: probably a better way to do this
  \vfill
  {\large Advisory Committee:
- \medskip\par\hspace*{60pt}
+ \medskip\par\hspace*{-28pt}
  \begin{tabular}[t]{l}\@advisor, \@advtitle \\ \@chairname, \@chairtitle \\ \@committee \end{tabular}}}
  \newpage}
 
@@ -351,12 +353,13 @@
  \ifhascopyright
   {\large
   \begin{center}
+ %JAM: Revert to the other copy right
 % I prefer this
-  \boldmath $\copyright$ \@author\ \@date \\
+  %\boldmath $\copyright$ \@author\ \@date \\
 % instead of the grad school suggested this
-%  \boldmath $\copyright$ Copyright by \\
-%  \@author \\
-%  \@date
+  \boldmath $\copyright$ Copyright by \\
+  \@author \\
+  \@date
   \end{center}}
   \vfill
  \fi
@@ -377,7 +380,7 @@
  \label{dissertationdedication}                     %  KG 30 Apr 2006
  \pdfbookmark[1]{Dedication}{dissertationdedication}%  KG 30 Apr 2006
  \vspace*{2in}
-% \begin{center}\LARGE\bf Dedication \end{center}
+ \begin{center}\LARGE\bf Dedication \end{center}
  \hugeskip\par\noindent
  \begin{quote} \@dedication \end{quote}
  \newpage}
